@@ -1,0 +1,91 @@
+* using log directory 'D:/Progetti R/netsim_hg/netsim.v4.1.Rcheck'
+* using R version 2.12.1 (2010-12-16)
+* using platform: i386-pc-mingw32 (32-bit)
+* using session charset: ISO8859-1
+* checking for file 'netsim.v4.1/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'netsim.gui' version '1.5.2'
+* checking package name space information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking for executable files ... OK
+* checking whether package 'netsim.gui' can be installed ... WARNING
+Found the following significant warnings:
+  Warning: package 'RGtk2' was built under R version 2.12.2
+See 'D:/Progetti R/netsim_hg/netsim.v4.1.Rcheck/00install.out' for details.
+NB: this package is only installed for sub-architecture 'i386'
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Found the following non-empty subdirectories of 'inst' also used by R:
+inst/libs
+It is recommended not to interfere with package subdirectories used by
+R.
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the name space can be loaded with stated dependencies ... OK
+* checking whether the name space can be unloaded cleanly ... OK
+* checking for unstated dependencies in R code ... WARNING
+'library' or 'require' calls not declared from:
+  cairoDevice graph
+See the information on DESCRIPTION files in the chapter 'Creating R
+packages' of the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  netsim_generate netsim_graph netsim_profiles netsim_simulate
+All user-level objects in a package should have documentation entries.
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Bad \usage lines found in documentation object 'simulatenet':
+  simulatenet <- function(N=50, connectivity="MTM", max.reg=12, gamma=2.2, INdegree="free", Cf.cl=0.4, num.subnet=c(5,5,10), kappa=3, f.pr.and="", act.fun="sigmoidal", alpha=c(10,0.2), beta=c(0.5,0.01), lambda=c(1,0.1), Xmin=NULL, Xmax=NULL, X0=c(0,1), weight.par=c(1,0), params=c(2,2,2,0,0,1), times=seq(0,5,0.05), stat_thr=0.001, stat_width=0, method="rkf45", itera=1, save=FALSE)
+Bad \usage lines found in documentation object 'simulateprofiles':
+  Data.new<-simulateprofiles<-function(weights, Rules=list(), f.pr.and="", act.fun="sigmoidal",alpha=c(10,0.2), beta=c(0.5,0.01), lambda=c(1,0.1), Xmin=NULL, Xmax=NULL, X0=c(0,1), params=c(2,2,2,0,0,1), ko.experim=NULL, times=seq(0,5,0.05), stat_thr=0.001, stat_width=0, sd_noise=NULL, method="rkf45", EXT.IN=NA, EXT.FUN=list(), itera=1, save=FALSE)
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See the chapter 'Writing R documentation files' in manual 'Writing R
+Extensions'.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'netsim.gui-Ex.R' failed
+The error most likely occurred in:
+
+> ### Name: simulateprofiles
+> ### Title: Simulator of time-series gene expression data
+> ### Aliases: simulateprofiles
+> ### Keywords: datagen ts
+> 
+> ### ** Examples
+> 
+> net<-simulatenet(N=50,connectivity="MTM",act.fun="sigmoidal", method="rkf45")
+Simulatenet: . done
+> Data<-net[[1]][[1]]
+> W.matrix<-net[[1]][[2]]
+> R<-net[[2]]
+> param.lambda<-net[[1]][[3]]
+> param.alpha<-net[[1]][[4]]
+> param.beta<-net[[1]][[5]]
+> N<-dim(Data)[1]
+> baseline<-runif(N,0,1)
+> Data.new<-simulateprofiles(X0=baseline,Xmax=rep(10,N),lambda=param.lambda,weights=W.matrix,Rules=R,act.fun="sigmoidal",alpha=param.alpha, beta=param.beta, method="rkf45")
+Error in simulateprofiles(X0 = baseline, Xmax = rep(10, N), lambda = param.lambda,  : 
+  VECTOR_ELT() can only be applied to a 'list', not a 'double'
+Calls: simulateprofiles -> .Call
+Execution halted

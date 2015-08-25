@@ -1,0 +1,1 @@
+h:\perl5.8\bin\clock --read-lang-def=R *.R

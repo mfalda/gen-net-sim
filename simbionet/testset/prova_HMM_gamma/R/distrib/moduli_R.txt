@@ -1,0 +1,176 @@
+
+***createMOD***
+input:
+	m =  2 
+	auto =  TRUE 
+
+***hubs***
+input:
+	mod =  0 0 1 0 
+
+***pathlength***
+input:
+	W =  0 0 1 0 
+	und =  FALSE 
+pathlength output:
+	M =  Inf Inf 1 Inf 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ FALSE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  0 0 1 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 0 1 1 
+
+***pathlength***
+input:
+	W =  0 0 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  Inf Inf 1 1 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ TRUE 
+ 2 
+
+***cluster_coeff***
+input:
+	W =  0 0 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 1 0 1 
+
+***pathlength***
+input:
+	W =  0 1 0 1 
+	und =  FALSE 
+pathlength output:
+	M =  Inf 1 Inf 1 
+hubs output:
+	list(H,feedback,Hio) =  1 
+ TRUE 
+ 2 
+
+***cluster_coeff***
+input:
+	W =  0 1 0 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 1 1 0 
+
+***pathlength***
+input:
+	W =  0 1 1 0 
+	und =  FALSE 
+pathlength output:
+	M =  2 1 1 2 
+hubs output:
+	list(H,feedback,Hio) =  1 2 
+ TRUE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  0 1 1 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 1 1 1 
+
+***pathlength***
+input:
+	W =  0 1 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  2 1 1 1 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ TRUE 
+ 2 
+
+***cluster_coeff***
+input:
+	W =  0 1 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  1 0 1 1 
+
+***pathlength***
+input:
+	W =  1 0 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  1 Inf 1 1 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ TRUE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  1 0 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  1 1 1 1 
+
+***pathlength***
+input:
+	W =  1 1 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  1 1 1 1 
+hubs output:
+	list(H,feedback,Hio) =  1 2 
+ TRUE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  1 1 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***HMM***
+
+
+***cluster_coeff***
+input:
+	W =  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 0 0 0 
+
+***sampleB***
+input:
+	x =  1 2 3 4 5 6 7 
+	size =  3 
+	replace =  FALSE 
+	prob =  0.1428571 0.1428571 0.1428571 0.1428571 0.1428571 0.1428571 0.1428571 

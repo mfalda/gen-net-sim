@@ -1,0 +1,8 @@
+"ID";"nome";"da";"a";"dim.massima";"riallocazioni";"prima linea";"ultima linea"
+"3";"'ris'";"/home/marco/Documenti/hmm_linux/cluster_coeff.c # 31";"/home/marco/Documenti/hmm_linux/create_mod.c # 102";"2";"0";"/home/marco/Documenti/hmm_linux/cluster_coeff.c # 32";"/home/marco/Documenti/hmm_linux/cluster_coeff.c # 65"
+"1";"'g_distanza'";"/home/marco/Documenti/hmm_linux/pathlength.c # 50";"/home/marco/Documenti/hmm_linux/globali.c # 324";"2";"0";"/home/marco/Documenti/hmm_linux/pathlength.c # 50";"/home/marco/Documenti/hmm_linux/pathlength.c # 94"
+"4";"'g_P'";"/home/marco/Documenti/hmm_linux/hubs.c # 53";"/home/marco/Documenti/hmm_linux/globali.c # 331";"2";"0";"/home/marco/Documenti/hmm_linux/hubs.c # 53";"/home/marco/Documenti/hmm_linux/hubs.c # 56"
+"2";"'g_tmp1_d'";"/home/marco/Documenti/hmm_linux/hubs.c # 38";"/home/marco/Documenti/hmm_linux/globali.c # 335";"2";"0";"/home/marco/Documenti/hmm_linux/hubs.c # 38";"/home/marco/Documenti/hmm_linux/hubs.c # 53"
+--------------------------------------
+
+"ID";"nome";"da";"a";"dim.massima";"riallocazioni";"prima linea";"ultima linea"

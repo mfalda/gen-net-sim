@@ -1,0 +1,6806 @@
+
+***createRules***
+input:
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	f.pr.and = ...
+
+***create_logicRule***
+input:
+	v =  2 4 
+	f_pr_and = ...
+create_logicRule output:
+	r = 	 -2 
+	 2 
+	 4 
+
+
+***create_logicRule***
+input:
+	v =  2 5 
+	f_pr_and = ...
+create_logicRule output:
+	r = 	 -2 
+	 2 
+	 5 
+
+createRules output:
+	list(L, max.lengthL) = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+3 
+
+***lsoda***
+input:
+	X0 =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	times =  0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2 2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9 3 3.1 3.2 3.3 3.4 3.5 3.6 3.7 3.8 3.9 4 4.1 4.2 4.3 4.4 4.5 4.6 4.7 4.8 4.9 5 
+
+***target***
+input:
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6820456 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529667 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8224437 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.898863 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529667 
+target output:
+	T =  0.3179544 0.2470333 0.1775563 0.1011370 0.2470333 
+lsoda step (t =  0 ):  0.05465282 -0.1058832 0.0001490941 -0.006402378 0.1363316 
+
+***target***
+input:
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6820456 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529667 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8224437 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.898863 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.898863 0.86013 0.7529667 0.6820456 0.8224437 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529667 
+target output:
+	T =  0.3179544 0.2470333 0.1775563 0.1011370 0.2470333 
+lsoda step (t =  0 ):  0.05465282 -0.1058832 0.0001490941 -0.006402378 0.1363316 
+
+***target***
+input:
+	n =  0.8990358 0.8597952 0.7529671 0.6820254 0.8228747 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.003161932 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.8990358 0.8597952 0.7529671 0.6820254 0.8228747 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6820254 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.8990358 0.8597952 0.7529671 0.6820254 0.8228747 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529671 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.8990358 0.8597952 0.7529671 0.6820254 0.8228747 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8228747 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.8990358 0.8597952 0.7529671 0.6820254 0.8228747 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8990358 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.8990358 0.8597952 0.7529671 0.6820254 0.8228747 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529671 
+target output:
+	T =  0.3179746 0.2470329 0.1771253 0.1009642 0.2470329 
+lsoda step (t =  0.003161932 ):  0.05449033 -0.1056052 -0.0007939947 -0.006579 0.1358262 
+
+***target***
+input:
+	n =  0.8990353 0.8597961 0.7529642 0.6820248 0.8228732 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.003161932 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.8990353 0.8597961 0.7529642 0.6820248 0.8228732 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6820248 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.8990353 0.8597961 0.7529642 0.6820248 0.8228732 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529642 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.8990353 0.8597961 0.7529642 0.6820248 0.8228732 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8228732 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.8990353 0.8597961 0.7529642 0.6820248 0.8228732 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8990353 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.8990353 0.8597961 0.7529642 0.6820248 0.8228732 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529642 
+target output:
+	T =  0.3179752 0.2470358 0.1771268 0.1009647 0.2470358 
+lsoda step (t =  0.003161932 ):  0.05449135 -0.1055988 -0.0007874105 -0.006577863 0.1358310 
+
+***target***
+input:
+	n =  0.8992076 0.8594622 0.7529617 0.682004 0.8233027 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.006323865 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.8992076 0.8594622 0.7529617 0.682004 0.8233027 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.682004 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.8992076 0.8594622 0.7529617 0.682004 0.8233027 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529617 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.8992076 0.8594622 0.7529617 0.682004 0.8233027 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8233027 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.8992076 0.8594622 0.7529617 0.682004 0.8233027 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8992076 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.8992076 0.8594622 0.7529617 0.682004 0.8233027 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529617 
+target output:
+	T =  0.317996 0.2470383 0.1766973 0.1007924 0.2470383 
+lsoda step (t =  0.006323865 ):  0.05432985 -0.1053146 -0.001722826 -0.006752936 0.1353304 
+
+***target***
+input:
+	n =  0.899207 0.8594631 0.7529587 0.6820035 0.823301 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.006323865 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.899207 0.8594631 0.7529587 0.6820035 0.823301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6820035 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.899207 0.8594631 0.7529587 0.6820035 0.823301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529587 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.899207 0.8594631 0.7529587 0.6820035 0.823301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.823301 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.899207 0.8594631 0.7529587 0.6820035 0.823301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.899207 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.899207 0.8594631 0.7529587 0.6820035 0.823301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7529587 
+target output:
+	T =  0.3179965 0.2470413 0.1766989 0.1007929 0.2470413 
+lsoda step (t =  0.006323865 ):  0.05433086 -0.1053082 -0.001716305 -0.006751809 0.1353352 
+
+***target***
+input:
+	n =  0.9077027 0.842903 0.7484301 0.6800633 0.844025 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.1761654 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9077027 0.842903 0.7484301 0.6800633 0.844025 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6800633 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9077027 0.842903 0.7484301 0.6800633 0.844025 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7484301 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9077027 0.842903 0.7484301 0.6800633 0.844025 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.842903 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9077027 0.842903 0.7484301 0.6800633 0.844025 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9077027 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9077027 0.842903 0.7484301 0.6800633 0.844025 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7484301 
+target output:
+	T =  0.3199367 0.2515699 0.157097 0.09229734 0.2515699 
+lsoda step (t =  0.1761654 ):  0.04713021 -0.0807292 -0.03804769 -0.01395529 0.1155207 
+
+***target***
+input:
+	n =  0.9078232 0.8436647 0.749582 0.680245 0.844604 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.1761654 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9078232 0.8436647 0.749582 0.680245 0.844604 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.680245 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9078232 0.8436647 0.749582 0.680245 0.844604 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.749582 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9078232 0.8436647 0.749582 0.680245 0.844604 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8436647 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9078232 0.8436647 0.749582 0.680245 0.844604 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9078232 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9078232 0.8436647 0.749582 0.680245 0.844604 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.749582 
+target output:
+	T =  0.319755 0.2504180 0.1563353 0.09217677 0.2504180 
+lsoda step (t =  0.1761654 ):  0.04685285 -0.08409055 -0.04074761 -0.01425740 0.1137254 
+
+***target***
+input:
+	n =  0.9151222 0.830899 0.7391175 0.6771605 0.8619317 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.346007 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9151222 0.830899 0.7391175 0.6771605 0.8619317 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6771605 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9151222 0.830899 0.7391175 0.6771605 0.8619317 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7391175 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9151222 0.830899 0.7391175 0.6771605 0.8619317 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.830899 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9151222 0.830899 0.7391175 0.6771605 0.8619317 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9151222 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9151222 0.830899 0.7391175 0.6771605 0.8619317 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7391175 
+target output:
+	T =  0.3228395 0.2608825 0.1691010 0.0848778 0.2608825 
+lsoda step (t =  0.346007 ):  0.04178058 -0.04910866 -0.003725775 -0.01823505 0.1031206 
+
+***target***
+input:
+	n =  0.9153265 0.8320679 0.745576 0.6774601 0.8628662 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.346007 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9153265 0.8320679 0.745576 0.6774601 0.8628662 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6774601 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9153265 0.8320679 0.745576 0.6774601 0.8628662 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.745576 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9153265 0.8320679 0.745576 0.6774601 0.8628662 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8320679 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9153265 0.8320679 0.745576 0.6774601 0.8628662 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9153265 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9153265 0.8320679 0.745576 0.6774601 0.8628662 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.745576 
+target output:
+	T =  0.3225399 0.2544240 0.1679321 0.0846735 0.2544240 
+lsoda step (t =  0.346007 ):  0.04132763 -0.06498614 -0.01289405 -0.0187182 0.09616456 
+
+***target***
+input:
+	n =  0.9137853 0.8330641 0.741649 0.6778613 0.8587906 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.3126745 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9137853 0.8330641 0.741649 0.6778613 0.8587906 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6778613 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9137853 0.8330641 0.741649 0.6778613 0.8587906 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.741649 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9137853 0.8330641 0.741649 0.6778613 0.8587906 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8330641 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9137853 0.8330641 0.741649 0.6778613 0.8587906 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9137853 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9137853 0.8330641 0.741649 0.6778613 0.8587906 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.741649 
+target output:
+	T =  0.3221387 0.2583510 0.1669359 0.08621472 0.2583510 
+lsoda step (t =  0.3126745 ):  0.04260825 -0.05670499 -0.01091852 -0.01769432 0.1045496 
+
+***target***
+input:
+	n =  0.9139058 0.8337693 0.7458262 0.6780385 0.8593498 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.3126745 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9139058 0.8337693 0.7458262 0.6780385 0.8593498 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6780385 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9139058 0.8337693 0.7458262 0.6780385 0.8593498 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7458262 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9139058 0.8337693 0.7458262 0.6780385 0.8593498 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8337693 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9139058 0.8337693 0.7458262 0.6780385 0.8593498 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9139058 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9139058 0.8337693 0.7458262 0.6780385 0.8593498 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7458262 
+target output:
+	T =  0.3219615 0.2541738 0.1662307 0.0860942 0.2541738 
+lsoda step (t =  0.3126745 ):  0.04233937 -0.06699023 -0.01672712 -0.01798195 0.1000488 
+
+***target***
+input:
+	n =  0.919359 0.8250897 0.7447859 0.67531 0.8717666 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.4491835 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.919359 0.8250897 0.7447859 0.67531 0.8717666 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.67531 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.919359 0.8250897 0.7447859 0.67531 0.8717666 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7447859 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.919359 0.8250897 0.7447859 0.67531 0.8717666 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8250897 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.919359 0.8250897 0.7447859 0.67531 0.8717666 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.919359 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.919359 0.8250897 0.7447859 0.67531 0.8717666 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7447859 
+target output:
+	T =  0.3246900 0.2552141 0.1749103 0.08064091 0.2552141 
+lsoda step (t =  0.4491835 ):  0.03883202 -0.05732339 0.002865028 -0.02016217 0.08647653 
+
+***target***
+input:
+	n =  0.9194278 0.8245824 0.7444836 0.6754154 0.8717738 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.4491835 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9194278 0.8245824 0.7444836 0.6754154 0.8717738 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6754154 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9194278 0.8245824 0.7444836 0.6754154 0.8717738 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7444836 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9194278 0.8245824 0.7444836 0.6754154 0.8717738 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8245824 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9194278 0.8245824 0.7444836 0.6754154 0.8717738 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9194278 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9194278 0.8245824 0.7444836 0.6754154 0.8717738 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7444836 
+target output:
+	T =  0.3245846 0.2555164 0.1754176 0.08057224 0.2555164 
+lsoda step (t =  0.4491835 ):  0.03867836 -0.05619609 0.004280281 -0.02032554 0.08674902 
+
+***target***
+input:
+	n =  0.9244473 0.8177248 0.7465984 0.6724696 0.8827266 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.5856926 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9244473 0.8177248 0.7465984 0.6724696 0.8827266 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6724696 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9244473 0.8177248 0.7465984 0.6724696 0.8827266 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7465984 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9244473 0.8177248 0.7465984 0.6724696 0.8827266 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8177248 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9244473 0.8177248 0.7465984 0.6724696 0.8827266 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9244473 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9244473 0.8177248 0.7465984 0.6724696 0.8827266 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7465984 
+target output:
+	T =  0.3275304 0.2534016 0.1822752 0.07555266 0.2534016 
+lsoda step (t =  0.5856926 ):  0.03570284 -0.0554238 0.01714021 -0.02156572 0.07193581 
+
+***target***
+input:
+	n =  0.9244941 0.8170407 0.7460423 0.672545 0.8826233 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.5856926 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9244941 0.8170407 0.7460423 0.672545 0.8826233 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.672545 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9244941 0.8170407 0.7460423 0.672545 0.8826233 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7460423 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9244941 0.8170407 0.7460423 0.672545 0.8826233 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8170407 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9244941 0.8170407 0.7460423 0.672545 0.8826233 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9244941 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9244941 0.8170407 0.7460423 0.672545 0.8826233 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7460423 
+target output:
+	T =  0.3274551 0.2539577 0.1829593 0.07550587 0.2539577 
+lsoda step (t =  0.5856926 ):  0.03559786 -0.05354935 0.01923173 -0.02167756 0.07258227 
+
+***target***
+input:
+	n =  0.9302687 0.8082566 0.7511042 0.6686677 0.8936039 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.757462 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9302687 0.8082566 0.7511042 0.6686677 0.8936039 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6686677 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9302687 0.8082566 0.7511042 0.6686677 0.8936039 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7511042 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9302687 0.8082566 0.7511042 0.6686677 0.8936039 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8082566 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9302687 0.8082566 0.7511042 0.6686677 0.8936039 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9302687 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9302687 0.8082566 0.7511042 0.6686677 0.8936039 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7511042 
+target output:
+	T =  0.3313323 0.2488958 0.1917434 0.06973132 0.2488958 
+lsoda step (t =  0.757462 ):  0.03240362 -0.05818834 0.03355681 -0.02224283 0.05483069 
+
+***target***
+input:
+	n =  0.9303273 0.8075721 0.7507187 0.6687652 0.8936103 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.757462 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9303273 0.8075721 0.7507187 0.6687652 0.8936103 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6687652 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9303273 0.8075721 0.7507187 0.6687652 0.8936103 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7507187 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9303273 0.8075721 0.7507187 0.6687652 0.8936103 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8075721 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9303273 0.8075721 0.7507187 0.6687652 0.8936103 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9303273 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9303273 0.8075721 0.7507187 0.6687652 0.8936103 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7507187 
+target output:
+	T =  0.3312348 0.2492813 0.1924279 0.06967275 0.2492813 
+lsoda step (t =  0.757462 ):  0.03227381 -0.05670003 0.03548609 -0.02238209 0.05520379 
+
+***target***
+input:
+	n =  0.9355743 0.79769 0.7583759 0.6648482 0.901632 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.9292313 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9355743 0.79769 0.7583759 0.6648482 0.901632 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6648482 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9355743 0.79769 0.7583759 0.6648482 0.901632 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7583759 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9355743 0.79769 0.7583759 0.6648482 0.901632 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.79769 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9355743 0.79769 0.7583759 0.6648482 0.901632 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9355743 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9355743 0.79769 0.7583759 0.6648482 0.901632 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7583759 
+target output:
+	T =  0.3351518 0.2416241 0.2023100 0.06442573 0.2416241 
+lsoda step (t =  0.9292313 ):  0.02949719 -0.06685136 0.04955331 -0.02217354 0.03799694 
+
+***target***
+input:
+	n =  0.9356213 0.7970888 0.758188 0.6649266 0.9016468 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  0.9292313 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9356213 0.7970888 0.758188 0.6649266 0.9016468 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6649266 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9356213 0.7970888 0.758188 0.6649266 0.9016468 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.758188 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9356213 0.7970888 0.758188 0.6649266 0.9016468 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7970888 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9356213 0.7970888 0.758188 0.6649266 0.9016468 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9356213 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9356213 0.7970888 0.758188 0.6649266 0.9016468 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.758188 
+target output:
+	T =  0.3350734 0.241812 0.2029112 0.06437871 0.241812 
+lsoda step (t =  0.9292313 ):  0.02939609 -0.06589558 0.05107711 -0.02228269 0.03817745 
+
+***target***
+input:
+	n =  0.9404148 0.7850623 0.7684314 0.6610983 0.9067577 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.101001 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9404148 0.7850623 0.7684314 0.6610983 0.9067577 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6610983 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9404148 0.7850623 0.7684314 0.6610983 0.9067577 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7684314 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9404148 0.7850623 0.7684314 0.6610983 0.9067577 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7850623 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9404148 0.7850623 0.7684314 0.6610983 0.9067577 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9404148 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9404148 0.7850623 0.7684314 0.6610983 0.9067577 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7684314 
+target output:
+	T =  0.3389017 0.2315686 0.2149377 0.0595852 0.2315686 
+lsoda step (t =  1.101001 ):  0.02688024 -0.08077175 0.06656174 -0.02158476 0.02097882 
+
+***target***
+input:
+	n =  0.9404459 0.7845744 0.7684223 0.6611497 0.906743 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.101001 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9404459 0.7845744 0.7684223 0.6611497 0.906743 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6611497 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9404459 0.7845744 0.7684223 0.6611497 0.906743 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7684223 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9404459 0.7845744 0.7684223 0.6611497 0.906743 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7845744 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9404459 0.7845744 0.7684223 0.6611497 0.906743 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9404459 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9404459 0.7845744 0.7684223 0.6611497 0.906743 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7684223 
+target output:
+	T =  0.3388503 0.2315777 0.2154256 0.05955412 0.2315777 
+lsoda step (t =  1.101001 ):  0.02681566 -0.08034275 0.06760568 -0.02165492 0.02100652 
+
+***target***
+input:
+	n =  0.9452211 0.7680007 0.7829399 0.6571328 0.9089284 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.289206 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9452211 0.7680007 0.7829399 0.6571328 0.9089284 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6571328 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9452211 0.7680007 0.7829399 0.6571328 0.9089284 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7829399 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9452211 0.7680007 0.7829399 0.6571328 0.9089284 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7680007 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9452211 0.7680007 0.7829399 0.6571328 0.9089284 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9452211 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9452211 0.7680007 0.7829399 0.6571328 0.9089284 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7829399 
+target output:
+	T =  0.3428672 0.2170601 0.2319993 0.05477888 0.2170601 
+lsoda step (t =  1.289206 ):  0.0242863 -0.1015846 0.08608035 -0.02052666 0.001254255 
+
+***target***
+input:
+	n =  0.9452492 0.7674914 0.7829742 0.6571743 0.9088401 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.289206 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9452492 0.7674914 0.7829742 0.6571743 0.9088401 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6571743 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9452492 0.7674914 0.7829742 0.6571743 0.9088401 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7829742 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9452492 0.7674914 0.7829742 0.6571743 0.9088401 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7674914 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9452492 0.7674914 0.7829742 0.6571743 0.9088401 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9452492 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9452492 0.7674914 0.7829742 0.6571743 0.9088401 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7829742 
+target output:
+	T =  0.3428257 0.2170258 0.2325086 0.05475084 0.2170258 
+lsoda step (t =  1.289206 ):  0.02423273 -0.1012416 0.08701798 -0.02058376 0.001315571 
+
+***target***
+input:
+	n =  0.9495618 0.7465029 0.8012664 0.6533957 0.9072405 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.477411 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9495618 0.7465029 0.8012664 0.6533957 0.9072405 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6533957 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9495618 0.7465029 0.8012664 0.6533957 0.9072405 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8012664 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9495618 0.7465029 0.8012664 0.6533957 0.9072405 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7465029 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9495618 0.7465029 0.8012664 0.6533957 0.9072405 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9495618 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9495618 0.7465029 0.8012664 0.6533957 0.9072405 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8012664 
+target output:
+	T =  0.3466043 0.1987336 0.2534971 0.05043822 0.1987336 
+lsoda step (t =  1.477411 ):  0.02190173 -0.1257348 0.1046095 -0.01922811 -0.01991706 
+
+***target***
+input:
+	n =  0.9495855 0.7461646 0.801095 0.6534225 0.9070954 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.477411 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9495855 0.7461646 0.801095 0.6534225 0.9070954 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6534225 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9495855 0.7461646 0.801095 0.6534225 0.9070954 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.801095 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9495855 0.7461646 0.801095 0.6534225 0.9070954 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7461646 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9495855 0.7461646 0.801095 0.6534225 0.9070954 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9495855 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9495855 0.7461646 0.801095 0.6534225 0.9070954 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.801095 
+target output:
+	T =  0.3465775 0.1989050 0.2538354 0.05041452 0.1989050 
+lsoda step (t =  1.477411 ):  0.02186223 -0.1250769 0.1053164 -0.01926725 -0.01952673 
+
+***target***
+input:
+	n =  0.9534733 0.7204434 0.8227046 0.6499165 0.9014958 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.665616 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9534733 0.7204434 0.8227046 0.6499165 0.9014958 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6499165 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9534733 0.7204434 0.8227046 0.6499165 0.9014958 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8227046 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9534733 0.7204434 0.8227046 0.6499165 0.9014958 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7204434 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9534733 0.7204434 0.8227046 0.6499165 0.9014958 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9534733 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9534733 0.7204434 0.8227046 0.6499165 0.9014958 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8227046 
+target output:
+	T =  0.3500835 0.1772954 0.2795566 0.04652672 0.1772954 
+lsoda step (t =  1.665616 ):  0.0197028 -0.1476009 0.117454 -0.01780266 -0.04064440 
+
+***target***
+input:
+	n =  0.9534931 0.7205668 0.8221248 0.6499305 0.90147 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.665616 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9534931 0.7205668 0.8221248 0.6499305 0.90147 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6499305 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9534931 0.7205668 0.8221248 0.6499305 0.90147 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8221248 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9534931 0.7205668 0.8221248 0.6499305 0.90147 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.7205668 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9534931 0.7205668 0.8221248 0.6499305 0.90147 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9534931 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9534931 0.7205668 0.8221248 0.6499305 0.90147 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8221248 
+target output:
+	T =  0.3500695 0.1778752 0.2794332 0.04650686 0.1778752 
+lsoda step (t =  1.665616 ):  0.01967484 -0.1466226 0.1179156 -0.01782637 -0.03988441 
+
+***target***
+input:
+	n =  0.9585447 0.675108 0.8578156 0.6452362 0.8861301 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.945666 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9585447 0.675108 0.8578156 0.6452362 0.8861301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6452362 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9585447 0.675108 0.8578156 0.6452362 0.8861301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8578156 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9585447 0.675108 0.8578156 0.6452362 0.8861301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.675108 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9585447 0.675108 0.8578156 0.6452362 0.8861301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9585447 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9585447 0.675108 0.8578156 0.6452362 0.8861301 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8578156 
+target output:
+	T =  0.3547638 0.1421844 0.3248919 0.04145531 0.1421844 
+lsoda step (t =  1.945666 ):  0.01677838 -0.1642578 0.1179989 -0.01559463 -0.06315418 
+
+***target***
+input:
+	n =  0.9585949 0.6771279 0.8552022 0.6452485 0.8871135 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  1.945666 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9585949 0.6771279 0.8552022 0.6452485 0.8871135 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6452485 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9585949 0.6771279 0.8552022 0.6452485 0.8871135 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8552022 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9585949 0.6771279 0.8552022 0.6452485 0.8871135 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6771279 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9585949 0.6771279 0.8552022 0.6452485 0.8871135 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9585949 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9585949 0.6771279 0.8552022 0.6452485 0.8871135 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8552022 
+target output:
+	T =  0.3547515 0.1447978 0.3228721 0.04140513 0.1447978 
+lsoda step (t =  1.945666 ):  0.01672021 -0.1626280 0.1195793 -0.01562974 -0.0616108 
+
+***target***
+input:
+	n =  0.9628555 0.629571 0.8891446 0.641174 0.8670332 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  2.225716 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9628555 0.629571 0.8891446 0.641174 0.8670332 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.629571 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9628555 0.629571 0.8891446 0.641174 0.8670332 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8891446 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9628555 0.629571 0.8891446 0.641174 0.8670332 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.629571 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9628555 0.629571 0.8891446 0.641174 0.8670332 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9628555 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9628555 0.629571 0.8891446 0.641174 0.8670332 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8891446 
+target output:
+	T =  0.3704290 0.1108554 0.3704290 0.0371445 0.1108554 
+lsoda step (t =  2.225716 ):  0.01893603 -0.1578395 0.1026123 -0.01347467 -0.06816874 
+
+***target***
+input:
+	n =  0.9635795 0.6324827 0.8865358 0.6411682 0.8691572 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  2.225716 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9635795 0.6324827 0.8865358 0.6411682 0.8691572 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6324827 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9635795 0.6324827 0.8865358 0.6411682 0.8691572 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8865358 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9635795 0.6324827 0.8865358 0.6411682 0.8691572 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.6324827 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9635795 0.6324827 0.8865358 0.6411682 0.8691572 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9635795 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9635795 0.6324827 0.8865358 0.6411682 0.8691572 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.8865358 
+target output:
+	T =  0.3675173 0.1134642 0.3675173 0.03642051 0.1134642 
+lsoda step (t =  2.225716 ):  0.01707981 -0.1581637 0.1046001 -0.01377447 -0.06872812 
+
+***target***
+input:
+	n =  0.9681531 0.5887687 0.91401 0.6375285 0.848835 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  2.505765 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9681531 0.5887687 0.91401 0.6375285 0.848835 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5887687 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9681531 0.5887687 0.91401 0.6375285 0.848835 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.91401 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9681531 0.5887687 0.91401 0.6375285 0.848835 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5887687 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9681531 0.5887687 0.91401 0.6375285 0.848835 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9681531 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9681531 0.5887687 0.91401 0.6375285 0.848835 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.91401 
+target output:
+	T =  0.4112313 0.08599005 0.4112313 0.03184688 0.08599005 
+lsoda step (t =  2.505765 ):  0.02408146 -0.1400161 0.08361895 -0.0120148 -0.06223312 
+
+***target***
+input:
+	n =  0.9690832 0.5906847 0.9131695 0.6375151 0.850741 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  2.505765 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9690832 0.5906847 0.9131695 0.6375151 0.850741 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5906847 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9690832 0.5906847 0.9131695 0.6375151 0.850741 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9131695 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9690832 0.5906847 0.9131695 0.6375151 0.850741 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5906847 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9690832 0.5906847 0.9131695 0.6375151 0.850741 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9690832 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9690832 0.5906847 0.9131695 0.6375151 0.850741 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9131695 
+target output:
+	T =  0.4093153 0.08683047 0.4093153 0.03091683 0.08683047 
+lsoda step (t =  2.505765 ):  0.02277177 -0.1411674 0.0842769 -0.01235857 -0.06402923 
+
+***target***
+input:
+	n =  0.977957 0.5481028 0.9367623 0.6336209 0.8311325 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  2.836629 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.977957 0.5481028 0.9367623 0.6336209 0.8311325 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5481028 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.977957 0.5481028 0.9367623 0.6336209 0.8311325 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9367623 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.977957 0.5481028 0.9367623 0.6336209 0.8311325 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5481028 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.977957 0.5481028 0.9367623 0.6336209 0.8311325 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.977957 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.977957 0.5481028 0.9367623 0.6336209 0.8311325 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9367623 
+target output:
+	T =  0.4518972 0.06323766 0.4518972 0.02204294 0.06323766 
+lsoda step (t =  2.836629 ):  0.01883689 -0.1160464 0.06309294 -0.01162905 -0.05141874 
+
+***target***
+input:
+	n =  0.9759745 0.547592 0.9376662 0.6335331 0.8309688 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  2.836629 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9759745 0.547592 0.9376662 0.6335331 0.8309688 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.547592 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9759745 0.547592 0.9376662 0.6335331 0.8309688 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9376662 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9759745 0.547592 0.9376662 0.6335331 0.8309688 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.547592 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9759745 0.547592 0.9376662 0.6335331 0.8309688 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9759745 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9759745 0.547592 0.9376662 0.6335331 0.8309688 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9376662 
+target output:
+	T =  0.452408 0.06233379 0.452408 0.02402552 0.06233379 
+lsoda step (t =  2.836629 ):  0.02094132 -0.1159399 0.06218077 -0.01088627 -0.05155227 
+
+***target***
+input:
+	n =  0.9822241 0.5153352 0.9542082 0.6302073 0.8180493 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  3.167493 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9822241 0.5153352 0.9542082 0.6302073 0.8180493 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5153352 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9822241 0.5153352 0.9542082 0.6302073 0.8180493 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9542082 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9822241 0.5153352 0.9542082 0.6302073 0.8180493 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5153352 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9822241 0.5153352 0.9542082 0.6302073 0.8180493 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9822241 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9822241 0.5153352 0.9542082 0.6302073 0.8180493 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9542082 
+target output:
+	T =  0.4846648 0.04579179 0.4846648 0.01777587 0.04579179 
+lsoda step (t =  3.167493 ):  0.01634570 -0.0940721 0.04618987 -0.009584609 -0.04159009 
+
+***target***
+input:
+	n =  0.9825093 0.5129567 0.9553 0.6302537 0.815611 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  3.167493 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9825093 0.5129567 0.9553 0.6302537 0.815611 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5129567 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9825093 0.5129567 0.9553 0.6302537 0.815611 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9553 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9825093 0.5129567 0.9553 0.6302537 0.815611 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.5129567 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9825093 0.5129567 0.9553 0.6302537 0.815611 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9825093 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9825093 0.5129567 0.9553 0.6302537 0.815611 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9553 
+target output:
+	T =  0.4870433 0.04469992 0.4870433 0.0174907 0.04469992 
+lsoda step (t =  3.167493 ):  0.01614764 -0.09237143 0.04511744 -0.009716106 -0.03902732 
+
+***target***
+input:
+	n =  0.9866231 0.486299 0.967951 0.6271728 0.8051302 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  3.498356 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9866231 0.486299 0.967951 0.6271728 0.8051302 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.486299 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9866231 0.486299 0.967951 0.6271728 0.8051302 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.967951 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9866231 0.486299 0.967951 0.6271728 0.8051302 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.486299 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9866231 0.486299 0.967951 0.6271728 0.8051302 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9866231 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9866231 0.486299 0.967951 0.6271728 0.8051302 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.967951 
+target output:
+	T =  0.513701 0.03204904 0.513701 0.01337687 0.03204904 
+lsoda step (t =  3.498356 ):  0.01270764 -0.07304238 0.03250738 -0.007852736 -0.02977845 
+
+***target***
+input:
+	n =  0.9872183 0.4859433 0.967871 0.62731 0.804672 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  3.498356 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9872183 0.4859433 0.967871 0.62731 0.804672 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4859433 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9872183 0.4859433 0.967871 0.62731 0.804672 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.967871 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9872183 0.4859433 0.967871 0.62731 0.804672 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4859433 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9872183 0.4859433 0.967871 0.62731 0.804672 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9872183 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9872183 0.4859433 0.967871 0.62731 0.804672 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.967871 
+target output:
+	T =  0.5140567 0.03212894 0.5140567 0.01278175 0.03212894 
+lsoda step (t =  3.498356 ):  0.01209673 -0.07272953 0.03259532 -0.00815295 -0.02922452 
+
+***target***
+input:
+	n =  0.9905686 0.464631 0.9772223 0.6248838 0.7963254 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  3.82922 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9905686 0.464631 0.9772223 0.6248838 0.7963254 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.464631 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9905686 0.464631 0.9772223 0.6248838 0.7963254 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9772223 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9905686 0.464631 0.9772223 0.6248838 0.7963254 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.464631 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9905686 0.464631 0.9772223 0.6248838 0.7963254 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9905686 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9905686 0.464631 0.9772223 0.6248838 0.7963254 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9772223 
+target output:
+	T =  0.535369 0.02277771 0.535369 0.00943135 0.02277771 
+lsoda step (t =  3.82922 ):  0.00902462 -0.05671436 0.02314811 -0.006644092 -0.02129649 
+
+***target***
+input:
+	n =  0.9906012 0.4646723 0.9770201 0.6248222 0.7964422 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  3.82922 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9906012 0.4646723 0.9770201 0.6248222 0.7964422 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4646723 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9906012 0.4646723 0.9770201 0.6248222 0.7964422 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9770201 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9906012 0.4646723 0.9770201 0.6248222 0.7964422 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4646723 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9906012 0.4646723 0.9770201 0.6248222 0.7964422 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9906012 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9906012 0.4646723 0.9770201 0.6248222 0.7964422 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9770201 
+target output:
+	T =  0.5353277 0.02297985 0.5353277 0.00939881 0.02297985 
+lsoda step (t =  3.82922 ):  0.008990104 -0.056714 0.02335731 -0.006591456 -0.02139649 
+
+***target***
+input:
+	n =  0.9943858 0.4402800 0.9867653 0.6220469 0.787699 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  4.347373 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9943858 0.4402800 0.9867653 0.6220469 0.787699 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4402800 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9943858 0.4402800 0.9867653 0.6220469 0.787699 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9867653 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9943858 0.4402800 0.9867653 0.6220469 0.787699 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4402800 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9943858 0.4402800 0.9867653 0.6220469 0.787699 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9943858 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9943858 0.4402800 0.9867653 0.6220469 0.787699 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9867653 
+target output:
+	T =  0.55972 0.01323468 0.55972 0.005614204 0.01323468 
+lsoda step (t =  4.347373 ):  0.005354485 -0.03791741 0.01343402 -0.004788193 -0.01278783 
+
+***target***
+input:
+	n =  0.9942416 0.4404963 0.9863217 0.621909 0.7877675 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  4.347373 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9942416 0.4404963 0.9863217 0.621909 0.7877675 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4404963 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9942416 0.4404963 0.9863217 0.621909 0.7877675 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9863217 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9942416 0.4404963 0.9863217 0.621909 0.7877675 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4404963 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9942416 0.4404963 0.9863217 0.621909 0.7877675 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9942416 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9942416 0.4404963 0.9863217 0.621909 0.7877675 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9863217 
+target output:
+	T =  0.5595037 0.0136783 0.5595037 0.005758385 0.0136783 
+lsoda step (t =  4.347373 ):  0.005502454 -0.03803349 0.01389274 -0.004616906 -0.01279977 
+
+***target***
+input:
+	n =  0.9966089 0.4238748 0.9925616 0.6199635 0.7823802 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  4.865527 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9966089 0.4238748 0.9925616 0.6199635 0.7823802 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4238748 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9966089 0.4238748 0.9925616 0.6199635 0.7823802 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9925616 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9966089 0.4238748 0.9925616 0.6199635 0.7823802 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4238748 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9966089 0.4238748 0.9925616 0.6199635 0.7823802 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9966089 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9966089 0.4238748 0.9925616 0.6199635 0.7823802 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9925616 
+target output:
+	T =  0.5761252 0.007438401 0.5761252 0.003391126 0.007438401 
+lsoda step (t =  4.865527 ):  0.003176298 -0.02503300 0.007504751 -0.003250321 -0.007401912 
+
+***target***
+input:
+	n =  0.9964719 0.4243775 0.9918315 0.619934 0.7826693 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  4.865527 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9964719 0.4243775 0.9918315 0.619934 0.7826693 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4243775 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9964719 0.4243775 0.9918315 0.619934 0.7826693 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9918315 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9964719 0.4243775 0.9918315 0.619934 0.7826693 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4243775 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9964719 0.4243775 0.9918315 0.619934 0.7826693 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9964719 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9964719 0.4243775 0.9918315 0.619934 0.7826693 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9918315 
+target output:
+	T =  0.5756225 0.008168522 0.5756225 0.003528130 0.008168522 
+lsoda step (t =  4.865527 ):  0.003315359 -0.02535681 0.008259671 -0.003189468 -0.007638932 
+
+***target***
+input:
+	n =  0.997934 0.4131569 0.995642 0.6185462 0.7792552 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  5.38368 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.997934 0.4131569 0.995642 0.6185462 0.7792552 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4131569 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.997934 0.4131569 0.995642 0.6185462 0.7792552 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.995642 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.997934 0.4131569 0.995642 0.6185462 0.7792552 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4131569 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.997934 0.4131569 0.995642 0.6185462 0.7792552 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.997934 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.997934 0.4131569 0.995642 0.6185462 0.7792552 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.995642 
+target output:
+	T =  0.5868431 0.004357944 0.5868431 0.002066082 0.004357944 
+lsoda step (t =  5.38368 ):  0.001864748 -0.01648531 0.004350846 -0.002149923 -0.004155420 
+
+***target***
+input:
+	n =  0.9978121 0.4136316 0.9951871 0.6185806 0.7796349 
+	R = 	 -2 2 4 
+	 3 
+	 -2 2 5 
+	 1 
+	 3 
+
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	t =  5.38368 
+
+***boole_result***
+input:
+	r =  -2 2 4 
+	n =  0.9978121 0.4136316 0.9951871 0.6185806 0.7796349 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 4 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4136316 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9978121 0.4136316 0.9951871 0.6185806 0.7796349 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  2 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9951871 
+
+***boole_result***
+input:
+	r =  -2 2 5 
+	n =  0.9978121 0.4136316 0.9951871 0.6185806 0.7796349 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  3 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 -2 
+	 2 
+	 5 
+
+next_op output:
+	k =  1 
+
+***next_op***
+input:
+	r = 	 0 
+	 -1 
+	 -1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.4136316 
+
+***boole_result***
+input:
+	r =  1 
+	n =  0.9978121 0.4136316 0.9951871 0.6185806 0.7796349 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  4 
+
+***next_op***
+input:
+	r = 	 1 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9978121 
+
+***boole_result***
+input:
+	r =  3 
+	n =  0.9978121 0.4136316 0.9951871 0.6185806 0.7796349 
+	M =  0 0 0 1 0 1 0 1 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 
+	N =  0 0 0 -1 0 -1 0 -1 0 0 0 -1 0 0 -1 -1 0 0 0 0 0 0 -1 0 0 
+	regulated =  5 
+
+***next_op***
+input:
+	r = 	 3 
+
+next_op output:
+	k =  -1 
+boole_result output:
+	c(signr[1],valr[1]) =  -1 0.9951871 
+target output:
+	T =  0.5863684 0.004812898 0.5863684 0.002187863 0.004812898 
+lsoda step (t =  5.38368 ):  0.001988802 -0.01682515 0.004820962 -0.002156456 -0.004540442 

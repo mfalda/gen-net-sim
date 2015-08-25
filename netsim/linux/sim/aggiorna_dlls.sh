@@ -1,0 +1,1 @@
+cp *.so netsim.v4_all/inst/libs/

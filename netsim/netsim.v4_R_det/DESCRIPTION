@@ -1,0 +1,12 @@
+Package: netsim
+Type: Package
+Title: Gene network simulator
+Version: 1.1
+Date: 2007-04-10
+Author: Di Camillo Barbara
+Description: This program is a simulator that generates network topology, regulatory rules and expression profiles so as to reproduce some important features of regulation in real gene networks, according to the parameter settings given as input.
+License: GNU General Public License
+Maintainer: Di Camillo Barbara <barbara.dicamillo@dei.unipd.it>
+Depends: R (>= 2.4.1), odesolve
+License: GPL version 2 or newer
+

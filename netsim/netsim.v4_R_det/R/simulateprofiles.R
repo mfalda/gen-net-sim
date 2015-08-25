@@ -1,0 +1,176 @@
+###     simulateprofiles  (2007-04-02)
+###
+###	Copyright (C) 2006, 2007  Di Camillo Barbara
+###
+###	This program is free software, part of the package netsim; you can redistribute it and/or
+###	modify it under the terms of the GNU General Public License
+###	as published by the Free Software Foundation; either version 2
+###	of the License, or (at your option) any later version.
+
+###	This program is distributed in the hope that it will be useful,
+###	but WITHOUT ANY WARRANTY; without even the implied warranty of
+###	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+###	GNU General Public License for more details.
+
+###	You should have received a copy of the GNU General Public License
+###	along with this program; if not, write to the Free Software
+###	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+simulateprofiles<-function(weights, Rules=NULL, f.pr.and=NULL, x0=NULL, Xmin=NULL,Xmax=NULL, lambda=NULL, act.fun=c("sigmoidal","linear"), alpha=NULL, beta=NULL, times=seq(0,5,0.1), method=c("lsoda","Euler"), EXT.IN=NA, EXT.FUN=list() )
+{
+
+#\arguments{
+
+# see also help files
+
+#  \item{weights}{(matrix of real numbers) Connectivity matrix defining network topology: an element (i,j) different from 0 indicates that j regulates i. Absolute value and sign of each element indicate efficiency and sign of the regulation.}
+#  \item{Rules}{(list of vectors of positive and negative integers. Each element of Rules is a binary tree codyfing for regulatory interactions) Either NULL (functions defining interaction among regulators are automatically generated), or a list codifying, for each element i, the interactions among the regulators of gene i. See details.}
+#  \item{f.pr.and}{(function. see details) Function with domain and codomain in [0-1] that expresses the probability to obtain a cooperative rather than a synergic rule as a function of the level of the binary tree used to implement the regulatory interactions among the regulators. Given a binary tree of maximum L levels, the probability to have a cooperative rule at level i is f.pr.and(i/L), whereas the probability to have a synergic rule is 1-f.pr.and(i/L). See details}
+#  \item{x0}{(real positive numbers in the interval [0,1]) Initial conditions, i.e. gene expression values at time 0 scaled betwwen 0 and 1. If NULL, x0 is set equal to runif_s(1,0,1) for each node i.}
+#  \item{Xmax}{(real positive number)  vector of maximum level of expression of genes. If NULL, Xmax is set equal to rep(10,N).}
+#  \item{lambda}{(real positive number)  vector of time constants influencing both the rate of transcription and the spontaneous degra-dation term for each gene i. If NULL, lambda is set equal to rnorm_s(N,1,0.1).}
+#  \item{act.fun}{(character) The activation function: either "linear", i.e. the target function resulting from regulatory rules or "sigmoidal", i.e. the modulated target function (see References for further details). Default="sigmoidal"}
+#  \item{alpha}{(real positive number)  Vector of parameters of the Activation sigmoid function. If NULL, alpha is set equal to rnorm_s(1,4,0.2) for each gene and always constrained to be equal to or greater than 1}
+#  \item{beta}{(real positive number)  Vector of parameters of the Activation sigmoid function. If NULL, beta is set equal to rnorm_s(1,0.1,0.01) for each gene and always constrained to be equal to or greater than 0 and equal to or lower than 0.5}
+#  \item{times}{(real positive number)  vector of time samples at which explicit estimates of gene expression are desired. The first value must be 0. Default=seq(0,5,0.05)}
+#  \item{method}{(character) One among "lsoda" and "Euler". Method used to solve differential equations. Either the function lsoda from library odesolve or Euler method. Default="lsoda"}
+#  \item{EXT.IN}{(matrix of real numbers) Connectivity matrix containing parameters of sign and efficiecy of regulation of external inputs on genes. It must have N rows, with N=number of nodes in the network and a number of coloumns equal to the number of external inputs. If equal to NA (default), no external input effect is considered.}
+#  \item{EXT.FUN}{(list of functions. see details) List of functions describing the external input signal as a function of time. If equal to an empty list (default), no external input effect is considered.}
+#  }
+
+#\value{(matrix of real non negative numbers) The function returns the matrix of gene expression data with genes in rows and time-samples in coloumns.}
+
+	##### CHECK PARAMETERS ####
+        if (!is.numeric(weights))
+        stop("'weights' must be numeric")
+        if (!is.matrix(weights))
+        stop("'weights' must be a matrix")
+	N<-dim(weights)[1]
+
+        if(is.null(Rules))
+	 {Mdiscr<-weights
+          ind<-which(Mdiscr!=0,arr.ind=TRUE)
+          Mdiscr[ind]<-1
+          ausR<-createRules(Mdiscr,f.pr.and)
+  	  Rules<-ausR[[1]]
+	  max.lengthR<-ausR[[2]]
+          REG<-matrix(0,ncol=max.lengthR,nrow=N)
+	  max.L<-0
+	  for (i in (1:N))
+	   {aus<-Rules[[i]]
+	     L<-length(aus)
+	     if (L>0) REG[i,1:L]<-aus
+	   }
+          etich<-"Rules_simulateprofiles.txt"
+          write.table(REG, file = etich,quote=FALSE,sep = "\t", eol = "\n", na = "NA", dec = ".", row.names = as.character(seq(1,N,1)),col.names = NA, qmethod = c("escape", "double"))
+	 }
+	else
+	 {if (!is.list(Rules)) stop("'rules' must be a list")
+          if (!is.numeric(Rules[[1]])) stop("'Rules' must contain numeric values")
+	 }
+
+	if (!is.null(f.pr.and))
+        {if (!is.function(f.pr.and)) stop("`f.pr.and' must be NULL or a function")
+          else {aus<-f.pr.and(seq(0,1,0.01))
+		ind<-which((aus<0)|(aus>1))
+		if (length(ind)>0) stop("`f.pr.and' must have codomain in [0-1]")
+	       }
+	}
+
+	if (is.null(lambda)) lambda<-abs(rnorm_s(N,1,0.1, chi="sp"))
+        if (!is.numeric(lambda))
+        stop("`lambda' must be numeric")
+
+	      if (is.null(Xmax)) Xmax<-rep(10,N)
+        if (!is.numeric(Xmax))
+        stop("`Xmax' must be numeric")
+        if (length(which(Xmax<0))>0)
+        stop("`Xmax' must be greater than 0")
+
+        if (is.null(Xmin)) Xmin<-rep(0,N)
+        if (!is.numeric(Xmin))
+        stop("`Xmin' must be numeric")
+        if (length(which((Xmax-Xmin)<=0))>0)
+        stop("each `Xmin[i]' must be lower than the corresponding Xmax[i]")
+        Xmin<-Xmin/Xmax         #normalizzo tra 0 e 1
+
+        if (is.null(x0)) for (i in (1:N)) x0[i]<-runif(1,Xmin[i],1)
+         else x0<-x0/Xmax
+        if (!is.numeric(x0))
+        stop("`x0' must be numeric")
+        if (length(which(x0>1))>0)
+        stop("each `x0[i]' must be lower than or equal to the corresponding Xmax[i]")
+        if (length(which((x0-Xmin)<0))>0)
+        stop("each `Xmin[i]' must be lower than or equal to the corresponding x0[i]")
+
+
+        if (!is.numeric(lambda))
+        stop("'lambda' must be numeric")
+
+        act.fun<-match.arg(act.fun)
+
+        if (is.null(alpha)) alpha<-abs(rnorm_s(N,10,0.2, chi="sp"))
+        if (!is.numeric(alpha))
+        stop("`alpha' must be numeric")
+
+        if (is.null(beta)) beta<-abs(rnorm_s(N,0.5,0.01, chi="sp"))
+        if (!is.numeric(beta))
+        stop("`beta' must be numeric")
+
+        if (!is.numeric(times))
+        stop("'times' must be numeric")
+
+        if (length(EXT.FUN)>0)
+          {if (!is.numeric(EXT.IN))
+           stop("'EXT.IN' must be numeric")
+           if (!is.matrix(EXT.IN))
+           stop("'EXT.IN' must be a matrix")
+           if (dim(EXT.IN)[1]!=dim(weights)[1])
+           stop("'EXT.IN' must have the same number of rows than 'weights'")
+           if (!is.list(EXT.FUN))
+           stop("'EXT.FUN' must be a list")
+           if (!is.function(EXT.FUN[[1]]))
+           stop("'EXT.FUN' must contain functions")
+           if (dim(EXT.IN)[2]!=length(EXT.FUN))
+           stop("'EXT.FUN' must contain a number of functions equal to the number of coloumns in 'EXT.IN'")
+          }
+
+        method<-match.arg(method)
+
+
+       ############### END CHECK PARAMETERS ####
+
+
+        act.fun<-match.arg(act.fun)
+
+        M<-weights
+        Mdiscr<-M
+        ind<-which(M!=0,arr.ind=TRUE)
+        Mdiscr[ind]<-1
+        Mneg<-Mdiscr*sign(M)
+        M<-abs(M)
+        R<-Rules
+        genenet<-list(M,R,Mneg,lambda,alpha,beta,act.fun,EXT.IN,EXT.FUN,Xmin)
+
+        if (method=="lsoda")
+          {out<-lsoda(y=x0, times=times, func=dinamica.lsoda, parms=genenet, rtol=1e-3, atol=1e-4)
+           if (length(out)>1)
+	      {if (attr(out,"istate")==2)
+	         {out.aus<-out[,2:(N+1)]
+	          D<-t(out.aus)*Xmax
+	         }
+               else stop("\n error in diff eq. solution! Try to set different parameters or use Euler Method\n")
+	      }
+           }
+        if (method=="Euler")
+          {D<-dinamica(genenet,x0,times)*Xmax
+          }
+
+ 	return(D)
+
+
+}
+
+
+
+

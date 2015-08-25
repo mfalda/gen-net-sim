@@ -1,0 +1,15 @@
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"
+"1";"'ris'";"/home/marco/Documenti/hmm_linux/read_table.c # 125";"/home/marco/Documenti/hmm_linux/create_mod.c # 103";"5";"7";"0";"/home/marco/Documenti/hmm_linux/read_table.c # 129";"/home/marco/Documenti/hmm_linux/create_mod.c # 51"
+"2";"'mod'";"/home/marco/Documenti/hmm_linux/create_mod.c # 52";"/home/marco/Documenti/hmm_linux/create_mod.c # 104";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 54";"/home/marco/Documenti/hmm_linux/create_mod.c # 76"
+"5";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"6";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"7";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"8";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"9";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"10";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"11";"'elem_ris->rete'";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146";"2";"2";"0";"/home/marco/Documenti/hmm_linux/create_mod.c # 76";"/home/marco/Documenti/hmm_linux/create_mod.c # 146"
+"4";"'g_tmpm_i'";"/home/marco/Documenti/hmm_linux/cluster_coeff.c # 20";"/home/marco/Documenti/hmm_linux/globali.c # 304";"2";"2";"0";"/home/marco/Documenti/hmm_linux/cluster_coeff.c # 20";"/home/marco/Documenti/hmm_linux/cluster_coeff.c # 38"
+"3";"'g_tmpm_i'";"/home/marco/Documenti/hmm_linux/pathlength.c # 37";"/home/marco/Documenti/hmm_linux/globali.c # 328";"2";"2";"0";"/home/marco/Documenti/hmm_linux/pathlength.c # 37";"/home/marco/Documenti/hmm_linux/pathlength.c # 58"
+--------------------------------------
+
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"

@@ -1,0 +1,210 @@
+###     simulatenet  (2007-04-02)
+###
+###
+###	This program is a simulator that generates network topology, regulatory rules and expression profiles
+###	so as to reproduce some important features of regulation in real gene networks, according to the parameter settings given as input
+###
+###	Copyright (C) 2006  Di Camillo Barbara
+###
+###	This program is free software, part of the package netsim; you can redistribute it and/or
+###	modify it under the terms of the GNU General Public License
+###	as published by the Free Software Foundation; either version 2
+###	of the License, or (at your option) any later version.
+
+###	This program is distributed in the hope that it will be useful,
+###	but WITHOUT ANY WARRANTY; without even the implied warranty of
+###	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+###	GNU General Public License for more details.
+
+###	You should have received a copy of the GNU General Public License
+###	along with this program; if not, write to the Free Software
+###	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+simulatenet<-function(N=50,connectivity=c("MTM","random","scale free","geometric"),max.reg=12,gamma=2.2,INdegree=c("free","out"), Cf.cl=0.4,num.subnet=c(5,5,10),kappa=3, f.pr.and=NULL, Xmin=NULL,Xmax=NULL,lambda=NULL,x0=NULL,weight.par=c(1,0),act.fun=c("sigmoidal","linear"), alpha=NULL, beta=NULL,times=seq(0,5,0.1),method=c("lsoda","Euler"), save=TRUE,ind.itera=1){
+# see also help files
+
+#\arguments{
+#  \item{N}{(integer) Number of genes in the network.}
+#  \item{connectivity}{(character) Type of connectivity in the network. One among "random","scale free", "geometric" and "MTM". Default="MTM"}
+#  \item{max.reg}{(integer) Maximum number of regulators that each node (gene) in the network can have. Default=5}
+#  \item{gamma}{(real positive number)  In case "scale-free" or "MTM" topology is chosen, this is the parameter of the power law distribution of the degree of connectivity of the nodes in the graph.Default=2.2  equal to the average value observed by (Albert and Barabasi (2000)) in protein networks.}
+#  \item{INdegree}{(character) The in-degree distribution (applicable only if connectivity="MTM"): either "free", i.e. it is not constrained to follow any distribution or "out", i.e. it is constrained to follow the same distribution of the out-degree (in this latter case the algorithm does not always converge)}
+#  \item{Cf.cl}{(real positive number)   Average clustering coefficient of each sub-network in the graph (see References for further details).Default=0.4, leading to an average clustering coefficient in the entire network ranging between 0.1 and 0.3 as observed by (Barabasi and Albert (1999)) in protein networks.}
+#  \item{num.subnet}{(integer) Vector of 3 elements containing the maximum number of nodes in each sub-network motif of type 1, 2 or 3 respectively (see References for further details). Default=c(5,5,10)}
+#  \item{kappa}{(real positive number)  average number of regulators that each node (gene) in the network has with random topology. Default=3}
+#  \item{f.pr.and}{(function. see details) Function with domain and codomain in [0-1] that expresses the probability to obtain a cooperative rather than a synergic rule as a function of the level of the binary tree used to implement the regulatory interactions among the regulators. Given a binary tree of maximum L levels, the probability to have a cooperative rule at level i is f.pr.and(i/L), whereas the probability to have a synergic rule is 1-f.pr.and(i/L). See Reference for further details}
+#  \item{Xmax}{(real positive number)   vector of maximum level of expression of genes. If NULL, Xmax is set equal to rep(10,N).}
+#  \item{lambda}{(real positive number)   vector of time constants influencing both the rate of transcription and the spontaneous degra-dation term for each gene i. If NULL, lambda is set equal to rnorm_s(N,1,0.1).}
+#  \item{x0}{(real positive numbers in the interval [0,1]) Vector of initial conditions, i.e. gene expression values at time 0 scaled betwwen 0 and 1. If NULL, x0 is set equal to runif_s(1,0,1) for each node i.}
+#  \item{weight.par}{(real positive numbers) vector of two elements: mean and sd of the Gaussian distribution used to sample_s regulatory efficiency w_ri of regulator r on gene i (see References for further details). Default=c(1,0.2)}
+#  \item{act.fun}{(character) The activation function: either "linear", i.e. the target function resulting from regulatory rules or "sigmoidal", i.e. the modulated target function (see References for further details). Default="sigmoidal"}
+#  \item{alpha}{(real positive numbers)  Vector of parameters of the Activation sigmoid function. If NULL, alpha is set equal to rnorm_s(1,10,0.2) for each gene and always constrained to be equal to or greater than 1}
+#  \item{beta}{(real positive numbers) Vector of parameters of the Activation sigmoid function. If NULL, beta is set equal to rnorm_s(1,0.5,0.01) for each gene and always constrained to be equal to or greater than 0 and equal to or lower than 0.5}
+#  \item{times}{(real positive numbers) vector of time samples at which explicit estimates of gene expression are desired. The first value must be 0. Default=seq(0,5,0.05)}
+#  \item{method}{(character) One among "lsoda" and "Euler". Method used to solve differential equations. Either the function lsoda from library odesolve or Euler method. Default="lsoda"}
+#  \item{save}{(TRUE/FALSE) If TRUE the connectivity matrix, the generated expression profiles, the regulatory rules and a matrix with parameters lambda, alpha and beta are saved in files "weightsX.txt", "SIMdataX.txt", "RulesX.txt" and "parametersX.txt" respectively,where X indicates a number identified by the parameter ind.itera. Default=TRUE}
+#  \item{ind.itera}{(integer) number useful to differentiate saved output files in case of multiple runs of the function simulate.net. Default=1}
+#  }
+
+#\value{The function returns a list of 4 elements:
+#  \item{1. }{(matrix of real non negative numbers) expr.data: the matrix of gene expression data with genes in rows and time-samples in coloumns;}
+#  \item{2. }{(matrix of real numbers) weight.matrix: the connectivity matrix containing information on network connectivity and regulatory
+#	     efficiency and sign: a non zero value in position (i,j) means that gene j regulates
+#	     gene i with efficiency and sign indicated by the value itself;}
+#  \item{3. }{(list of vectors containing integers) Rules: a list of regulatory Rules. The regulatory rule for gene i is codified in position
+#             [[i]] of the list as a vector representing a structure of a binary tree (see help(simulateprofiles) for further details.}
+#   \item{4. }{(matrix of real positive numbers) parameters: a matrix of 3 coloumns and N rows containing parameters lambda, alpha and beta setted for each gene.}
+#}
+
+	##### CHECK PARAMETERS ####
+        if (!is.numeric(N))
+        stop("`N' must be numeric")
+
+        connectivity<-match.arg(connectivity)
+
+        if (!is.numeric(max.reg))
+        stop("`max.reg' must be numeric")
+
+        if (!is.numeric(gamma))
+        stop("`gamma' must be numeric")
+
+        INdegree<-match.arg(INdegree)
+
+	if (!is.numeric(Cf.cl))
+        stop("`max.reg' must be numeric")
+
+        if (!is.numeric(num.subnet))
+        stop("`num.subnet' must be numeric")
+        if (length(num.subnet)!=3)
+        stop("`num.subnet' must have length 3")
+
+        if (!is.numeric(kappa))
+        stop("`kappa' must be numeric")
+
+        if (!is.null(f.pr.and))
+        {if (!is.function(f.pr.and)) stop("`f.pr.and' must be NULL or a function")
+          else {aus<-f.pr.and(seq(0,1,0.01))
+		ind<-which((aus<0)|(aus>1))
+		if (length(ind)>0) stop("`f.pr.and' must have codomain in [0-1]")
+	       }
+	}
+
+
+	if (is.null(Xmax)) Xmax<-rep(10,N)
+        if (!is.numeric(Xmax))
+        stop("`Xmax' must be numeric")
+        if (length(which(Xmax<0))>0)
+        stop("`Xmax' must be greater than 0")
+
+        if (is.null(Xmin)) Xmin<-rep(0,N)
+        if (!is.numeric(Xmin))
+        stop("`Xmin' must be numeric")
+        if (length(which((Xmax-Xmin)<=0))>0)
+        stop("each `Xmin[i]' must be lower than the corresponding Xmax[i]")
+        Xmin<-Xmin/Xmax         #normalizzo tra 0 e 1
+
+        if (is.null(lambda)) lambda<-abs(rnorm_s(N,1,0.1, chi="sn"))
+        if (!is.numeric(lambda))
+        stop("`lambda' must be numeric")
+
+        if (is.null(x0)) for (i in (1:N)) x0[i]<-runif_s(1,Xmin[i],1, chi="sn")
+         else x0<-x0/Xmax
+        if (!is.numeric(x0))
+        stop("`x0' must be numeric")
+        if (length(which(x0>1))>0)
+        stop("each `x0[i]' must be lower than or equal to the corresponding Xmax[i]")
+        if (length(which((x0-Xmin)<0))>0)
+        stop("each `Xmin[i]' must be lower than or equal to the corresponding x0[i]")
+
+        if (!is.numeric(weight.par))
+        stop("`weight.mean' must be numeric")
+	       weight.mean<-weight.par[1]
+        weight.sd<-weight.par[2]
+        if ( (weight.mean<0) | (weight.sd<0) )
+        stop("`weight.par' must contain values >=0")
+
+        act.fun<-match.arg(act.fun)
+
+        if (is.null(alpha)) alpha<-abs(rnorm_s(N,10,0.2, chi="sn"))
+        if (!is.numeric(alpha))
+        stop("`alpha' must be numeric")
+
+        if (is.null(beta)) beta<-abs(rnorm_s(N,0.5,0.01, chi="sn"))
+        if (!is.numeric(beta))
+        stop("`beta' must be numeric")
+
+
+        if (!is.numeric(times))
+        stop("`times' must be numeric")
+
+        method<-match.arg(method)
+
+        if (!is.logical(save))
+        stop("`save' must be TRUE or FALSE")
+
+       ############### END CHECK PARAMETERS ####
+
+
+	if (connectivity=="random") aus<-connectivityrandom(N=N,max.con=max.reg,k=kappa,weight.mean=weight.mean, weight.sd=weight.sd)
+
+	if (connectivity=="scale free") aus<-connectivityscalefree(N=N,gamma=gamma,max.con=max.reg,weight.mean=weight.mean, weight.sd=weight.sd,r.tol=0.1,a.tol=1)
+
+	if (connectivity=="MTM") aus<-connectivitymodular(N=N,gamma=gamma,INdegree=INdegree, Cf.cl=Cf.cl, max.con=max.reg,num.subnet=num.subnet, weight.mean=weight.mean, weight.sd=weight.sd,r.tol=0.1,a.tol=1)
+
+	if (connectivity=="geometric") aus<-connectivitygeometric(N=N,k=kappa,weight.mean=weight.mean, weight.sd=weight.sd)
+
+	M<-aus[[1]]
+	Mdiscr<-aus[[2]]
+	ausR<-createRules(M,f.pr.and)
+  	R<-ausR[[1]]
+	max.lengthR<-ausR[[2]]
+
+	Mneg<-createNEG(Mdiscr)
+  genenet<-list(M,R,Mneg,lambda,alpha,beta,act.fun,NA,list(),Xmin)
+
+        if (method=="lsoda")
+          {out<-lsoda(y=x0, times=times, func=dinamica.lsoda, parms=genenet, rtol=1e-3, atol=1e-4)
+           if (length(out)>1)
+	      {if (attr(out,"istate")==2)
+	         {out.aus<-out[,2:(N+1)]
+	          D<-t(out.aus)*Xmax
+	         }
+               else stop("\n error in diff eq. solution! Try to set different parameters or use Euler Method\n")
+	      }
+           }
+        if (method=="Euler")
+          {D<-dinamica(genenet,x0,times)*Xmax
+          }
+
+ 	# SAVING FILES
+	if (save==TRUE)
+	{
+        etich<-paste("weights",ind.itera,".txt",sep="")
+        write.table(M*Mneg, file = etich,quote=FALSE,sep = "\t", eol = "\n", na = "NA", dec = ".", row.names = as.character(seq(1,N,1)),col.names = NA, qmethod = c("escape", "double"))
+
+        etich<-paste("SIMdata",ind.itera,".txt",sep="")
+        write.table(D, file = etich,quote=FALSE,sep = "\t", eol = "\n", na = "NA", dec = ".", row.names = as.character(seq(1,N,1)),col.names = NA, qmethod = c("escape", "double"))
+
+	REG<-matrix(0,ncol=max.lengthR,nrow=N)
+	max.L<-0
+	for (i in (1:N))
+	 {aus<-R[[i]]
+	  L<-length(aus)
+	  if (L>0) REG[i,1:L]<-aus
+	 }
+
+	etich<-paste("Rules",ind.itera,".txt",sep="")
+        write.table(REG, file = etich,quote=FALSE,sep = "\t", eol = "\n", na = "NA", dec = ".", row.names = as.character(seq(1,N,1)),col.names = NA, qmethod = c("escape", "double"))
+
+        etich<-paste("parameters",ind.itera,".txt",sep="")
+        write.table(cbind(lambda,alpha,beta), file = etich,quote=FALSE,sep = "\t", eol = "\n", na = "NA", dec = ".", row.names = as.character(seq(1,N,1)),col.names = NA, qmethod = c("escape", "double"))
+
+       }
+
+        return(list(expr.data=D,weight.matrix=M*Mneg,Rules=R,parameters=cbind(lambda,alpha,beta)))
+
+}
+
+
+
+

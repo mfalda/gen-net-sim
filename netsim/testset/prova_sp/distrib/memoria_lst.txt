@@ -1,0 +1,20 @@
+1_lst - allocazione della lista 'Rules'[5] (0246BCB0) dalla linea simulateprofiles.c # 215
+allocLst+: simulateprofiles.c::Rules	
+
+2_lst - allocazione della lista 'ext_fun'[0] (04C2C640) dalla linea simulateprofiles.c # 227
+allocLst+: simulateprofiles.c::Rules	simulateprofiles.c::ext_fun	
+
+3_lst - allocazione della lista 'genenet'[8] (02334178) dalla linea simulateprofiles.c # 67
+allocLst+: simulateprofiles.c::Rules	simulateprofiles.c::ext_fun	simulateprofiles.c::genenet	
+
+3_lst - disallocazione della lista 'genenet'[8] (02334178) dalla linea simulateprofiles.c # 148
+allocLst-: simulateprofiles.c::Rules	simulateprofiles.c::ext_fun	
+
+1_lst - disallocazione della lista 'Rules'[5] (0246BCB0) dalla linea simulateprofiles.c # 662
+allocLst-: simulateprofiles.c::ext_fun	
+
+2_lst - disallocazione della lista 'ext_fun'[0] (04C2C640) dalla linea simulateprofiles.c # 683
+allocLst-: 
+
+--------------------------------------
+--------------------------------------

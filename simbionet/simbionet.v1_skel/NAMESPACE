@@ -1,0 +1,6 @@
+useDynLib(create_mod)
+useDynLib(hmm)
+useDynLib(hmm_und)
+
+# functions
+export(createMOD, SBNT, UNSBNT)

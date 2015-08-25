@@ -1,0 +1,9 @@
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"
+"3";"'g_tmpm_d'";"scoremodular.c # 139";"globali.c # 340";"5";"2";"0";"scoremodular.c # 139";"scoremodular.c # 140"
+"1";"'g_aus'";"HMM.c # 192";"globali.c # 455";"7";"2";"0";"HMM.c # 192";"HMM.c # 194"
+"2";"'ris'";"probmod.c # 66";"globali.c # 456";"2";"5";"0";"probmod.c # 67";"HMM.c # 400"
+"4";"'ris'";"probmod.c # 66";"globali.c # 457";"2";"5";"0";"probmod.c # 67";"probmod.c # 185"
+"5";"'ris'";"probmod.c # 66";"globali.c # 458";"2";"5";"0";"probmod.c # 67";"probmod.c # 185"
+"6";"'g_Sc'";"HMM.c # 400";"globali.c # 459";"2";"5";"0";"HMM.c # 400";"assign_nodes.c # 63"
+--------------------------------------
+

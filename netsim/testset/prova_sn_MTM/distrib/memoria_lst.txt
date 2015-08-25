@@ -1,0 +1,32 @@
+1_lst - allocazione della lista 'ris'[5] (04C261D8) dalla linea createRules.c # 21
+allocLst+: createRules.c::ris	
+
+2_lst - allocazione della lista 'nulla'[0] (04C25C88) dalla linea simulatenet.c # 79
+allocLst+: createRules.c::ris	simulatenet.c::nulla	
+
+3_lst - allocazione della lista 'genenet'[8] (04C24D10) dalla linea simulatenet.c # 89
+allocLst+: createRules.c::ris	simulatenet.c::nulla	simulatenet.c::genenet	
+
+4_lst - allocazione della lista 'ris'[5] (04C272B0) dalla linea simulatenet.c # 147
+allocLst+: createRules.c::ris	simulatenet.c::nulla	simulatenet.c::genenet	simulatenet.c::ris	
+
+1_lst - disallocazione della lista 'ris'[2] (04C2A230) dalla linea simulatenet.c # 162
+allocLst-: createRules.c::ris	simulatenet.c::nulla	simulatenet.c::genenet	simulatenet.c::ris	
+
+3_lst - disallocazione della lista 'genenet'[8] (04C24D10) dalla linea simulatenet.c # 163
+allocLst-: createRules.c::ris	simulatenet.c::nulla	simulatenet.c::ris	
+
+2_lst - disallocazione della lista 'nulla'[0] (04C25C88) dalla linea simulatenet.c # 164
+allocLst-: createRules.c::ris	simulatenet.c::ris	
+
+1_lst - disallocazione della lista 'ris'[5] (04C261D8) dalla linea simulatenet.c # 381
+allocLst-: simulatenet.c::ris	
+
+4_lst - disallocazione della lista 'ris'[5] (04C272B0) dalla linea simulatenet.c # 382
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (04C2A230) dalla linea connectivity_modular.c # 469
+allocLst+: connectivity_modular.c::ris	
+

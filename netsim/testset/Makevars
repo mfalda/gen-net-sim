@@ -1,0 +1,2 @@
+PKG_LIBS= -lm -L. -lgsl -lpars -lr2c -lglib-2.0
+PKG_CFLAGS=-O3 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -fshort-enums

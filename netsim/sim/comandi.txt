@@ -1,0 +1,6 @@
+RCMD SHLIB  simulatenet.c createRules.c create_logicRule.c sample.c connectivity_modular.c module1.c module2.c module3.c mod1.c mod2.c mod3.c triangola.c probmod.c scoremodular.c cluster_coeff.c assign_nodes.c hist.c connectivity_geometric.c connectivity_random.c sampleB.c connectivity_scalefree.c score_sf.c createNEG.c dinamica.c target.c boole_result.c next_op.c write_table.c lsoda.c globali.c read_table.c pars.c r_aux.c r_aux_i.c r_aux_d.c -fopenmp -lgthread-2.0
+
+RCMD SHLIB  simulateprofiles.c createRules.c create_logicRule.c sample.c dinamica.c target.c boole_result.c next_op.c write_table.c lsoda.c globali.c read_table.c pars.c r_aux.c r_aux_i.c r_aux_d.c -fopenmp -lgthread-2.0
+
+RCMD SHLIB  interfacce.c globali.c r_aux.c r_aux_i.c r_aux_d.c -fopenmp -lgthread-2.0
+

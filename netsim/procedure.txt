@@ -1,0 +1,15 @@
+Compilazione:
+
+tmpl2c.pl
+make r2c
+make r2c_debug
+
+debug: cambiare -lr2c_debug in Makevars e commentare #define NDEBUG in r_aux.h
+
+release: cambiare -lr2c in Makevars e commentare #define MDEBUG e #define FDEBUG in r_aux.h
+
+Installazione:
+
+in Windows crea_v1.bat e poi installare con Rgui
+in Linux crea_v1.sh e installa....sh
+in MAC simile (NB: le librerie vanno in /inst/libs/i386!)

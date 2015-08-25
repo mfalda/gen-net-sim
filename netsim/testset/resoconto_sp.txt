@@ -1,0 +1,18 @@
+rules
+
+
+Sembrano funzionare tutti!
+
+
+Messaggi di attenzione (a parte gli ingrandimenti dei vettori, che rallentano solo e non sono quasi mai ripetuti):
+
+*sp: divisione per zero in boole_result #42
+actfun: nessuno
+extfun: nessuno (pero` ci sono dei NaN nei pesi, forse dipendono dalla funzione esterna)
+fun: nessuno
+itera: si raggiunge la risoluzione massima per Euler
+ko0: si raggiunge la risoluzione massima per Euler
+ko: nessuno
+ode: nessuno
+rules: nessuno
+save: nessuno

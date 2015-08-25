@@ -1,0 +1,22 @@
+1_lst - allocazione della lista 'ris'[2] (0x18235d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x18235d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+--------------------------------------
+--------------------------------------

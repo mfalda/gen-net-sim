@@ -1,0 +1,1 @@
+I profili hanno una differenza di 4, però gli x0 sono identici e i valori sono nei limiti

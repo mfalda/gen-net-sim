@@ -1,0 +1,20 @@
+1_lst - allocazione della lista 'ris'[2] (0x2c60870) dalla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+allocLst+: /home/marco/Documenti/hmm_linux/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/Documenti/hmm_linux/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/Documenti/hmm_linux/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/Documenti/hmm_linux/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/Documenti/hmm_linux/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/Documenti/hmm_linux/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/Documenti/hmm_linux/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/hubs.c # 77
+
+1_lst - disallocazione della lista 'ris'[2] (0x2c60870) dalla linea /home/marco/Documenti/hmm_linux/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------

@@ -1,0 +1,7 @@
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"
+"2";"'ris'";"createNEG.c # 16";"simulatenet.c # 159";"5";"5";"0";"createNEG.c # 17";"boole_result.c # 58"
+"1";"'Mdiscr'";"connectivity_geometric.c # 26";"simulatenet.c # 160";"5";"5";"0";"connectivity_geometric.c # 27";"createNEG.c # 19"
+"1";"'reg'";"simulatenet.c # 54";"simulatenet.c # 161";"5";"15";"0";"simulatenet.c # 55";"write_table.c # 28"
+--------------------------------------
+
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"

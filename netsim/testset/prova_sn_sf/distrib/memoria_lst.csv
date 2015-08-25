@@ -1,0 +1,9 @@
+"ID";"nome";"da";"a";"dim.";"riallocazioni";"prima linea";"ultima linea"
+"1";"'ris'";"connectivity_scalefree.c # 491";"simulatenet.c # 162";"2";"0";"simulatenet.c # 41";"simulatenet.c # 43"
+"3";"'genenet'";"simulatenet.c # 89";"simulatenet.c # 163";"8";"0";"simulatenet.c # 90";"lsoda.c # 89"
+"2";"'nulla'";"simulatenet.c # 79";"simulatenet.c # 164";"0";"0";" # 0";" # 0"
+"1";"'ris'";"createRules.c # 21";"simulatenet.c # 381";"5";"0";"createRules.c # 61";"target.c # 66"
+"4";"'ris'";"simulatenet.c # 147";"simulatenet.c # 382";"5";"0";"simulatenet.c # 148";"simulatenet.c # 156"
+--------------------------------------
+
+"ID";"nome";"da";"a";"dim.";"riallocazioni";"prima linea";"ultima linea"

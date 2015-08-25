@@ -1,0 +1,13 @@
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"
+"1";"'ris'";"/home/marco/hmm/pathlength.c # 43";"/home/marco/hmm/globali.c # 339";"2";"2";"0";"/home/marco/hmm/pathlength.c # 44";"/home/marco/hmm/hubs.c # 48"
+--------------------------------------
+
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"
+"3";"'g_tmpm_d'";"/home/marco/hmm/scoremodular.c # 92";"/home/marco/hmm/globali.c # 341";"5";"2";"0";"/home/marco/hmm/scoremodular.c # 92";"/home/marco/hmm/scoremodular.c # 140"
+"1";"'g_aus'";"/home/marco/hmm/HMM_und.c # 159";"/home/marco/hmm/globali.c # 543";"7";"2";"0";"/home/marco/hmm/HMM_und.c # 159";"/home/marco/hmm/HMM_und.c # 161"
+"2";"'ris'";"/home/marco/hmm/probmod_und.c # 57";"/home/marco/hmm/globali.c # 544";"2";"5";"0";"/home/marco/hmm/probmod_und.c # 58";"/home/marco/hmm/probmod_und.c # 134"
+"4";"'ris'";"/home/marco/hmm/probmod_und.c # 57";"/home/marco/hmm/globali.c # 545";"2";"5";"0";"/home/marco/hmm/probmod_und.c # 58";"/home/marco/hmm/probmod_und.c # 134"
+"5";"'ris'";"/home/marco/hmm/probmod_und.c # 57";"/home/marco/hmm/globali.c # 546";"2";"5";"0";"/home/marco/hmm/probmod_und.c # 58";"/home/marco/hmm/HMM_und.c # 378"
+"6";"'g_Sc'";"/home/marco/hmm/HMM_und.c # 364";"/home/marco/hmm/globali.c # 547";"2";"5";"0";"/home/marco/hmm/HMM_und.c # 364";"/home/marco/hmm/assign_nodes_und.c # 61"
+--------------------------------------
+

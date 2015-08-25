@@ -1,0 +1,262 @@
+1_lst - allocazione della lista 'ris'[2] (0x1b25640) dalla linea /home/marco/hmm/hubs.c # 77
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - disallocazione della lista 'ris'[2] (0x1b25640) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x216e640) dalla linea /home/marco/hmm/hubs.c # 77
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - disallocazione della lista 'ris'[2] (0x216e640) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x2515640) dalla linea /home/marco/hmm/hubs.c # 77
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - disallocazione della lista 'ris'[2] (0x2515640) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x221e640) dalla linea /home/marco/hmm/hubs.c # 77
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 77) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 77
+
+1_lst - disallocazione della lista 'ris'[2] (0x221e640) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x20ad5d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x20ad5d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x2d735d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x2d735d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x15165d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x15165d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x18ca5d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x18ca5d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x15595d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x15595d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x26a05d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x26a05d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x29fc5d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x29fc5d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x2d515d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x2d515d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'ris'[2] (0x2ff85d0) dalla linea /home/marco/hmm/hubs.c # 73
+allocLst+: /home/marco/hmm/hubs.c::ris	
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - la lista 'ris' (linea /home/marco/hmm/hubs.c # 73) esiste gia`: e` stata allocata alla linea /home/marco/hmm/hubs.c # 73
+
+1_lst - disallocazione della lista 'ris'[2] (0x2ff85d0) dalla linea /home/marco/hmm/create_mod.c # 106
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+--------------------------------------
+--------------------------------------

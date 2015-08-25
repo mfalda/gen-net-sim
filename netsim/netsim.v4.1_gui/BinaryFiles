@@ -1,0 +1,6 @@
+inst/libs/i386/calc.dll
+inst/libs/i386/libgsl.dll
+inst/libs/i386/libgslcblas.dll
+inst/libs/i386/muparser32.dll
+inst/libs/i386/simulatenet.dll
+inst/libs/i386/simulateprofiles.dll

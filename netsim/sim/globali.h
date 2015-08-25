@@ -1,0 +1,429 @@
+#ifndef GLOBALI_H
+#define GLOBALI_H
+
+#include "r_aux.h"
+
+struct Globali {
+
+	int n_tipi; // so che le liste avranno sempre lo stesso numero di elementi in una stessa invocazione: e` per avere una conferma in piu`
+	enum TIPO *tipi;
+
+	struct {
+		VETTOREd *v2;
+		VETTOREd *v3;
+	} ret_vettore;
+
+	struct {
+		VETTOREi *v2;
+		MATRICEi *m1;
+	} ret_lista;
+
+	struct {
+		VETTOREi *HL;
+		VETTOREd *q;
+		VETTOREi *x;
+		VETTOREi *y;
+	} sample;
+
+	struct {
+		MATRICEi *Mt;
+		MATRICEi *Maus;
+		VETTOREi *colore;
+		VETTOREi *ind;
+		VETTOREi *adj;
+		VETTOREi *grigi;
+		VETTOREi *tmp_i;
+		VETTOREi *scalare_i;
+		VETTOREd *dist;
+		VETTOREd *scalare_d;
+		VETTOREd *tmp1_d;
+	} check_conn;
+
+	struct {
+		VETTOREd *valr;
+		VETTOREi *signr;
+		VETTOREi *tmp_r;
+	} boole_result;
+
+	struct {
+		VETTOREi *tmp1_i;
+		VETTOREi *tmp2_i;
+		VETTOREd *tmp3_d;
+		VETTOREi *M_in;
+		VETTOREi *sk;
+		VETTOREi *coord_ind;
+		VETTOREi *ind_aus;
+		VETTOREi *ind;
+		MATRICEi *coord;
+		MATRICEi *tmp_coord;
+		MATRICEi *tmp_coord1;
+		VETTOREi *Dmem;
+	} triangola;
+
+	struct {
+		// ottimizzati ind e neighbours in ind
+		MATRICEi *tmpm_i;
+		VETTOREi *ind;
+	} cluster_coeff;
+
+	struct {
+		VETTOREi *Sin_h;
+		VETTOREi *tmp_i;
+		VETTOREd *tmp_d;
+		VETTOREi *or_h;
+		VETTOREi *aus_h;
+		VETTOREi *M_in;
+		VETTOREi *Ord;
+		VETTOREd *p;
+		VETTOREi *ind_h;
+		VETTOREi *ri;
+		VETTOREi *co;
+		VETTOREi *ind;
+		VETTOREi *index;
+	} assign_nodes;
+
+	struct {
+		MATRICEd *tmp_d;
+		VETTOREd *tmp1_d;
+		VETTOREi *ind;
+		VETTOREd *aus;
+		VETTOREi *ind_reg;
+	} target;
+
+	struct {
+		// ottimizzati S_new e g_ind in ind
+		// ottimizzati indinf e tmp_i1 in tmp_i1
+		MATRICEd *tmpm_d;
+		VETTOREi *tmp_i1;
+		VETTOREd *tmp_d1;
+		VETTOREd *T1;
+		VETTOREd *T2;
+		VETTOREd *old1;
+		VETTOREd *old2;
+		VETTOREd *new1;
+		VETTOREd *new2;
+		VETTOREd *toll1;
+		VETTOREd *toll2;
+		VETTOREd *a;
+		VETTOREd *b;
+		VETTOREi *ind;
+		VETTOREd *m;
+		VETTOREd *S1;
+		VETTOREd *S2;
+		VETTOREi *ind1;
+		VETTOREi *ind2;
+	} scoremodular;
+
+	struct {
+		MATRICEd *tmpm_d;
+		VETTOREd *scalare_d;
+		VETTOREi *tmp_i1;
+		VETTOREd *tmp_d1;
+		VETTOREd *T1;
+		VETTOREd *T2;
+		VETTOREd *old1;
+		VETTOREd *old2;
+		VETTOREd *new1;
+		VETTOREd *new2;
+		VETTOREd *toll1;
+		VETTOREd *toll2;
+		VETTOREd *a;
+		VETTOREd *b;
+		VETTOREi *ind;
+		VETTOREd *m;
+		VETTOREd *S1;
+		VETTOREd *S2;
+		VETTOREi *ind1;
+		VETTOREi *ind2;
+		VETTOREi *indinf;
+		VETTOREi *tmp_i2;
+		VETTOREi *indbad;
+		VETTOREi *ind0;
+		VETTOREi *ind3;
+	} score_sf;
+
+	struct {
+		// ottimizzati indok e aus in tmp_i3
+		MATRICEd *Sc;
+		MATRICEi *checkIN;
+		MATRICEi *checkOUT;
+		MATRICEi *memory;
+		VETTOREi *M_in;
+		VETTOREi *M_out;
+		VETTOREi *tmp_i1;
+		VETTOREi *tmp_i2;
+		VETTOREi *tmp_i3;
+		VETTOREi *indInf;
+		VETTOREi *I;
+		VETTOREi *ord_ind;
+		VETTOREi *rs;
+		VETTOREi *ind1;
+		VETTOREi *scalare_i;
+		VETTOREi *I_add;
+		VETTOREd *S_in;
+		VETTOREd *S_out;
+		VETTOREd *tmp_d1;
+		MATRICEd *score_matr1;
+		MATRICEd *score_matr2;
+		MATRICEd *score_matr3;
+	} probmod;
+
+	struct {
+		MATRICEd *D;
+		VETTOREd *y_prec;
+		VETTOREi *ind;
+		VETTOREd *targetT;
+		VETTOREd *targ;
+		VETTOREd *incr;
+		VETTOREd *n;
+		VETTOREd *aus;
+		MATRICEd *tmp_ris;
+	} dinamica;
+
+	struct {
+		VETTOREi *tmp_i;
+		VETTOREi *segno;
+		VETTOREi *ind;
+	} createNEG;
+
+	struct {
+		VETTOREd *y;
+		VETTOREd *y1;
+		VETTOREd *y_prec;
+		VETTOREd *targetT;
+		VETTOREd *targ;
+		MATRICEd *tmp_ris;
+	} lsoda;
+
+	struct {
+		VETTOREi *op;
+		VETTOREi *tmp;
+	} createRules;
+
+	struct {
+		VETTOREd *x;
+		VETTOREi *s;
+		VETTOREd *scalare_d;
+		VETTOREi *nvect;
+		VETTOREi *e;
+		VETTOREd *prob;
+		VETTOREi *tmp_i;
+		VETTOREi *tmp1_i;
+		VETTOREd *pr_and;
+		VETTOREd *pr_or;
+		VETTOREi *scalare_i;
+		VETTOREi *blacklist;
+		VETTOREi *black_p;
+		VETTOREi *o;
+	} create_logicRule;
+
+	struct {
+		MATRICEi *ind;
+		VETTOREi *tmp1_i;
+		VETTOREi *x;
+		VETTOREi *s;
+	} mod1;
+
+	struct {
+		VETTOREi *M_out;
+		VETTOREi *indok;
+		VETTOREi *tmp3_i;
+		VETTOREd *tmp1_d;
+		VETTOREd *tmpSTin;
+		VETTOREd *tmpSTout;
+		VETTOREd *Freq_in;
+		VETTOREd *Freq_out;
+		VETTOREd *tmp3_d;
+		VETTOREd *p;
+		VETTOREd *Sc;
+		VETTOREi *tmp2_i;
+		VETTOREi *ind_M;
+		VETTOREi *ind1;
+		VETTOREi *indS;
+		VETTOREi *indBS;
+		VETTOREi *Sin;
+		VETTOREi *ind;
+		VETTOREi *indInf;
+		VETTOREi *tmp1_i;
+		VETTOREi *scalare_i;
+		VETTOREd *scalare_d;
+		VETTOREd *p_sc;
+	} mod3;
+
+	struct {
+		VETTOREi *scalare_i;
+		VETTOREi *Ng;
+		VETTOREi *tmp1_i;
+		MATRICEi *conn_matr;
+		VETTOREi *indices;
+	} module1;
+
+	struct {
+		VETTOREi *tmp1_i;
+		VETTOREi *Ng;
+		MATRICEi *conn_matr;
+		VETTOREi *indices;
+	} module2;
+
+	struct {
+		VETTOREi *tmp1_i;
+		VETTOREi *Ng;
+		VETTOREi *Ng_UP;
+		MATRICEi *conn_matr;
+		VETTOREi *indices;
+	} module3;
+
+	struct {
+		MATRICEd *M;
+		MATRICEi *Mdiscr;
+		VETTOREd *x;
+		VETTOREd *y;
+		VETTOREd *xy;
+		VETTOREd *d;
+		VETTOREi *s;
+		VETTOREi *regulatedind;
+		VETTOREi *indL;
+		VETTOREi *Sr;
+		VETTOREd *aus;
+		VETTOREi *ind;
+		VETTOREi *ind1;
+		VETTOREi *ind0;
+		VETTOREi *tmp1_i;
+		VETTOREi *tmp2_i;
+		VETTOREd *tmp1_d;
+	} connectivity_geometric;
+
+	struct {
+		MATRICEd *M;
+		MATRICEi *Mdiscr;
+		VETTOREd *x;
+		VETTOREd *y;
+		VETTOREd *d;
+		VETTOREi *s;
+		VETTOREi *o;
+		VETTOREi *regulatedind;
+		VETTOREi *indL;
+		VETTOREi *Sr;
+		VETTOREi *inthenet;
+		VETTOREi *not_inthenet;
+		VETTOREi *not_regulated;
+		VETTOREi *numposs;
+		VETTOREi *give_outlink;
+		VETTOREi *aus_give_outlink;
+		VETTOREi *indInf;
+		VETTOREi *ind_Sc;
+		VETTOREi *a1;
+		VETTOREi *a2;
+		VETTOREi *primi;
+		VETTOREi *indici;
+		VETTOREi *num_v;
+		VETTOREi *mem_o;
+		VETTOREi *available;
+		VETTOREi *campione;
+		VETTOREi *linked;
+		VETTOREi *ind_s;
+		VETTOREi *Sout;
+		VETTOREi *Sin;
+		VETTOREi *ind;
+		VETTOREi *indok;
+		VETTOREi *ind1;
+		VETTOREi *ind0;
+		VETTOREi *tmp1_i;
+		VETTOREi *tmp2_i;
+		VETTOREd *tmp1_d;
+		VETTOREd *tmp2_d;
+		VETTOREi *scalare_i;
+		VETTOREd *scalare_d;
+		VETTOREd *Prob;
+		VETTOREd *Freq_in;
+		VETTOREd *Freq_out;
+		VETTOREd *STin;
+		VETTOREd *STout;
+		VETTOREd *p;
+		VETTOREi *toll1;
+		VETTOREd *toll_in;
+		VETTOREd *toll_out;
+		VETTOREd *Sc;
+		VETTOREd *p_ind;
+		VETTOREd *p_out;
+		MATRICEd *aus;
+	} connectivity_scalefree;
+
+	struct {
+		MATRICEd *M;
+		MATRICEi *Mdiscr;
+		VETTOREd *aus;
+		VETTOREd *tmp_d;
+		VETTOREi *scalare_i;
+		VETTOREd *Pnum;
+		VETTOREi *ind;
+		VETTOREi *num;
+		VETTOREi *tmp_i;
+	} connectivity_random;
+
+	struct {
+		MATRICEd *M;
+		MATRICEi *Mdiscr;
+		VETTOREi *scalare_i;
+		VETTOREi *tmp1_i;
+		VETTOREi *tmp2_i;
+		VETTOREd *tmp1_d;
+		VETTOREd *tmp2_d;
+		VETTOREd *Prob;
+		VETTOREd *Freq_out;
+		VETTOREd *Freq_in;
+		VETTOREd *STout;
+		VETTOREd *STin;
+		VETTOREd *toll;
+		VETTOREd *p_out;
+		VETTOREd *scalare_d;
+		VETTOREi *Sr;
+		VETTOREd *p;
+		VETTOREi *h;
+		VETTOREd *prob_mod;
+		MATRICEd *aus;
+		VETTOREd *Sc_v;
+		VETTOREd *Cg;
+		VETTOREi *Sin;
+		VETTOREi *Sout;
+		VETTOREi *a1;
+		VETTOREi *a2;
+		VETTOREi *ind;
+		VETTOREi *ind_Sc;
+		VETTOREi *h_new;
+		VETTOREi *mod_type;
+		VETTOREi *ind_s;
+		VETTOREi *aus0;
+	} connectivity_modular;
+
+	struct {
+		VETTOREi *ind;
+		MATRICEi *tmpm1_i;
+		MATRICEd *tmpm1_d;
+		MATRICEi *reg;
+		MATRICEd *M;
+		MATRICEi *Mdiscr;
+		MATRICEi *Mneg;
+		LISTA *genenet;
+	} simulateprofiles;
+
+	struct {
+		MATRICEd *M;
+		MATRICEd *tmpm1_d;
+		MATRICEd *D;
+		MATRICEi *Mneg;
+		MATRICEi *Mdiscr;
+		MATRICEi *reg;
+		LISTA *aus;
+		LISTA *genenet;
+		LISTA *nulla;
+		LISTA *R;
+		LISTA *ris;
+	} simulatenet;
+
+} globali;
+
+void InitGlobali();
+void CancGlobali();
+
+#endif

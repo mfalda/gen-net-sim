@@ -1,0 +1,826 @@
+
+*** HMM ***
+
+*** HMM1 ***
+
+***cluster_coeff***
+input:
+	W =  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+*** Esco da cluster_coeff2 ***
+cluster_coeff output:
+	list(coeff,Cg) =  0
+ 0 0 0 0 0
+
+***sampleB_p***
+input:
+	x =  1 2 3 4 5 6 7
+	size =  3
+	replace =  FALSE
+	prob =  0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429
+
+*** sample_p ***
++++Letti 3 valore/i per 'sampleB' da 'sample_1.txt'
+sampleB_p output:
+	res =  2 7 6
+
+***probmod***
+input:
+	M =  0 0 1 1
+	h =  1 2 3 4 5
+	Sin =  0 0 0 0 0
+	Sout =  0 0 0 0 0
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  5 0 0 0 0 0 0
+	Freq_out =  5 0 0 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  5 0 0 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  5 0 0 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  17.50856288884183
+ 0 0 1 1
+ 2.5 4.503425155536733 2.5 4.503425155536733 2.5 4.503425155536733 2.5 4.503425155536733 2.5 4.503425155536733
+NO
+
+***probmod***
+input:
+	M =  1 1 1 1
+	h =  1 2 3 4 5
+	Sin =  0 0 0 0 0
+	Sout =  0 0 0 0 0
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  5 0 0 0 0 0 0
+	Freq_out =  5 0 0 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  22.51712577768366
+ 1 1 1 1
+ 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733 4.503425155536733
+NO
+
+***probmod***
+input:
+	M =  1 0 1 1
+	h =  1 2 3 4 5
+	Sin =  0 0 0 0 0
+	Sout =  0 0 0 0 0
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  5 0 0 0 0 0 0
+	Freq_out =  5 0 0 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  5 0 0 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  3.698429469322712 3.698429469322712 3.698429469322712 3.698429469322712 3.698429469322712
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  5 0 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733 2.003425155536733
+
+***score***
+input:
+	S =  0 0 0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  5 0 0 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  26.75463656214861
+ 1 0 1 1
+ 6.198429469322711 4.503425155536733 6.198429469322711 4.503425155536733 6.198429469322711 4.503425155536733 6.198429469322711 4.503425155536733 6.198429469322711 4.503425155536733
+NO
+
+***sampleB_p***
+input:
+	x =  1 2 3
+	size =  1
+	replace =  FALSE
+	prob =  0.2621814558238182 0.3371820322913802 0.4006365118848016
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_2.txt'
+sampleB_p output:
+	res =  1
+
+***assign_nodes***
+input:
+	M =  0 0 1 1
+	Mdiscr =  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	h =  1 2 3 4 5
+	hubs =  2
+	Sc =  2.5 4.503425155536733 2.5 4.503425155536733 2.5 4.503425155536733 2.5 4.503425155536733 2.5 4.503425155536733
+	Sin =  0 0 0 0 0
+	max_con =  5
+
+***sampleB_p***
+input:
+	x =  1 2 3 4 5
+	size =  1
+	replace =  FALSE
+	prob =  0.2 0.2 0.2 0.2 0.2
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_3.txt'
+sampleB_p output:
+	res =  4
+
+***sampleB_p***
+input:
+	x =  1 2 3 5
+	size =  1
+	replace =  FALSE
+	prob =  0.25 0.25 0.25 0.25
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_4.txt'
+sampleB_p output:
+	res =  2
+
+*** Esco da assign_nodes ***
+
+assign_nodes output:
+	list(Mdiscr,h,new_hubs) =  0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 3 5
+ 2
+
+*** hist1 ***
+
+*** hist1 ***
+
+***cluster_coeff***
+input:
+	W =  0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+*** Esco da cluster_coeff2 ***
+cluster_coeff output:
+	list(coeff,Cg) =  0
+ 0 0 0 0 0
+
+***sampleB_p***
+input:
+	x =  1 2 3 4 5 6 7
+	size =  3
+	replace =  FALSE
+	prob =  0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429
+
+*** sample_p ***
++++Letti 3 valore/i per 'sampleB' da 'sample_5.txt'
+sampleB_p output:
+	res =  3 7 1
+
+***probmod***
+input:
+	M =  0 1 0 1
+	h =  1 3 5
+	Sin =  0 1 0 1 0
+	Sout =  0 2 0 0 0
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  3 2 0 0 0 0 0
+	Freq_out =  4 0 1 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  4 0 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.958743575458169 2.958743575458169 2.958743575458169
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  4 0 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.958743575458169 2.958743575458169 2.958743575458169
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  3 2 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1.5 1.5 1.5
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  11.12623072637451
+ 0 1 0 1
+ 2.958743575458169 4.458743575458169 2.958743575458169 4.458743575458169 2.958743575458169 4.458743575458169
+NO
+
+***probmod***
+input:
+	M =  1 1 1 1
+	h =  1 3 5
+	Sin =  0 1 0 1 0
+	Sout =  0 2 0 0 0
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  3 2 0 0 0 0 0
+	Freq_out =  4 0 1 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  4 0 1 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -inf -inf -inf
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  3 2 0 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1.5 1.5 1.5
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  1.#QNAN
+ 1 1 1 1
+ 0 0.5 0 0.5 0 0.5
+NO
+
+***probmod***
+input:
+	M =  0 0 1 0
+	h =  1 3 5
+	Sin =  0 1 0 1 0
+	Sout =  0 2 0 0 0
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  3 2 0 0 0 0 0
+	Freq_out =  4 0 1 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  3 2 0 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1.5 1.5 1.5
+
+***score***
+input:
+	S =  0 0 0
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  4 0 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  2.958743575458169 2.958743575458169 2.958743575458169
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  6.688115363187254
+ 0 0 1 0
+ 1.5 2.958743575458169 1.5 2.958743575458169 1.5 2.958743575458169
+NO
+
+***sampleB_p***
+input:
+	x =  1 2 3
+	size =  1
+	replace =  FALSE
+	prob =  0.6230310357954196 0 0.3769689642045804
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_6.txt'
+sampleB_p output:
+	res =  1
+
+***assign_nodes***
+input:
+	M =  0 1 0 1
+	Mdiscr =  0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+	h =  1 3 5
+	hubs =  1
+	Sc =  2.958743575458169 4.458743575458169 2.958743575458169 4.458743575458169 2.958743575458169 4.458743575458169
+	Sin =  0 1 0 1 0
+	max_con =  5
+
+***sampleB_p***
+input:
+	x =  1 3 5
+	size =  1
+	replace =  FALSE
+	prob =  0.3333333333333333 0.3333333333333333 0.3333333333333333
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_7.txt'
+sampleB_p output:
+	res =  3
+
+***sampleB_p***
+input:
+	x =  1 5
+	size =  1
+	replace =  FALSE
+	prob =  0.5 0.5
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_8.txt'
+sampleB_p output:
+	res =  5
+
+*** Esco da assign_nodes ***
+
+assign_nodes output:
+	list(Mdiscr,h,new_hubs) =  0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0
+ 1
+ 5
+
+*** hist1 ***
+
+*** hist1 ***
+
+***cluster_coeff***
+input:
+	W =  0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0
+
+*** Esco da cluster_coeff2 ***
+cluster_coeff output:
+	list(coeff,Cg) =  0
+ 0 0 0 0 0
+
+***sampleB_p***
+input:
+	x =  1 2 3 4 5 6 7
+	size =  3
+	replace =  FALSE
+	prob =  0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429
+
+*** sample_p ***
++++Letti 3 valore/i per 'sampleB' da 'sample_9.txt'
+sampleB_p output:
+	res =  7 4 2
+
+***probmod***
+input:
+	M =  1 1 1 1
+	h =  1 2 5
+	Sin =  0 1 2 1 0
+	Sout =  0 2 1 0 1
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  2 2 1 0 0 0 0
+	Freq_out =  2 2 1 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 2 1
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  2 2 1 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -inf 1.695004313785979 -2.134595902838008
+
+***score***
+input:
+	S =  0 1 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  2 2 1 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1 0 1
+
+***score***
+input:
+	S =  0 2 1
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  2 2 1 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -inf 1.695004313785979 -2.134595902838008
+
+***score***
+input:
+	S =  0 1 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  2 2 1 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1 0 1
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  -1.574187491890038
+ 1 1 1 1
+ -2.134595902838008 -2.134595902838008 1.695004313785979 1.695004313785979 -1.134595902838008 -1.134595902838008
+NO
+
+***probmod***
+input:
+	M =  0 1 1 0
+	h =  1 2 5
+	Sin =  0 1 2 1 0
+	Sout =  0 2 1 0 1
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  2 2 1 0 0 0 0
+	Freq_out =  2 2 1 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 2 1
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  2 2 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -0.1943255234427109 -1.555389796499893 -inf
+
+***score***
+input:
+	S =  0 1 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  2 2 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1 0 1
+
+***score***
+input:
+	S =  0 2 1
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  2 2 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -0.1943255234427109 -1.555389796499893 -inf
+
+***score***
+input:
+	S =  0 1 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  2 2 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1 0 1
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  -2.305105116442498
+ 0 1 1 0
+ 0.8056744765572891 0.8056744765572891 -1.555389796499893 -1.555389796499893 -1.555389796499894 -1.555389796499894
+NO
+
+***probmod***
+input:
+	M =  0 0 1 1
+	h =  1 2 5
+	Sin =  0 1 2 1 0
+	Sout =  0 2 1 0 1
+	STin =  0 NA NA NA NA NA 0
+	STout =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq_in =  2 2 1 0 0 0 0
+	Freq_out =  2 2 1 0 0 0 0
+	toll =  1 1 1 1 1 1 1
+
+***score***
+input:
+	S =  0 1 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  2 2 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1 0 1
+
+***score***
+input:
+	S =  0 2 1
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  2 2 1 0 0 0 0
+	n =  2
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -inf 1.695004313785979 -2.134595902838008
+
+***score***
+input:
+	S =  0 1 0
+	ST =  0 NA NA NA NA NA 0
+	Freq =  2 2 1 0 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  1 0 1
+
+*** Esco da probmod ***
+
+probmod output:
+	list(Pm,M,g_Sc,lab) =  0.212906254054981
+ 0 0 1 1
+ 1 -2.134595902838008 0 1.695004313785979 1 -1.134595902838008
+NO
+
+***sampleB_p***
+input:
+	x =  1 2 3
+	size =  1
+	replace =  FALSE
+	prob =  0.2350550178840729 0.03101702246391801 0.733927959652009
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_10.txt'
+sampleB_p output:
+	res =  3
+
+***assign_nodes***
+input:
+	M =  0 0 1 1
+	Mdiscr =  0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0
+	h =  1 2 5
+	hubs =  2
+	Sc =  1 -2.134595902838008 0 1.695004313785979 1 -1.134595902838008
+	Sin =  0 1 2 1 0
+	max_con =  5
+
+***sampleB_p***
+input:
+	x =  1 2 5
+	size =  1
+	replace =  FALSE
+	prob =  0.4761904761904762 0.04761904761904762 0.4761904761904762
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_11.txt'
+sampleB_p output:
+	res =  1
+
+***sampleB_p***
+input:
+	x =  2 5
+	size =  1
+	replace =  FALSE
+	prob =  0.7800573704714613 0.2199426295285388
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_12.txt'
+sampleB_p output:
+	res =  2
+
+*** Esco da assign_nodes ***
+
+assign_nodes output:
+	list(Mdiscr,h,new_hubs) =  0 0 0 0 0 1 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0
+ 5
+ 2
+
+*** hist1 ***
+
+*** hist1 ***
+
+***score***
+input:
+	S =  0 3 1 0 1
+	ST =  0.6759625999999999 0.8962194 0.2949845 0.1538275 1.1431788 1.8358272 0
+	Freq =  2 2 0 1 0 0 0
+	n =  1
+	toll =  1 1 1 1 1 1 1
+
+*** Esco da scoremodular ***
+
+scoremodular output:
+	Sc =  -0.1943255234427109 3.250394110285872 -0.579206106338115 -0.1943255234427109 -0.579206106338115
+
+***sampleB_p***
+input:
+	x =  1 2 3 4 5
+	size =  1
+	replace =  FALSE
+	prob =  0.08368130940242205 0.832637381195156 0 0.08368130940242205 0
+
+*** sample_p ***
++++Letti 1 valore/i per 'sampleB' da 'sample_13.txt'
+sampleB_p output:
+	res =  2
+
+*** write_m_i ***
+
+*** write_m_i ***
+
+*** Esco da HMM1 ***

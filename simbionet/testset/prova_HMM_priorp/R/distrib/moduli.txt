@@ -1,0 +1,798 @@
+
+***hubs***
+input:
+	mod =  0 0 1 0 
+
+***pathlength***
+input:
+	W =  0 0 1 0 
+	und =  FALSE 
+pathlength output:
+	M =  Inf Inf 1 Inf 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ FALSE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  0 0 1 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 0 1 1 
+
+***pathlength***
+input:
+	W =  0 0 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  Inf Inf 1 1 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ TRUE 
+ 2 
+
+***cluster_coeff***
+input:
+	W =  0 0 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 1 0 1 
+
+***pathlength***
+input:
+	W =  0 1 0 1 
+	und =  FALSE 
+pathlength output:
+	M =  Inf 1 Inf 1 
+hubs output:
+	list(H,feedback,Hio) =  1 
+ TRUE 
+ 2 
+
+***cluster_coeff***
+input:
+	W =  0 1 0 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 1 1 0 
+
+***pathlength***
+input:
+	W =  0 1 1 0 
+	und =  FALSE 
+pathlength output:
+	M =  2 1 1 2 
+hubs output:
+	list(H,feedback,Hio) =  1 2 
+ TRUE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  0 1 1 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  0 1 1 1 
+
+***pathlength***
+input:
+	W =  0 1 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  2 1 1 1 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ TRUE 
+ 2 
+
+***cluster_coeff***
+input:
+	W =  0 1 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  1 0 1 1 
+
+***pathlength***
+input:
+	W =  1 0 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  1 Inf 1 1 
+hubs output:
+	list(H,feedback,Hio) =  2 
+ TRUE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  1 0 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***hubs***
+input:
+	mod =  1 1 1 1 
+
+***pathlength***
+input:
+	W =  1 1 1 1 
+	und =  FALSE 
+pathlength output:
+	M =  1 1 1 1 
+hubs output:
+	list(H,feedback,Hio) =  1 2 
+ TRUE 
+ 1 2 
+
+***cluster_coeff***
+input:
+	W =  1 1 1 1 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 
+
+***HMM***
+
+
+***cluster_coeff***
+input:
+	W =  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 0 0 0 
+
+***sampleB***
+input:
+	x =  1 2 3 4 5 6 7 
+	size =  3 
+	replace =  FALSE 
+	prob =  0.1041737 0.2576365 0.1785133 0.1936157 0.05220486 0.1091155 0.1047405 
+sampleB output:
+	res =  6 3 7 
+
+***probmod***
+input:
+	M =  1 0 1 1 
+	h =  1 2 3 4 5 
+	Sin =  0 0 0 0 0 
+	Sout =  0 0 0 0 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  5 0 0 0 0 0 0 
+	Freq_out =  5 0 0 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0.5 0.5 0.5 0.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0.5 0.5 0.5 0.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5 
+probmod output:
+	list(Pm,M,Sc,lab) =  15 
+ 1 0 1 1 
+ 3 3 3 3 3 3 3 3 3 3 
+ NO 
+
+***probmod***
+input:
+	M =  0 1 0 1 
+	h =  1 2 3 4 5 
+	Sin =  0 0 0 0 0 
+	Sout =  0 0 0 0 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  5 0 0 0 0 0 0 
+	Freq_out =  5 0 0 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0.5 0.5 0.5 0.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0.5 0.5 0.5 0.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5 
+probmod output:
+	list(Pm,M,Sc,lab) =  8.75 
+ 0 1 0 1 
+ 0.5 3 0.5 3 0.5 3 0.5 3 0.5 3 
+ NO 
+
+***probmod***
+input:
+	M =  1 1 1 1 
+	h =  1 2 3 4 5 
+	Sin =  0 0 0 0 0 
+	Sout =  0 0 0 0 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  5 0 0 0 0 0 0 
+	Freq_out =  5 0 0 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0.5 0.5 0.5 0.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0.5 0.5 0.5 0.5 
+
+***score***
+input:
+	S =  0 0 0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  5 0 0 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  2.5 2.5 2.5 2.5 2.5 
+probmod output:
+	list(Pm,M,Sc,lab) =  15 
+ 1 1 1 1 
+ 3 3 3 3 3 3 3 3 3 3 
+ NO 
+
+***sampleB***
+input:
+	x =  1 2 3 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.3870968 0.2258065 0.3870968 
+sampleB output:
+	res =  1 
+
+***assign_nodes***
+input:
+	M =  1 0 1 1 
+	Mdiscr =  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+	h =  1 2 3 4 5 
+	hubs =  2 
+	Sc =  3 3 3 3 3 3 3 3 3 3 
+	Sin =  0 0 0 0 0 
+	max_con =  5 
+
+***sampleB***
+input:
+	x =  1 2 3 4 5 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.2 0.2 0.2 0.2 0.2 
+sampleB output:
+	res =  1 
+
+***sampleB***
+input:
+	x =  2 3 4 5 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.25 0.25 0.25 0.25 
+sampleB output:
+	res =  3 
+assign_nodes output:
+	list(Mdiscr,h,new.hubs) =  1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+ 2 4 5 
+ 3 
+
+***cluster_coeff***
+input:
+	W =  1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 0 0 0 
+
+***sampleB***
+input:
+	x =  1 2 3 4 5 6 7 
+	size =  3 
+	replace =  FALSE 
+	prob =  0.1041737 0.2576365 0.1785133 0.1936157 0.05220486 0.1091155 0.1047405 
+sampleB output:
+	res =  2 1 4 
+
+***probmod***
+input:
+	M =  0 0 1 1 
+	h =  2 4 5 
+	Sin =  2 0 1 0 0 
+	Sout =  1 0 2 0 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  3 1 1 0 0 0 0 
+	Freq_out =  3 1 1 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  1.5 1.5 1.5 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  -Inf -Inf -Inf 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  1.5 1.5 1.5 
+probmod output:
+	list(Pm,M,Sc,lab) =  NA 
+ 0 0 1 1 
+ 1.5 0.5 1.5 0.5 1.5 0.5 
+ NO 
+
+***probmod***
+input:
+	M =  0 0 1 0 
+	h =  2 4 5 
+	Sin =  2 0 1 0 0 
+	Sout =  1 0 2 0 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  3 1 1 0 0 0 0 
+	Freq_out =  3 1 1 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  1.5 1.5 1.5 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.3616812 0.3616812 0.3616812 
+probmod output:
+	list(Pm,M,Sc,lab) =  2.792522 
+ 0 0 1 0 
+ 1.5 0.3616812 1.5 0.3616812 1.5 0.3616812 
+ NO 
+
+***probmod***
+input:
+	M =  0 1 1 0 
+	h =  2 4 5 
+	Sin =  2 0 1 0 0 
+	Sout =  1 0 2 0 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  3 1 1 0 0 0 0 
+	Freq_out =  3 1 1 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.3616812 0.3616812 0.3616812 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  1.5 1.5 1.5 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.3616812 0.3616812 0.3616812 
+
+***score***
+input:
+	S =  0 0 0 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  3 1 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  1.5 1.5 1.5 
+probmod output:
+	list(Pm,M,Sc,lab) =  5.585043 
+ 0 1 1 0 
+ 1.861681 1.861681 1.861681 1.861681 1.861681 1.861681 
+ NO 
+
+***sampleB***
+input:
+	x =  1 2 3 
+	size =  1 
+	replace =  FALSE 
+	prob =  0 0.3376401 0.6623599 
+sampleB output:
+	res =  3 
+
+***sampleB***
+input:
+	x =  1 2 
+	size =  1 
+	replace =  FALSE 
+sampleB output:
+	res =  1 
+
+***assign_nodes***
+input:
+	M =  0 1 1 0 
+	Mdiscr =  1 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+	h =  2 4 5 
+	hubs =  1 
+	Sc =  1.861681 1.861681 1.861681 1.861681 1.861681 1.861681 
+	Sin =  2 0 1 0 0 
+	max_con =  5 
+
+***sampleB***
+input:
+	x =  2 4 5 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.3333333 0.3333333 0.3333333 
+sampleB output:
+	res =  4 
+
+***sampleB***
+input:
+	x =  2 5 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.5 0.5 
+sampleB output:
+	res =  2 
+assign_nodes output:
+	list(Mdiscr,h,new.hubs) =  1 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 
+ 5 
+ 4 
+
+***cluster_coeff***
+input:
+	W =  1 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 
+cluster_coeff output:
+	list(coeff,Cg) =  0 
+ 0 0 0 0 0 
+
+***sampleB***
+input:
+	x =  1 2 3 4 5 6 7 
+	size =  3 
+	replace =  FALSE 
+	prob =  0.1041737 0.2576365 0.1785133 0.1936157 0.05220486 0.1091155 0.1047405 
+sampleB output:
+	res =  1 4 2 
+
+***probmod***
+input:
+	M =  0 0 1 0 
+	h =  5 3 4 
+	Sin =  2 1 1 1 0 
+	Sout =  1 1 2 1 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  1 3 1 0 0 0 0 
+	Freq_out =  1 3 1 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 1 1 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0 0 
+
+***score***
+input:
+	S =  0 2 1 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.08504346 -1.550773 -Inf 
+probmod output:
+	list(Pm,M,Sc,lab) =  -1.758251 
+ 0 0 1 0 
+ 0.5 0.08504346 0 -1.550773 0 -2.550773 
+ NO 
+
+***probmod***
+input:
+	M =  0 1 1 0 
+	h =  5 3 4 
+	Sin =  2 1 1 1 0 
+	Sout =  1 1 2 1 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  1 3 1 0 0 0 0 
+	Freq_out =  1 3 1 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 2 1 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.08504346 -1.550773 -Inf 
+
+***score***
+input:
+	S =  0 1 1 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0 0 
+
+***score***
+input:
+	S =  0 2 1 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.08504346 -1.550773 -Inf 
+
+***score***
+input:
+	S =  0 1 1 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0 0 
+probmod output:
+	list(Pm,M,Sc,lab) =  -3.516502 
+ 0 1 1 0 
+ 0.5850435 0.5850435 -1.550773 -1.550773 -2.550773 -2.550773 
+ NO 
+
+***probmod***
+input:
+	M =  0 0 1 1 
+	h =  5 3 4 
+	Sin =  2 1 1 1 0 
+	Sout =  1 1 2 1 0 
+	STin =  0 NA NA NA NA NA 0 
+	STout =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq_in =  1 3 1 0 0 0 0 
+	Freq_out =  1 3 1 0 0 0 0 
+	toll =  NA 1 1 1 1 1 1 
+
+***score***
+input:
+	S =  0 1 1 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0 0 
+
+***score***
+input:
+	S =  0 2 1 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  2 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  -Inf -2.920205 -Inf 
+
+***score***
+input:
+	S =  0 1 1 
+	ST =  0 NA NA NA NA NA 0 
+	Freq =  1 3 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  0.5 0 0 
+probmod output:
+	list(Pm,M,Sc,lab) =  -4.880308 
+ 0 0 1 1 
+ 0.5 -3.420205 0 -2.920205 0 -3.920205 
+ NO 
+
+***sampleB***
+input:
+	x =  1 2 3 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.6708936 0.3060504 0.02305594 
+sampleB output:
+	res =  1 
+
+***assign_nodes***
+input:
+	M =  0 0 1 0 
+	Mdiscr =  1 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 
+	h =  5 3 4 
+	hubs =  2 
+	Sc =  0.5 0.08504346 0 -1.550773 0 -2.550773 
+	Sin =  2 1 1 1 0 
+	max_con =  5 
+
+***sampleB***
+input:
+	x =  5 3 4 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.7333333 0.1333333 0.1333333 
+sampleB output:
+	res =  3 
+
+***sampleB***
+input:
+	x =  5 4 
+	size =  1 
+	replace =  FALSE 
+	prob =  0.9611233 0.03887670 
+sampleB output:
+	res =  5 
+assign_nodes output:
+	list(Mdiscr,h,new.hubs) =  1 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 0 1 0 0 
+ 4 
+ 5 
+
+***score***
+input:
+	S =  1 1 2 1 1 
+	ST =  NA 3.614836 0.7867245 0.3224199 0.1712209 0.1047984 0 
+	Freq =  0 4 1 0 0 0 0 
+	n =  1 
+	toll =  NA 1 1 1 1 1 1 
+scoremodular output:
+	Sc =  -Inf -Inf -1.550773 -Inf -Inf 
+
+***sampleB***
+input:
+	x =  1 2 3 4 5 
+	size =  1 
+	replace =  FALSE 
+	prob =  0 0 1 0 0 
+sampleB output:
+	res =  3 

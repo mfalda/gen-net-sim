@@ -1,0 +1,18 @@
+"ID";"nome";"da";"a";"dim.max.righe";"dim.max.col.";"riallocazioni";"prima linea";"ultima linea"
+"8";"'ris'";"HMM.c # 123";"HMM.c # 1047";"5";"5";"0";"HMM.c # 124";"HMM.c # 1047"
+"1";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 336"
+"2";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 95"
+"3";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 95"
+"4";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 95"
+"5";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 95"
+"6";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 95"
+"7";"'VECTOR_ELT(elem, 1)'";"HMM.c # 1028";"HMM.c # 1050";"1";"2";"0";"HMM.c # 95";"HMM.c # 95"
+"9";"'g_tmpm_i'";"cluster_coeff.c # 20";"globali.c # 304";"5";"5";"0";"cluster_coeff.c # 20";"cluster_coeff.c # 38"
+"14";"'g_M'";"HMM.c # 399";"globali.c # 450";"2";"2";"0";"HMM.c # 399";"assign_nodes.c # 103"
+"10";"'g_mod1'";"HMM.c # 336";"globali.c # 451";"2";"2";"0";"HMM.c # 336";"HMM.c # 399"
+"15";"'g_tmpm_i'";"HMM.c # 977";"globali.c # 454";"5";"2";"0";"HMM.c # 977";"write_table.c # 28"
+"12";"'g_checkIN'";"probmod.c # 64";"globali.c # 470";"2";"5";"0";"probmod.c # 65";"probmod.c # 218"
+"11";"'g_checkOUT'";"probmod.c # 62";"globali.c # 471";"2";"5";"0";"probmod.c # 63";"probmod.c # 263"
+"13";"'g_memory'";"probmod.c # 73";"globali.c # 472";"2";"3";"0";"probmod.c # 74";"probmod.c # 91"
+--------------------------------------
+

@@ -1,0 +1,15 @@
+Sembrano funzionare tutti!
+
+
+Messaggi di attenzione (a parte gli ingrandimenti dei vettori, che rallentano solo e non sono quasi mai ripetuti):
+
+actfun: promossi dei vettori in cm
+*fun: assegnati degli NA in sm #40 e #44, promossi dei vettori in cm
+geometric: nessuno
+itera: nessuno
+MTM: promossi dei vettori in cm
+ode: promossi dei vettori in cm
+out: promossi dei vettori in cm
+random: nessuno
+save: promossi dei vettori in cm
+*sf: divisione per zero in score_sf #62

@@ -1,0 +1,317 @@
+
+*** HMM ***
+1_d - allocazione del vettore 'prior_p_subnet'[0] (0x23bc0c8) dalla linea HMM_und.c # 848
+allocVett_d+: HMM_und.c::prior_p_subnet	
+
+
+***HMM1_und***
+2_d - allocazione del vettore 'g_scalare_d'[1] (0x1dec4b8) dalla linea HMM_und.c # 77
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	
+
+3_d - allocazione del vettore 'g_scalare1_d'[1] (0x1dec488) dalla linea HMM_und.c # 78
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	
+
+4_d - allocazione del vettore 'g_prior_p_subnet'[7] (0x1dec458) dalla linea HMM_und.c # 81
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	
+
+2_d - il vettore 'g_scalare_d' (linea HMM_und.c # 121) esiste gia`: e` stato allocato alla linea HMM_und.c # 77
+
+5_d - allocazione del vettore 'g_tmp1_d'[6] (0x23bc370) dalla linea HMM_und.c # 123
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	
+
+6_d - allocazione del vettore 'g_Freq_out'[7] (0x2468790) dalla linea HMM_und.c # 124
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	
+
+7_d - allocazione del vettore 'g_Freq_in'[7] (0x2468858) dalla linea HMM_und.c # 125
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	
+
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 129) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+8_d - allocazione del vettore 'g_tmp2_d'[5] (0x2468920) dalla linea HMM_und.c # 130
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	
+
+9_d - allocazione del vettore 'g_Prob'[7] (0x2468a18) dalla linea HMM_und.c # 133
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	
+
+10_d - allocazione del vettore 'g_STout'[7] (0x2468ae0) dalla linea HMM_und.c # 147
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	
+
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 151) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+8_d - il vettore 'g_tmp2_d' (linea HMM_und.c # 152) esiste gia`: e` stato allocato alla linea HMM_und.c # 130
+
+
+*** createMOD ***
+
+*** createMOD1 ***
+
+*** read_m_i ***
+
+***hubs***
+
+*** pathlength ***
+1_d - allocazione della matrice 'ris'[2 x 2] (0x229c200) dalla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+allocMatr_d+: /home/marco/Documenti/hmm_linux/pathlength.c::ris	
+
+1_d - allocazione del vettore 'g_distanza'[2] (0x335ac30) dalla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+allocVett_d+: /home/marco/Documenti/hmm_linux/pathlength.c::g_distanza	
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - allocazione del vettore 'g_tmp1_d'[2] (0x226de00) dalla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+allocVett_d+: /home/marco/Documenti/hmm_linux/pathlength.c::g_distanza	/home/marco/Documenti/hmm_linux/hubs.c::g_tmp1_d	
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - allocazione del vettore 'ris'[2] (0x23bc830) dalla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+allocVett_d+: /home/marco/Documenti/hmm_linux/pathlength.c::g_distanza	/home/marco/Documenti/hmm_linux/hubs.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/cluster_coeff.c::ris	
+
+
+*** Esco da cluster_coeff2 ***
+
+***hubs***
+
+*** pathlength ***
+1_d - la matrice 'ris' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 43) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 38) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - il vettore 'ris' (linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+
+***hubs***
+
+*** pathlength ***
+1_d - la matrice 'ris' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 43) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 38) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 52) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+4_d - allocazione del vettore 'g_P'[2] (0x2630890) dalla linea /home/marco/Documenti/hmm_linux/hubs.c # 53
+allocVett_d+: /home/marco/Documenti/hmm_linux/pathlength.c::g_distanza	/home/marco/Documenti/hmm_linux/hubs.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/cluster_coeff.c::ris	/home/marco/Documenti/hmm_linux/hubs.c::g_P	
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - il vettore 'ris' (linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+
+***hubs***
+
+*** pathlength ***
+1_d - la matrice 'ris' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 43) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 38) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 52) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+4_d - il vettore 'g_P' (linea /home/marco/Documenti/hmm_linux/hubs.c # 53) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 53
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - il vettore 'ris' (linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+
+***hubs***
+
+*** pathlength ***
+1_d - la matrice 'ris' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 43) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 38) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - il vettore 'ris' (linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+
+***hubs***
+
+*** pathlength ***
+1_d - la matrice 'ris' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 43) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 38) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - il vettore 'ris' (linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+
+***hubs***
+
+*** pathlength ***
+1_d - la matrice 'ris' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 43) esiste gia`: e` stata allocata alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 43
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+1_d - il vettore 'g_distanza' (linea /home/marco/Documenti/hmm_linux/pathlength.c # 50) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/pathlength.c # 50
+
+
+*** Esco da pathlength ***
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 38) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+2_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/hubs.c # 52) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 38
+
+4_d - il vettore 'g_P' (linea /home/marco/Documenti/hmm_linux/hubs.c # 53) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/hubs.c # 53
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+3_d - il vettore 'ris' (linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+3_d - disallocazione del vettore 'ris'[2] (0x23bc830) dalla linea /home/marco/Documenti/hmm_linux/create_mod.c # 102
+allocVett_d-: /home/marco/Documenti/hmm_linux/pathlength.c::g_distanza	/home/marco/Documenti/hmm_linux/hubs.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/hubs.c::g_P	
+
+
+*** Esco da createMOD1 ***
+1_d - disallocazione del vettore 'g_distanza'[2] (0x335ac30) dalla linea /home/marco/Documenti/hmm_linux/globali.c # 324
+allocVett_d-: /home/marco/Documenti/hmm_linux/hubs.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/hubs.c::g_P	
+
+4_d - disallocazione del vettore 'g_P'[2] (0x2630890) dalla linea /home/marco/Documenti/hmm_linux/globali.c # 331
+allocVett_d-: /home/marco/Documenti/hmm_linux/hubs.c::g_tmp1_d	
+
+2_d - disallocazione del vettore 'g_tmp1_d'[2] (0x226de00) dalla linea /home/marco/Documenti/hmm_linux/globali.c # 335
+allocVett_d-: 
+
+1_d - disallocazione della matrice 'ris'[2 x 2] (0x229c200) dalla linea /home/marco/Documenti/hmm_linux/globali.c # 338
+allocMatr_d-: 
+
+--------------------------------------
+--------------------------------------
+
+*** HMM ***
+1_d - allocazione del vettore 'prior_p_subnet'[0] (0x3380af0) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 1010
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	
+
+
+*** HMM1 ***
+2_d - allocazione del vettore 'g_scalare_d'[1] (0x26c0b20) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 76
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	
+
+3_d - allocazione del vettore 'g_scalare1_d'[1] (0x25460a0) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 77
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	
+
+4_d - allocazione del vettore 'g_prior_p_subnet'[7] (0x26c0730) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 80
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	
+
+2_d - il vettore 'g_scalare_d' (linea /home/marco/Documenti/hmm_linux/HMM.c # 129) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/HMM.c # 76
+
+5_d - allocazione del vettore 'g_tmp1_d'[11] (0x2422a20) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 131
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	
+
+6_d - allocazione del vettore 'g_Freq_out'[12] (0x2477990) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 132
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	
+
+7_d - allocazione del vettore 'g_Freq_in'[12] (0x2f5db50) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 133
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	
+
+5_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/HMM.c # 137) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/HMM.c # 131
+
+8_d - allocazione del vettore 'g_tmp2_d'[10] (0x2f5db80) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 138
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	
+
+9_d - allocazione del vettore 'g_Prob'[12] (0x24b12b0) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 141
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	
+
+10_d - allocazione del vettore 'g_STout'[12] (0x2fd8ae0) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 155
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	/home/marco/Documenti/hmm_linux/HMM.c::g_STout	
+
+11_d - allocazione del vettore 'g_STin'[12] (0x2881020) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 157
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	/home/marco/Documenti/hmm_linux/HMM.c::g_STout	/home/marco/Documenti/hmm_linux/HMM.c::g_STin	
+
+5_d - il vettore 'g_tmp1_d' (linea /home/marco/Documenti/hmm_linux/HMM.c # 190) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/HMM.c # 131
+
+*** il vettore 'g_tmp1_d' verra` riallocato passando da 11 a 34 (1 riallocazione/i, finora)
+
+8_d - il vettore 'g_tmp2_d' (linea /home/marco/Documenti/hmm_linux/HMM.c # 191) esiste gia`: e` stato allocato alla linea /home/marco/Documenti/hmm_linux/HMM.c # 138
+
+*** il vettore 'g_tmp2_d' verra` riallocato passando da 10 a 32 (1 riallocazione/i, finora)
+
+1_d - allocazione della matrice 'g_aus'[12 x 2] (0x2881050) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 192
+allocMatr_d+: /home/marco/Documenti/hmm_linux/HMM.c::g_aus	
+
+12_d - allocazione del vettore 'g_toll'[12] (0x2f8dff0) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 194
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	/home/marco/Documenti/hmm_linux/HMM.c::g_STout	/home/marco/Documenti/hmm_linux/HMM.c::g_STin	/home/marco/Documenti/hmm_linux/HMM.c::g_toll	
+
+13_d - allocazione del vettore 'g_CCp'[7] (0x23c2f20) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 204
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	/home/marco/Documenti/hmm_linux/HMM.c::g_STout	/home/marco/Documenti/hmm_linux/HMM.c::g_STin	/home/marco/Documenti/hmm_linux/HMM.c::g_toll	/home/marco/Documenti/hmm_linux/HMM.c::g_CCp	
+
+
+***cluster_coeff***
+14_d - allocazione del vettore 'ris'[10] (0x31d9b40) dalla linea /home/marco/Documenti/hmm_linux/cluster_coeff.c # 31
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	/home/marco/Documenti/hmm_linux/HMM.c::g_STout	/home/marco/Documenti/hmm_linux/HMM.c::g_STin	/home/marco/Documenti/hmm_linux/HMM.c::g_toll	/home/marco/Documenti/hmm_linux/HMM.c::g_CCp	/home/marco/Documenti/hmm_linux/cluster_coeff.c::ris	
+
+
+*** Esco da cluster_coeff2 ***
+15_d - allocazione del vettore 'g_ppp'[7] (0x20b1990) dalla linea /home/marco/Documenti/hmm_linux/HMM.c # 301
+allocVett_d+: /home/marco/Documenti/hmm_linux/HMM.c::prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare_d	/home/marco/Documenti/hmm_linux/HMM.c::g_scalare1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_prior_p_subnet	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp1_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_out	/home/marco/Documenti/hmm_linux/HMM.c::g_Freq_in	/home/marco/Documenti/hmm_linux/HMM.c::g_tmp2_d	/home/marco/Documenti/hmm_linux/HMM.c::g_Prob	/home/marco/Documenti/hmm_linux/HMM.c::g_STout	/home/marco/Documenti/hmm_linux/HMM.c::g_STin	/home/marco/Documenti/hmm_linux/HMM.c::g_toll	/home/marco/Documenti/hmm_linux/HMM.c::g_CCp	/home/marco/Documenti/hmm_linux/cluster_coeff.c::ris	/home/marco/Documenti/hmm_linux/HMM.c::g_ppp	
+
+
+***sampleB_p***
+
+*** sample_p ***

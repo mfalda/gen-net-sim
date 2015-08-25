@@ -1,0 +1,12 @@
+ifdef debug
+	PKG_LIBS= -g -lm -L. -lr2c_debug -LG:/C/glib2.18/lib -lglib-2.0
+	PKG_CFLAGS=-IG:/C/glib2.18/include/glib-2.0 -IG:/R-2.8.1/include -IG:/C/gsl/include -mno-cygwin -fshort-enums -DFDEBUG -DMDEBUG -Wconversion -Wfloat-equal -g
+else
+	ifdef moduli
+		PKG_LIBS= -g -lm -L. -lr2c_moduli -LG:/C/glib2.18/lib -lglib-2.0
+		PKG_CFLAGS=-IG:/C/glib2.18/include/glib-2.0 -IG:/R-2.8.1/include -IG:/C/gsl/include -mno-cygwin -fshort-enums -DFDEBUG -DMDEBUG -DDET -Wconversion -Wfloat-equal -g
+	else
+		PKG_LIBS= -g -lm -L. -lr2c -LG:/C/glib2.18/lib -lglib-2.0
+		PKG_CFLAGS=-IG:/C/glib2.18/include/glib-2.0 -IG:/R-2.8.1/include -IG:/C/gsl/include -mno-cygwin -fshort-enums -DNDEBUG -march=i686 -g
+	endif
+endif

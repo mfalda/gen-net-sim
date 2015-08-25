@@ -1,0 +1,26 @@
+#ifndef EXT_PARS_H
+#define EXT_PARS_H
+
+#include <R.h>
+#include <Rdefines.h>
+
+#include "muParserDLL.h"
+
+#define PARSER_CONST_PI  3.141592653589793238462643
+#define PARSER_CONST_E   2.718281828459045235360287
+
+void OnError(muParserHandle_t hParser);
+
+double Not(double x);
+muFloat_t Mod(muFloat_t v1, muFloat_t v2);
+double Angle(double x, double y);
+double PRamp(double x, double n, double pos, double neg);
+double Periodic1(double x, double n, double a, double b);
+double Periodic2(double x, double n, double a, double b);
+double Fact(double n);
+double Pulse(double x, double p, double r);
+
+muParserHandle_t InitCalc();
+void DeInitCalc(muParserHandle_t hParser);
+
+#endif

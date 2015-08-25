@@ -1,0 +1,23 @@
+1_lst - allocazione della lista 'ris'[5] (02338B58) dalla linea createRules.c # 21
+allocLst+: createRules.c::ris	
+
+2_lst - allocazione della lista 'genenet'[8] (024660B8) dalla linea simulateprofiles.c # 67
+allocLst+: createRules.c::ris	simulateprofiles.c::genenet	
+
+2_lst - disallocazione della lista 'genenet'[8] (024660B8) dalla linea simulateprofiles.c # 148
+allocLst-: createRules.c::ris	
+
+1_lst - disallocazione della lista 'ris'[5] (02338B58) dalla linea simulateprofiles.c # 662
+allocLst-: 
+
+2_lst - disallocazione della lista 'ext_fun'[0] (023322C8) dalla linea simulateprofiles.c # 683
+allocLst-: 
+
+--------------------------------------
+--------------------------------------
+1_lst - allocazione della lista 'Rules'[0] (023311E0) dalla linea simulateprofiles.c # 215
+allocLst+: simulateprofiles.c::Rules	
+
+2_lst - allocazione della lista 'ext_fun'[0] (023322C8) dalla linea simulateprofiles.c # 227
+allocLst+: simulateprofiles.c::Rules	simulateprofiles.c::ext_fun	
+

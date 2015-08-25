@@ -1,0 +1,5 @@
+useDynLib(simulatenet)
+useDynLib(simulateprofiles)
+
+# functions
+export(simulatenet, simulateprofiles)

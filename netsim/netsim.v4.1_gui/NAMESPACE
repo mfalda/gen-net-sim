@@ -1,0 +1,8 @@
+useDynLib(simulatenet)
+useDynLib(simulateprofiles)
+useDynLib(calc)
+
+# functions
+export(simulatenet, simulateprofiles, netsim_generate, netsim_simulate, netsim_profiles, netsim_graph)
+
+import(grid, RGtk2, Rgraphviz, cairoDevice, graph)

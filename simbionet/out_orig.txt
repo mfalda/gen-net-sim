@@ -1,0 +1,112 @@
+700: 11.63 sec
+CPU: Intel Architectural Perfmon, speed 1199 MHz (estimated)
+Counted CPU_CLK_UNHALTED events (Clock cycles when not halted) with a unit mask of 0x00 (No unit mask) count 100000
+samples  %        linenr info                 image name               symbol name
+123815   34.9730  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma1_m_i
+56050    15.8320  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_righe_i
+52226    14.7519  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _trasponi_i
+41602    11.7510  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_colonne_i
+18612     5.2572  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_m_rowindxne_i
+16368     4.6233  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_riga_i
+11262     3.1811  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _elimina1_indx_i
+11137     3.1458  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_m_indxne_i
+6396      1.8066  (no location information)   /usr/lib/R/lib/libR.so   /usr/lib/R/lib/libR.so
+4758      1.3440  (no location information)   /lib/libc-2.10.1.so      /lib/libc-2.10.1.so
+3072      0.8677  (no location information)   /lib/libglib-2.0.so.0.2200.3 /lib/libglib-2.0.so.0.2200.3
+808       0.2282  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so Uguale
+783       0.2212  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna_v_indxNA_d
+741       0.2093  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _esiste_v_i
+481       0.1359  /home/marco/Documenti/hmm_linux/hist.c:10 /home/marco/Documenti/hmm_linux/hmm.so _hist1
+371       0.1048  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_vs_i
+340       0.0960  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _f_aux_d
+328       0.0926  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _InitMatr_i
+272       0.0768  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _diff_vv_d
+257       0.0726  (no location information)   /lib/libz.so.1.2.3.3     /lib/libz.so.1.2.3.3
+254       0.0717  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _aggiungi_ms_rigaindx_i
+236       0.0667  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxNA_d
+229       0.0647  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna_v_indxNA_i
+197       0.0556  /home/marco/Documenti/hmm_linux/cluster_coeff.c:8 /home/marco/Documenti/hmm_linux/hmm.so cluster_coeff2
+160       0.0452  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _elimina_doppi_i
+155       0.0438  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _cbind2v_d
+155       0.0438  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _setdiff_i
+148       0.0418  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxeq_d
+138       0.0390  /home/marco/Documenti/hmm_linux/write_table.c:5 /home/marco/Documenti/hmm_linux/hmm.so write_m_i
+131       0.0370  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _creaVett_i
+121       0.0342  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _max_righe_d
+116       0.0328  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _abs1_v_d
+115       0.0325  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _copia_v_indx_d
+110       0.0311  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_m_indxgt_i
+97        0.0274  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxgt_d
+94        0.0266  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxlt_d
+93        0.0263  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _seq_i
+91        0.0257  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_vs_d
+88        0.0249  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _f_aux10_d
+82        0.0232  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _creaVett_d
+80        0.0226  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _unione1_i
+73        0.0206  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _min_v_d
+72        0.0203  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxne_d
+61        0.0172  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_vv_d
+59        0.0167  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_s_diag_i
+58        0.0164  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_ms_indx_i
+56        0.0158  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _media_v_d
+55        0.0155  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxne_i
+53        0.0150  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _dividi1_vs_d
+51        0.0144  (no location information)   /lib/ld-2.10.1.so        /lib/ld-2.10.1.so
+48        0.0136  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _dividi_vs_d
+46        0.0130  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _interseca_i
+44        0.0124  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _InitMatr_d
+44        0.0124  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _rep_s_d
+42        0.0119  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _copia_v_i
+41        0.0116  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _InitVett_d
+41        0.0116  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _max_v_i
+40        0.0113  /home/marco/Documenti/hmm_linux/HMM.c:65 /home/marco/Documenti/hmm_linux/hmm.so HMM1
+38        0.0107  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_v_d
+36        0.0102  /home/marco/Documenti/hmm_linux/scoremodular.c:29 /home/marco/Documenti/hmm_linux/hmm.so score1
+35        0.0099  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_vs_indx_d
+33        0.0093  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _aggiungi_ms_riga_i
+31        0.0088  /home/marco/Documenti/hmm_linux/sample.c:187 /home/marco/Documenti/hmm_linux/hmm.so sample1
+29        0.0082  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_m_indxlt_i
+29        0.0082  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma_m_d
+26        0.0073  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _aggiungi_mv_riga_i
+26        0.0073  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _copia_m_i
+25        0.0071  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _aggiungi_mv_riga_d
+21        0.0059  (no location information)   /lib/libm-2.10.1.so      /lib/libm-2.10.1.so
+17        0.0048  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _creaMatr_d
+16        0.0045  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _daMATRICE_i
+16        0.0045  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _moltiplica_vv_d
+15        0.0042  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _creaMatr_i
+14        0.0040  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _copia_m_d
+14        0.0040  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _riga_d
+13        0.0037  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxle_d
+12        0.0034  /home/marco/Documenti/hmm_linux/probmod.c:26 /home/marco/Documenti/hmm_linux/hmm.so probmod2
+10        0.0028  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _incr1_v_indx_i
+10        0.0028  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_v_indxgt_i
+9         0.0025  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_m_colindxeq_i
+8         0.0023  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_v_indx_d
+7         0.0020  /home/marco/Documenti/hmm_linux/assign_nodes.c:19 /home/marco/Documenti/hmm_linux/hmm.so assign_nodes2
+6         0.0017  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _InitVett_i
+6         0.0017  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _Intestazione
+6         0.0017  /home/marco/Documenti/hmm_linux/sample.c:229 /home/marco/Documenti/hmm_linux/hmm.so _sample_p
+6         0.0017  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_vv_eq_i
+5         0.0014  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_v_segmv_d
+5         0.0014  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _copia_v_d
+5         0.0014  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _ordine_i
+4         0.0011  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _accoda1_vv_i
+4         0.0011  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _assegna1_v_indxNA_d
+4         0.0011  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _cancellaVett_i
+4         0.0011  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _copia_v_indx_i
+4         0.0011  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _promuovi_i
+4         0.0011  /home/marco/Documenti/hmm_linux/sampleB.c:8 /home/marco/Documenti/hmm_linux/hmm.so _sampleB_p
+3        8.5e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _min_s_d
+3        8.5e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _somma1_vs_d
+3        8.5e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _vettore3s_i
+3        8.5e-04  (no location information)   /usr/lib/R/library/methods/libs/methods.so /usr/lib/R/library/methods/libs/methods.so
+2        5.6e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so StrBilanciam
+2        5.6e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _vettore3s_d
+2        5.6e-04  (no location information)   /lib/libnss_compat-2.10.1.so /lib/libnss_compat-2.10.1.so
+1        2.8e-04  (no location information)   /home/marco/Documenti/hmm_linux/create_mod.so _creaVett_i
+1        2.8e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _cbind2v_i
+1        2.8e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _min_s_i
+1        2.8e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _seq_d
+1        2.8e-04  (no location information)   /home/marco/Documenti/hmm_linux/hmm.so _which_m_rowindxeq_i
+1        2.8e-04  (no location information)   /usr/lib/libgsl.so.0.13.0 /usr/lib/libgsl.so.0.13.0

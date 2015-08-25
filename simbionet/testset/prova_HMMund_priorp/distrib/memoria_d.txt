@@ -1,0 +1,1511 @@
+
+*** HMM ***
+1_d - allocazione del vettore 'prior_p_subnet'[0] (0x19b90d0) dalla linea HMM_und.c # 841
+allocVett_d+: HMM_und.c::prior_p_subnet	
+
+
+***HMM1_und***
+2_d - allocazione del vettore 'g_scalare_d'[1] (0x41628c8) dalla linea HMM_und.c # 77
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	
+
+3_d - allocazione del vettore 'g_scalare1_d'[1] (0x41627b0) dalla linea HMM_und.c # 78
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	
+
+4_d - allocazione del vettore 'g_prior_p_subnet'[7] (0x4162780) dalla linea HMM_und.c # 81
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	
+
+2_d - il vettore 'g_scalare_d' (linea HMM_und.c # 121) esiste gia`: e` stato allocato alla linea HMM_und.c # 77
+
+5_d - allocazione del vettore 'g_tmp1_d'[6] (0x19b9110) dalla linea HMM_und.c # 123
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	
+
+6_d - allocazione del vettore 'g_Freq_out'[7] (0x19c2bd8) dalla linea HMM_und.c # 124
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	
+
+7_d - allocazione del vettore 'g_Freq_in'[7] (0x19bdd00) dalla linea HMM_und.c # 125
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	
+
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 129) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+8_d - allocazione del vettore 'g_tmp2_d'[5] (0x191e470) dalla linea HMM_und.c # 130
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	
+
+9_d - allocazione del vettore 'g_Prob'[7] (0x191e568) dalla linea HMM_und.c # 133
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	
+
+10_d - allocazione del vettore 'g_STout'[7] (0x191e630) dalla linea HMM_und.c # 147
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	
+
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 151) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+8_d - il vettore 'g_tmp2_d' (linea HMM_und.c # 152) esiste gia`: e` stato allocato alla linea HMM_und.c # 130
+
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 157) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+*** il vettore 'g_tmp1_d' verra` riallocato passando da 6 a 19 (1 riallocazione/i, finora)
+
+8_d - il vettore 'g_tmp2_d' (linea HMM_und.c # 158) esiste gia`: e` stato allocato alla linea HMM_und.c # 130
+
+*** il vettore 'g_tmp2_d' verra` riallocato passando da 5 a 17 (1 riallocazione/i, finora)
+
+1_d - allocazione della matrice 'g_aus'[7 x 2] (0x191e6f8) dalla linea HMM_und.c # 159
+allocMatr_d+: HMM_und.c::g_aus	
+
+11_d - allocazione del vettore 'g_toll'[7] (0x191e7b0) dalla linea HMM_und.c # 161
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	
+
+12_d - allocazione del vettore 'g_CCp'[7] (0x191ea20) dalla linea HMM_und.c # 171
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	
+
+13_d - allocazione del vettore 'g_p'[1] (0x191ebc0) dalla linea HMM_und.c # 193
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	
+
+
+***cluster_coeff***
+14_d - allocazione del vettore 'ris'[5] (0x1a66e98) dalla linea cluster_coeff.c # 31
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	
+
+
+*** Esco da cluster_coeff2 ***
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 220) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+15_d - allocazione del vettore 'g_ppp'[7] (0x1a67388) dalla linea HMM_und.c # 267
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	
+
+
+***sampleB_p***
+
+*** sample_p ***
+
+***probmod_und***
+16_d - allocazione del vettore 'g_scalare_d'[1] (0x1a67698) dalla linea probmod_und.c # 48
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	
+
+2_d - allocazione della matrice 'ris'[2 x 5] (0x1a67928) dalla linea probmod_und.c # 57
+allocMatr_d+: HMM_und.c::g_aus	probmod_und.c::ris	
+
+
+***score***
+17_d - allocazione del vettore 'g_scalare_d'[1] (0x1a67dc8) dalla linea scoremodular.c # 43
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	
+
+18_d - allocazione del vettore 'g_T1'[5] (0x191f0b0) dalla linea scoremodular.c # 49
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	
+
+19_d - allocazione del vettore 'g_T2'[5] (0x191f1d0) dalla linea scoremodular.c # 52
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	
+
+20_d - allocazione del vettore 'g_old1'[5] (0x191f2e0) dalla linea scoremodular.c # 55
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	
+
+21_d - allocazione del vettore 'g_old2'[5] (0x191f3f8) dalla linea scoremodular.c # 58
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	
+
+22_d - allocazione del vettore 'g_new1'[5] (0x191f510) dalla linea scoremodular.c # 60
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	
+
+23_d - allocazione del vettore 'g_new2'[5] (0x191f628) dalla linea scoremodular.c # 62
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	
+
+24_d - allocazione del vettore 'g_toll1'[5] (0x191f740) dalla linea scoremodular.c # 66
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	
+
+25_d - allocazione del vettore 'g_toll2'[5] (0x191f858) dalla linea scoremodular.c # 70
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	
+
+26_d - allocazione del vettore 'g_a'[5] (0x191f970) dalla linea scoremodular.c # 72
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	
+
+27_d - allocazione del vettore 'g_b'[5] (0x191fa80) dalla linea scoremodular.c # 75
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	
+
+3_d - allocazione della matrice 'g_tmpm_d'[5 x 2] (0x191fc60) dalla linea scoremodular.c # 92
+allocMatr_d+: HMM_und.c::g_aus	probmod_und.c::ris	scoremodular.c::g_tmpm_d	
+
+28_d - allocazione del vettore 'g_m'[5] (0x191fdc8) dalla linea scoremodular.c # 93
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	
+
+29_d - allocazione del vettore 'g_S1'[5] (0x191fed8) dalla linea scoremodular.c # 95
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	
+
+30_d - allocazione del vettore 'g_tmp1_d'[5] (0x1920320) dalla linea scoremodular.c # 97
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - allocazione del vettore 'g_S2'[5] (0x19207b8) dalla linea scoremodular.c # 142
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - allocazione del vettore 'Sc'[5] (0x1920990) dalla linea scoremodular.c # 173
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	
+
+33_d - allocazione del vettore 'g_tmp_d1'[5] (0x1920c00) dalla linea probmod_und.c # 107
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+4_d - allocazione della matrice 'ris'[2 x 5] (0x19213c8) dalla linea probmod_und.c # 57
+allocMatr_d+: HMM_und.c::g_aus	probmod_und.c::ris	scoremodular.c::g_tmpm_d	probmod_und.c::ris	
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+5_d - allocazione della matrice 'ris'[2 x 5] (0x19215e8) dalla linea probmod_und.c # 57
+allocMatr_d+: HMM_und.c::g_aus	probmod_und.c::ris	scoremodular.c::g_tmpm_d	probmod_und.c::ris	probmod_und.c::ris	
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+34_d - allocazione del vettore 'g_pm'[3] (0x19211d0) dalla linea HMM_und.c # 340
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	
+
+35_d - allocazione del vettore 'g_prob_mod'[3] (0x1921270) dalla linea HMM_und.c # 341
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	
+
+
+***sampleB_p***
+
+*** sample_p ***
+6_d - allocazione della matrice 'g_Sc'[2 x 5] (0x1921cc8) dalla linea HMM_und.c # 372
+allocMatr_d+: HMM_und.c::g_aus	probmod_und.c::ris	scoremodular.c::g_tmpm_d	probmod_und.c::ris	probmod_und.c::ris	HMM_und.c::g_Sc	
+
+
+***sampleB***
+
+***sample***
+
+***assign_nodes_und***
+36_d - allocazione del vettore 'g_p'[5] (0x1922690) dalla linea assign_nodes_und.c # 61
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	
+
+37_d - allocazione del vettore 'g_tmp_d'[5] (0x1922aa0) dalla linea assign_nodes_und.c # 81
+allocVett_d+: HMM_und.c::prior_p_subnet	HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 83) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+
+***sampleB_p***
+
+*** sample_p ***
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 61) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+37_d - il vettore 'g_tmp_d' (linea assign_nodes_und.c # 81) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 81
+
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 83) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+
+***sampleB_p***
+
+*** sample_p ***
+
+*** hist1 ***
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 695) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+
+***cluster_coeff***
+14_d - il vettore 'ris' (linea cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 220) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+15_d - il vettore 'g_ppp' (linea HMM_und.c # 267) esiste gia`: e` stato allocato alla linea HMM_und.c # 267
+
+
+***sampleB_p***
+
+*** sample_p ***
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+2_d - la matrice 'ris' (linea probmod_und.c # 57) esiste gia`: e` stata allocata alla linea probmod_und.c # 57
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+4_d - la matrice 'ris' (linea probmod_und.c # 57) esiste gia`: e` stata allocata alla linea probmod_und.c # 57
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+5_d - la matrice 'ris' (linea probmod_und.c # 57) esiste gia`: e` stata allocata alla linea probmod_und.c # 57
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+34_d - il vettore 'g_pm' (linea HMM_und.c # 340) esiste gia`: e` stato allocato alla linea HMM_und.c # 340
+
+35_d - il vettore 'g_prob_mod' (linea HMM_und.c # 341) esiste gia`: e` stato allocato alla linea HMM_und.c # 341
+
+
+***sampleB_p***
+
+*** sample_p ***
+6_d - la matrice 'g_Sc' (linea HMM_und.c # 379) esiste gia`: e` stata allocata alla linea HMM_und.c # 372
+
+
+***assign_nodes_und***
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 61) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+37_d - il vettore 'g_tmp_d' (linea assign_nodes_und.c # 81) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 81
+
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 83) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+
+***sampleB_p***
+
+*** sample_p ***
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 61) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+37_d - il vettore 'g_tmp_d' (linea assign_nodes_und.c # 81) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 81
+
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 83) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+
+***sampleB_p***
+
+*** sample_p ***
+
+*** hist1 ***
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 695) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+
+***cluster_coeff***
+14_d - il vettore 'ris' (linea cluster_coeff.c # 31) esiste gia`: e` stato allocato alla linea cluster_coeff.c # 31
+
+
+*** Esco da cluster_coeff2 ***
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 220) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+15_d - il vettore 'g_ppp' (linea HMM_und.c # 267) esiste gia`: e` stato allocato alla linea HMM_und.c # 267
+
+
+***sampleB_p***
+
+*** sample_p ***
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+2_d - la matrice 'ris' (linea probmod_und.c # 57) esiste gia`: e` stata allocata alla linea probmod_und.c # 57
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+4_d - la matrice 'ris' (linea probmod_und.c # 57) esiste gia`: e` stata allocata alla linea probmod_und.c # 57
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+
+***probmod_und***
+16_d - il vettore 'g_scalare_d' (linea probmod_und.c # 48) esiste gia`: e` stato allocato alla linea probmod_und.c # 48
+
+5_d - la matrice 'ris' (linea probmod_und.c # 57) esiste gia`: e` stata allocata alla linea probmod_und.c # 57
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+***score***
+17_d - il vettore 'g_scalare_d' (linea scoremodular.c # 43) esiste gia`: e` stato allocato alla linea scoremodular.c # 43
+
+18_d - il vettore 'g_T1' (linea scoremodular.c # 49) esiste gia`: e` stato allocato alla linea scoremodular.c # 49
+
+19_d - il vettore 'g_T2' (linea scoremodular.c # 52) esiste gia`: e` stato allocato alla linea scoremodular.c # 52
+
+20_d - il vettore 'g_old1' (linea scoremodular.c # 55) esiste gia`: e` stato allocato alla linea scoremodular.c # 55
+
+21_d - il vettore 'g_old2' (linea scoremodular.c # 58) esiste gia`: e` stato allocato alla linea scoremodular.c # 58
+
+22_d - il vettore 'g_new1' (linea scoremodular.c # 60) esiste gia`: e` stato allocato alla linea scoremodular.c # 60
+
+23_d - il vettore 'g_new2' (linea scoremodular.c # 62) esiste gia`: e` stato allocato alla linea scoremodular.c # 62
+
+24_d - il vettore 'g_toll1' (linea scoremodular.c # 66) esiste gia`: e` stato allocato alla linea scoremodular.c # 66
+
+25_d - il vettore 'g_toll2' (linea scoremodular.c # 70) esiste gia`: e` stato allocato alla linea scoremodular.c # 70
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 72) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 75) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 92) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 93) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+29_d - il vettore 'g_S1' (linea scoremodular.c # 95) esiste gia`: e` stato allocato alla linea scoremodular.c # 95
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 97) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 100) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 111) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+26_d - il vettore 'g_a' (linea scoremodular.c # 125) esiste gia`: e` stato allocato alla linea scoremodular.c # 72
+
+27_d - il vettore 'g_b' (linea scoremodular.c # 128) esiste gia`: e` stato allocato alla linea scoremodular.c # 75
+
+3_d - la matrice 'g_tmpm_d' (linea scoremodular.c # 139) esiste gia`: e` stata allocata alla linea scoremodular.c # 92
+
+28_d - il vettore 'g_m' (linea scoremodular.c # 140) esiste gia`: e` stato allocato alla linea scoremodular.c # 93
+
+31_d - il vettore 'g_S2' (linea scoremodular.c # 142) esiste gia`: e` stato allocato alla linea scoremodular.c # 142
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 144) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 147) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 158) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+30_d - il vettore 'g_tmp1_d' (linea scoremodular.c # 163) esiste gia`: e` stato allocato alla linea scoremodular.c # 97
+
+32_d - il vettore 'Sc' (linea scoremodular.c # 173) esiste gia`: e` stato allocato alla linea scoremodular.c # 173
+
+33_d - il vettore 'g_tmp_d1' (linea probmod_und.c # 107) esiste gia`: e` stato allocato alla linea probmod_und.c # 107
+
+
+*** Esco da probmod_und ***
+
+34_d - il vettore 'g_pm' (linea HMM_und.c # 340) esiste gia`: e` stato allocato alla linea HMM_und.c # 340
+
+35_d - il vettore 'g_prob_mod' (linea HMM_und.c # 341) esiste gia`: e` stato allocato alla linea HMM_und.c # 341
+
+
+***sampleB_p***
+
+*** sample_p ***
+6_d - la matrice 'g_Sc' (linea HMM_und.c # 365) esiste gia`: e` stata allocata alla linea HMM_und.c # 372
+
+
+***sampleB***
+
+***sample***
+
+***assign_nodes_und***
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 61) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+37_d - il vettore 'g_tmp_d' (linea assign_nodes_und.c # 81) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 81
+
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 83) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+
+***sampleB_p***
+
+*** sample_p ***
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 61) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+37_d - il vettore 'g_tmp_d' (linea assign_nodes_und.c # 81) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 81
+
+36_d - il vettore 'g_p' (linea assign_nodes_und.c # 83) esiste gia`: e` stato allocato alla linea assign_nodes_und.c # 61
+
+
+***sampleB_p***
+
+*** sample_p ***
+
+*** hist1 ***
+5_d - il vettore 'g_tmp1_d' (linea HMM_und.c # 695) esiste gia`: e` stato allocato alla linea HMM_und.c # 123
+
+
+*** write_m_i ***
+
+*** write_m_i ***
+
+*** Esco da HMM1_und ***
+1_d - disallocazione del vettore 'prior_p_subnet'[7] (0x19b90d0) dalla linea HMM_und.c # 884
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+3_d - disallocazione della matrice 'g_tmpm_d'[3 x 2] (0x191fc60) dalla linea globali.c # 340
+allocMatr_d-: HMM_und.c::g_aus	probmod_und.c::ris	probmod_und.c::ris	probmod_und.c::ris	HMM_und.c::g_Sc	
+
+17_d - disallocazione del vettore 'g_scalare_d'[1] (0x1a67dc8) dalla linea globali.c # 341
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_tmp1_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+30_d - disallocazione del vettore 'g_tmp1_d'[0] (0x1920320) dalla linea globali.c # 344
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_T1	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+18_d - disallocazione del vettore 'g_T1'[3] (0x191f0b0) dalla linea globali.c # 345
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_T2	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+19_d - disallocazione del vettore 'g_T2'[3] (0x191f1d0) dalla linea globali.c # 346
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_old1	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+20_d - disallocazione del vettore 'g_old1'[3] (0x191f2e0) dalla linea globali.c # 347
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_old2	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+21_d - disallocazione del vettore 'g_old2'[3] (0x191f3f8) dalla linea globali.c # 348
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_new1	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+22_d - disallocazione del vettore 'g_new1'[3] (0x191f510) dalla linea globali.c # 349
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_new2	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+23_d - disallocazione del vettore 'g_new2'[3] (0x191f628) dalla linea globali.c # 350
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_toll1	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+24_d - disallocazione del vettore 'g_toll1'[3] (0x191f740) dalla linea globali.c # 351
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_toll2	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+25_d - disallocazione del vettore 'g_toll2'[3] (0x191f858) dalla linea globali.c # 352
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_a	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+26_d - disallocazione del vettore 'g_a'[3] (0x191f970) dalla linea globali.c # 353
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_b	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+27_d - disallocazione del vettore 'g_b'[3] (0x191fa80) dalla linea globali.c # 354
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_m	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+28_d - disallocazione del vettore 'g_m'[3] (0x191fdc8) dalla linea globali.c # 356
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_S1	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+29_d - disallocazione del vettore 'g_S1'[3] (0x191fed8) dalla linea globali.c # 357
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::g_S2	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+31_d - disallocazione del vettore 'g_S2'[3] (0x19207b8) dalla linea globali.c # 358
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_toll	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+11_d - disallocazione del vettore 'g_toll'[7] (0x191e7b0) dalla linea globali.c # 517
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_prior_p_subnet	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+4_d - disallocazione del vettore 'g_prior_p_subnet'[7] (0x4162780) dalla linea globali.c # 518
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_Freq_in	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+7_d - disallocazione del vettore 'g_Freq_in'[7] (0x19bdd00) dalla linea globali.c # 519
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_tmp1_d	HMM_und.c::g_Freq_out	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+6_d - disallocazione del vettore 'g_Freq_out'[7] (0x19c2bd8) dalla linea globali.c # 520
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_tmp1_d	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+5_d - disallocazione del vettore 'g_tmp1_d'[4] (0x19b9110) dalla linea globali.c # 521
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_tmp2_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+8_d - disallocazione del vettore 'g_tmp2_d'[7] (0x191e470) dalla linea globali.c # 522
+allocVett_d-: HMM_und.c::g_scalare_d	HMM_und.c::g_scalare1_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+2_d - disallocazione del vettore 'g_scalare_d'[1] (0x41628c8) dalla linea globali.c # 523
+allocVett_d-: HMM_und.c::g_scalare1_d	HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+3_d - disallocazione del vettore 'g_scalare1_d'[1] (0x41627b0) dalla linea globali.c # 524
+allocVett_d-: HMM_und.c::g_Prob	HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+9_d - disallocazione del vettore 'g_Prob'[7] (0x191e568) dalla linea globali.c # 525
+allocVett_d-: HMM_und.c::g_STout	HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+10_d - disallocazione del vettore 'g_STout'[7] (0x191e630) dalla linea globali.c # 527
+allocVett_d-: HMM_und.c::g_CCp	HMM_und.c::g_p	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+13_d - disallocazione del vettore 'g_p'[1] (0x191ebc0) dalla linea globali.c # 528
+allocVett_d-: HMM_und.c::g_CCp	cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+12_d - disallocazione del vettore 'g_CCp'[7] (0x191ea20) dalla linea globali.c # 530
+allocVett_d-: cluster_coeff.c::ris	HMM_und.c::g_ppp	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+15_d - disallocazione del vettore 'g_ppp'[7] (0x1a67388) dalla linea globali.c # 531
+allocVett_d-: cluster_coeff.c::ris	probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+14_d - disallocazione del vettore 'ris'[5] (0x1a66e98) dalla linea globali.c # 532
+allocVett_d-: probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_pm	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+34_d - disallocazione del vettore 'g_pm'[3] (0x19211d0) dalla linea globali.c # 534
+allocVett_d-: probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	HMM_und.c::g_prob_mod	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+35_d - disallocazione del vettore 'g_prob_mod'[3] (0x1921270) dalla linea globali.c # 535
+allocVett_d-: probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	assign_nodes_und.c::g_p	assign_nodes_und.c::g_tmp_d	
+
+1_d - disallocazione della matrice 'g_aus'[7 x 2] (0x191e6f8) dalla linea globali.c # 542
+allocMatr_d-: probmod_und.c::ris	probmod_und.c::ris	probmod_und.c::ris	HMM_und.c::g_Sc	
+
+2_d - disallocazione della matrice 'ris'[2 x 3] (0x1a67928) dalla linea globali.c # 543
+allocMatr_d-: probmod_und.c::ris	probmod_und.c::ris	HMM_und.c::g_Sc	
+
+4_d - disallocazione della matrice 'ris'[2 x 3] (0x19213c8) dalla linea globali.c # 544
+allocMatr_d-: probmod_und.c::ris	HMM_und.c::g_Sc	
+
+5_d - disallocazione della matrice 'ris'[2 x 3] (0x19215e8) dalla linea globali.c # 545
+allocMatr_d-: HMM_und.c::g_Sc	
+
+6_d - disallocazione della matrice 'g_Sc'[2 x 3] (0x1921cc8) dalla linea globali.c # 546
+allocMatr_d-: 
+
+37_d - disallocazione del vettore 'g_tmp_d'[2] (0x1922aa0) dalla linea globali.c # 554
+allocVett_d-: probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	assign_nodes_und.c::g_p	
+
+36_d - disallocazione del vettore 'g_p'[2] (0x1922690) dalla linea globali.c # 559
+allocVett_d-: probmod_und.c::g_scalare_d	scoremodular.c::Sc	probmod_und.c::g_tmp_d1	
+
+32_d - disallocazione del vettore 'Sc'[3] (0x1920990) dalla linea globali.c # 566
+allocVett_d-: probmod_und.c::g_scalare_d	probmod_und.c::g_tmp_d1	
+
+16_d - disallocazione del vettore 'g_scalare_d'[1] (0x1a67698) dalla linea globali.c # 568
+allocVett_d-: probmod_und.c::g_tmp_d1	
+
+33_d - disallocazione del vettore 'g_tmp_d1'[1] (0x1920c00) dalla linea globali.c # 585
+allocVett_d-: 
+
+--------------------------------------
+--------------------------------------

@@ -1,0 +1,6734 @@
+
+*** HMM ***
+Il vettore 'degree' e` nullo
+Ho trasformato il vettore prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (1 : 1): [ 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 1 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (1 : 1): [ 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (2 : 2): [ 1 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (1 : 1): [ 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (2 : 2): [ 1 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+
+***HMM1_und***
+81: copia_v_d	<=>	ris[st:end] <- v[st:end]
+prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+st = 1
+end = 7
+
+
+g_prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+------------------------------ Fine copia_v_d
+
+91: rep_s_i	<=>	ris <- rep(num, rip)
+num = 0
+rip = 7
+
+
+g_MC (7 : 7): [ 0 0 0 0 0 0 0 ]
+------------------------------ Fine rep_s_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 0 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 0 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 0 2 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 0 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 2 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 2 1 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 2 1 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+97: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 2 2 ]
+------------------------------ Fine somma_righe_i
+
+101: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 2 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+107: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_SIMM (7 : 7): [ 0 0 0 1 1 0 1 ]
+val = 0
+
+
+g_tmp1_i (4 : 11): [ 1 2 3 6 ]
+------------------------------ Fine which_v_indxeq_i
+
+108: assegna1_v_indx_d	<=>	v[indx] <- val
+g_prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+g_tmp1_i (4 : 11): [ 1 2 3 6 ]
+val = 0
+
+
+g_prior_p_subnet (7 : 7): [ 0 0 0 0.1428571428571428 0.1428571428571428 0 0.1428571428571428 ]
+------------------------------ Fine assegna1_v_indx_d
+
+110: somma_v_d	<=>	ris <- sum(v, na.rm=canc_NA)
+g_prior_p_subnet (7 : 7): [ 0 0 0 0.1428571428571428 0.1428571428571428 0 0.1428571428571428 ]
+canc_NA = 0
+
+
+
+ris: 0.4285714285714285
+------------------------------ Fine somma_v_d
+
+110: dividi1_vs_d	<=>	v <- v / div
+g_prior_p_subnet (7 : 7): [ 0 0 0 0.1428571428571428 0.1428571428571428 0 0.1428571428571428 ]
+div = 0.429
+
+
+g_prior_p_subnet (7 : 7): [ 0 0 0 0.3333333333333333 0.3333333333333333 0 0.3333333333333333 ]
+------------------------------ Fine dividi1_vs_d
+
+113: rep_s_i	<=>	ris <- rep(num, rip)
+num = -1
+rip = 5
+
+
+g_LG (5 : 5): [ -1 -1 -1 -1 -1 ]
+------------------------------ Fine rep_s_i
+
+116: InitMatr_i
+ris (5 x 5 : 5 x 5): [
+	 0 36460096 0 2819640 2117700569
+	 0 37494680 14713528 28 2118062216
+	 10 0 14713424 0 3
+	 2 3 14713316 1212 14713388
+	 0 44357263 2117780008 1 2117780028
+ ]
+val = 0
+
+
+ris (5 x 5 : 5 x 5): [
+	 0 0 0 0 0
+	 0 0 0 0 0
+	 0 0 0 0 0
+	 0 0 0 0 0
+	 0 0 0 0 0
+ ]
+------------------------------ Fine InitMatr_i
+
+123: rep_s_d	<=>	ris <- rep(num, rip)
+num = 0
+rip = 6
+
+
+g_tmp1_d (6 : 6): [ 0 0 0 0 0 0 ]
+------------------------------ Fine rep_s_d
+
+124: vettore2v_d		<=>	ris <- c(v1, v2)
+g_scalare_d (1 : 1): [ 5 ]
+g_tmp1_d (6 : 6): [ 0 0 0 0 0 0 ]
+
+
+g_Freq_out (7 : 7): [ 5 0 0 0 0 0 0 ]
+------------------------------ Fine vettore2v_d
+
+125: copia_v_d	<=>	ris[st:end] <- v[st:end]
+g_Freq_out (7 : 7): [ 5 0 0 0 0 0 0 ]
+st = 1
+end = 7
+
+
+g_Freq_in (7 : 7): [ 5 0 0 0 0 0 0 ]
+------------------------------ Fine copia_v_d
+
+129: seq_d	<=>	ris <- seq(da, a, incr)
+da = 1
+a = 5
+incr = 1
+
+
+g_tmp1_d (5 : 6): [ 1 2 3 4 5 ]
+------------------------------ Fine seq_d
+
+130: exp_d	<=>	ris <- v ^ val
+g_tmp1_d (5 : 6): [ 1 2 3 4 5 ]
+val = -2.2
+
+
+g_tmp2_d (5 : 5): [ 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 ]
+------------------------------ Fine exp_d
+
+133: vettore3v_d		<=>	ris <- c(v1, v2, v3)
+g_scalare1_d (1 : 1): [ nan ]
+g_tmp2_d (5 : 5): [ 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 ]
+g_scalare_d (1 : 1): [ 0 ]
+
+
+g_Prob (7 : 7): [ nan 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0 ]
+------------------------------ Fine vettore3v_d
+
+135: somma_v_d	<=>	ris <- sum(v, na.rm=canc_NA)
+g_Prob (7 : 7): [ nan 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0 ]
+canc_NA = 1
+
+
+
+ris: 1.383188476936837
+------------------------------ Fine somma_v_d
+
+135: dividi1_vs_d	<=>	v <- v / div
+g_Prob (7 : 7): [ nan 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0 ]
+div = 1.383
+
+
+g_Prob (7 : 7): [ nan 0.722967272120837 0.1573448914973642 0.06448398634709047 0.03424417098119949 0.02095967905350884 0 ]
+------------------------------ Fine dividi1_vs_d
+
+147: rep_s_d	<=>	ris <- rep(num, rip)
+num = 0
+rip = 7
+
+
+g_STout (7 : 7): [ 0 0 0 0 0 0 0 ]
+------------------------------ Fine rep_s_d
+
+149: assegna_v_segm_d	<=>	v[st:end] <- val
+g_STout (7 : 7): [ 0 0 0 0 0 0 0 ]
+start = 7
+end = 7
+val = 0
+
+
+g_STout (7 : 7): [ 0 0 0 0 0 0 0 ]
+------------------------------ Fine assegna_v_segm_d
+
+151: segmento_v_d	<=>	ris <- v[st:end]
+g_Prob (7 : 7): [ nan 0.722967272120837 0.1573448914973642 0.06448398634709047 0.03424417098119949 0.02095967905350884 0 ]
+start = 2
+end = 6
+
+
+g_tmp1_d (5 : 6): [ 0.722967272120837 0.1573448914973642 0.06448398634709047 0.03424417098119949 0.02095967905350884 ]
+------------------------------ Fine segmento_v_d
+
+152: moltiplica_vs_d	<=>	ris <- v1 * v2
+g_tmp1_d (5 : 6): [ 0.722967272120837 0.1573448914973642 0.06448398634709047 0.03424417098119949 0.02095967905350884 ]
+val = 5
+
+
+g_tmp2_d (5 : 5): [ 3.614836360604185 0.7867244574868211 0.3224199317354524 0.1712208549059974 0.1047983952675442 ]
+------------------------------ Fine moltiplica_vs_d
+
+154: somma_v_d	<=>	ris <- sum(v, na.rm=canc_NA)
+g_tmp1_d (5 : 6): [ 0.722967272120837 0.1573448914973642 0.06448398634709047 0.03424417098119949 0.02095967905350884 ]
+canc_NA = 1
+
+
+
+ris: 1
+------------------------------ Fine somma_v_d
+
+154: dividi1_vs_d	<=>	v <- v / div
+g_tmp2_d (5 : 5): [ 3.614836360604185 0.7867244574868211 0.3224199317354524 0.1712208549059974 0.1047983952675442 ]
+div = 1.000
+
+
+g_tmp2_d (5 : 5): [ 3.614836360604185 0.7867244574868211 0.3224199317354524 0.1712208549059974 0.1047983952675442 ]
+------------------------------ Fine dividi1_vs_d
+
+155: assegna1_v_segmv_d	<=>	v1[st:end] <- v2
+g_STout (7 : 7): [ 0 0 0 0 0 0 0 ]
+start = 1
+end = 6
+g_tmp2_d (5 : 5): [ 3.614836360604185 0.7867244574868211 0.3224199317354524 0.1712208549059974 0.1047983952675442 ]
+
+*** createMOD ***
+
+*** createMOD1 ***
+
+*** read_m_i ***
+114: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (0 : 0): [ ]
+s: 2
+ATTENZIONE (accoda1_vs_i, linea /home/marco/Documenti/hmm_linux/read_table.c # 114): ingrandito il vettore da 0 a 1
+
+
+tmp_i (1 : 2): [ 2 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (1 : 2): [ 2 ]
+s: 3
+
+
+tmp_i (2 : 2): [ 2 3 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (2 : 2): [ 2 3 ]
+s: 5
+ATTENZIONE (accoda1_vs_i, linea /home/marco/Documenti/hmm_linux/read_table.c # 118): ingrandito il vettore da 2 a 3
+
+
+tmp_i (3 : 6): [ 2 3 5 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (3 : 6): [ 2 3 5 ]
+s: 6
+
+
+tmp_i (4 : 6): [ 2 3 5 6 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (4 : 6): [ 2 3 5 6 ]
+s: 7
+
+
+tmp_i (5 : 6): [ 2 3 5 6 7 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (5 : 6): [ 2 3 5 6 7 ]
+s: 11
+
+
+tmp_i (6 : 6): [ 2 3 5 6 7 11 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (6 : 6): [ 2 3 5 6 7 11 ]
+s: 15
+ATTENZIONE (accoda1_vs_i, linea /home/marco/Documenti/hmm_linux/read_table.c # 118): ingrandito il vettore da 6 a 7
+
+
+tmp_i (7 : 14): [ 2 3 5 6 7 11 15 ]
+------------------------------ Fine accoda1_vs_i
+
+114: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (7 : 14): [ 2 3 5 6 7 11 15 ]
+s: 0
+
+
+tmp_i (8 : 14): [ 2 3 5 6 7 11 15 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (8 : 14): [ 2 3 5 6 7 11 15 0 ]
+s: 0
+
+
+tmp_i (9 : 14): [ 2 3 5 6 7 11 15 0 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (9 : 14): [ 2 3 5 6 7 11 15 0 0 ]
+s: 0
+
+
+tmp_i (10 : 14): [ 2 3 5 6 7 11 15 0 0 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (10 : 14): [ 2 3 5 6 7 11 15 0 0 0 ]
+s: 0
+
+
+tmp_i (11 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (11 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 ]
+s: 0
+
+
+tmp_i (12 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (12 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 0 ]
+s: 1
+
+
+tmp_i (13 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (13 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 ]
+s: 1
+
+
+tmp_i (14 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+114: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (14 : 14): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 ]
+s: 0
+ATTENZIONE (accoda1_vs_i, linea /home/marco/Documenti/hmm_linux/read_table.c # 114): ingrandito il vettore da 14 a 15
+
+
+tmp_i (15 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (15 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 ]
+s: 0
+
+
+tmp_i (16 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (16 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 ]
+s: 1
+
+
+tmp_i (17 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (17 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 ]
+s: 1
+
+
+tmp_i (18 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (18 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 ]
+s: 1
+
+
+tmp_i (19 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (19 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 ]
+s: 0
+
+
+tmp_i (20 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (20 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 ]
+s: 1
+
+
+tmp_i (21 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 ]
+------------------------------ Fine accoda1_vs_i
+
+114: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (21 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 ]
+s: 1
+
+
+tmp_i (22 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (22 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 ]
+s: 1
+
+
+tmp_i (23 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (23 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 ]
+s: 0
+
+
+tmp_i (24 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (24 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 ]
+s: 1
+
+
+tmp_i (25 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (25 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 ]
+s: 1
+
+
+tmp_i (26 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (26 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 ]
+s: 1
+
+
+tmp_i (27 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (27 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 ]
+s: 1
+
+
+tmp_i (28 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+114: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (28 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 ]
+s: 0
+
+
+tmp_i (29 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (29 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 ]
+s: 1
+
+
+tmp_i (30 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (30 : 30): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 ]
+s: 1
+ATTENZIONE (accoda1_vs_i, linea /home/marco/Documenti/hmm_linux/read_table.c # 118): ingrandito il vettore da 30 a 31
+
+
+tmp_i (31 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (31 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 ]
+s: 0
+
+
+tmp_i (32 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (32 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 ]
+s: 1
+
+
+tmp_i (33 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (33 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 1 ]
+s: 1
+
+
+tmp_i (34 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+118: accoda1_vs_i	<=>	v <- c(v, s)
+tmp_i (34 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 1 1 ]
+s: 1
+
+
+tmp_i (35 : 62): [ 2 3 5 6 7 11 15 0 0 0 0 0 1 1 0 0 1 1 1 0 1 1 1 0 1 1 1 1 0 1 1 0 1 1 1 ]
+------------------------------ Fine accoda1_vs_i
+
+ris (5 x 7 : 5 x 7): [
+	 2 3 5 6 7 11 15
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+
+Stringhe allocate: 2 (40 interne); stringhe deallocate: 0 (35 interne)
+
+43: riga_i	<=>	ris <- m[r,]
+ris (5 x 7 : 5 x 7): [
+	 2 3 5 6 7 11 15
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+r = 1
+
+codes (7 : 7): [ 2 3 5 6 7 11 15 ]
+------------------------------ Fine riga_i
+
+45: elimina1_riga_i	<=>	m <- m[-riga,]
+ris (5 x 7 : 5 x 7): [
+	 2 3 5 6 7 11 15
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+riga = 1
+
+
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+------------------------------ Fine elimina1_riga_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 1
+
+tmp1_i (4 : 4): [ 0 0 1 0 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+tmp2_i (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_S (2 : 2): [ 0 1 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 0 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 0 1 ]
+val = 1
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+val = 0
+
+
+g_tmp1_i (1 : 4): [ 3 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+g_tmp1_i (1 : 4): [ 3 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 6.920036712463469e-310 2.121995791459338e-314
+	 6.920036712463469e-310 2.121995791459338e-314
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+c = 1, val = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine which_m_colindxne_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ nan nan ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+c = 2, val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 1 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 nan ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 0): [ ]
+g_neighbours (1 : 4): [ 1 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 1 ]
+
+
+g_visitati (1 : 1): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 1): [ 1 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (0 : 4): [ ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+g_new_neighbours (0 : 0): [ ]
+g_tmp1_i (0 : 4): [ ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (0 : 0): [ ]
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 0): [ ]
+ris (0 : 0): [ ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (0 : 0): [ ]
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (0 : 0): [ ]
+g_visitati (1 : 1): [ 1 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (0 : 0): [ ]
+
+
+indx = 0
+------------------------------ Fine esiste_v_i
+
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 0): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ 1 nan ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan 1
+	 nan nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 nan 1
+	 nan nan
+ ]
+ris (2 x 2 : 2 x 2): [
+	 nan 1
+	 nan nan
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 inf 1
+	 inf inf
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (135 interne); stringhe deallocate: 0 (60 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 inf 1
+	 inf inf
+ ]
+
+
+g_tmp1_d (2 : 2): [ inf inf ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ inf inf ]
+
+
+min = inf
+------------------------------ Fine min_v_d
+
+46: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_H (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 0 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 0 1 ]
+g_tmp1_i (2 : 2): [ 1 0 ]
+
+
+g_S (2 : 2): [ 1 1 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 1 ]
+val = 1
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+g_Hio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (160 interne); stringhe deallocate: 0 (60 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 0
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 0
+ ]
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+val = 0
+
+
+g_ind (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+g_ind (2 : 4): [ 2 3 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 6.920036712472955e-310 1.991137516577458e-316 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (180 interne); stringhe deallocate: 0 (60 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (1 : 1): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubs (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+elem_ris->hubsio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 2
+
+tmp1_i (4 : 4): [ 0 0 1 1 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+tmp2_i (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_S (2 : 2): [ 0 2 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 0 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 0 2 ]
+val = 2
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+val = 0
+
+
+g_tmp1_i (2 : 4): [ 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+g_tmp1_i (2 : 4): [ 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 inf 1
+	 inf inf
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+c = 1, val = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine which_m_colindxne_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ nan nan ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+c = 2, val = 0
+
+
+g_neighbours (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (2 : 4): [ 1 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 1): [ ]
+g_neighbours (2 : 4): [ 1 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 1 2 ]
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (0 : 4): [ ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 0): [ ]
+g_tmp1_i (0 : 4): [ ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (0 : 0): [ ]
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (0 : 0): [ ]
+------------------------------ Fine unione1_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 0): [ ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 2 ]
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 2): [ 1 2 ]
+ris (2 : 2): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (2 : 4): [ 1 2 ]
+g_visitati (2 : 4): [ 1 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (2 : 4): [ 1 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (2 : 4): [ 1 2 ]
+indx = 1
+
+
+ris (1 : 4): [ 2 ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 4): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 4): [ 2 ]
+indx = 1
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 4): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ 1 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan 1
+	 nan 1
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 nan 1
+	 nan 1
+ ]
+ris (2 x 2 : 2 x 2): [
+	 nan 1
+	 nan 1
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 inf 1
+	 inf 1
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (230 interne); stringhe deallocate: 0 (95 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 inf 1
+	 inf 1
+ ]
+
+
+g_tmp1_d (2 : 2): [ inf 1 ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ inf 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+46: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_H (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 0 2 ]
+g_tmp1_i (2 : 2): [ 1 1 ]
+
+
+g_S (2 : 2): [ 1 3 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 3 ]
+
+
+max = 3
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 3 ]
+val = 3
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_Hio (1 : 2): [ 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (230 interne); stringhe deallocate: 0 (95 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 2
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 2
+ ]
+val = 0
+
+
+g_ind (3 : 4): [ 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 2
+ ]
+g_ind (3 : 4): [ 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 0 0 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (230 interne); stringhe deallocate: 0 (95 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (1 : 1): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubs (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubsio (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 3
+
+tmp1_i (4 : 4): [ 0 1 0 1 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+tmp2_i (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_S (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 1 ]
+val = 1
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+val = 0
+
+
+g_tmp1_i (2 : 4): [ 2 4 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+g_tmp1_i (2 : 4): [ 2 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 inf 1
+	 inf 1
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ nan 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (1 : 4): [ 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 2 ]
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 4): [ ]
+g_tmp1_i (1 : 4): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 2 ]
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 2 ]
+ris (1 : 1): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 2 2 ]
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 2 ]
+g_visitati (1 : 4): [ 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 2): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 2): [ 2 ]
+indx = 1
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 2): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ nan 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 1 nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ nan 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (1 : 4): [ 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 2 ]
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 2 ]
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 2 ]
+ris (1 : 1): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 2 2 ]
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 2 ]
+g_visitati (1 : 4): [ 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 2): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 2): [ 2 ]
+indx = 1
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 2): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 1 nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ nan 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 1 1
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 1 1
+ ]
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 1 1
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 inf inf
+	 1 1
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (295 interne); stringhe deallocate: 0 (145 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 inf inf
+	 1 1
+ ]
+
+
+g_tmp1_d (2 : 2): [ inf 1 ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ inf 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+50: assegna1_s_diag_d	<=>	diag_d(m) <- s
+ris (2 x 2 : 2 x 2): [
+	 inf inf
+	 1 1
+ ]
+val = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 0 inf
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_d
+
+52: somma_colonne_d	<=>	ris <- apply(m, 2, sum)
+ris (2 x 2 : 2 x 2): [
+	 0 inf
+	 1 0
+ ]
+
+
+g_tmp1_d (2 : 2): [ 1 inf ]
+------------------------------ Fine somma_colonne_d
+
+53: copia_v_indx_d	<=>	ris <- v[indx]
+g_tmp1_d (2 : 2): [ 1 inf ]
+g_ind (2 : 2): [ 1 2 ]
+
+
+g_P (2 : 2): [ 1 inf ]
+------------------------------ Fine copia_v_indx_d
+
+55: min_v_d	<=>	ris <- min(v)
+g_P (2 : 2): [ 1 inf ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+56: min_v_d	<=>	ris <- min(v)
+g_P (2 : 2): [ 1 inf ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+56: which_v_indxeq_d	<=>	ris <- which(v==val)
+g_P (2 : 2): [ 1 inf ]
+val = 1
+
+
+g_ind2 (1 : 2): [ 1 ]
+------------------------------ Fine which_v_indxeq_d
+
+57: copia_v_indx_i	<=>	ris <- v[indx]
+g_ind (2 : 2): [ 1 2 ]
+g_ind2 (1 : 2): [ 1 ]
+
+
+g_H (1 : 1): [ 1 ]
+------------------------------ Fine copia_v_indx_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 0 2 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 1 1 ]
+g_tmp1_i (2 : 2): [ 0 2 ]
+
+
+g_S (2 : 2): [ 1 3 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 3 ]
+
+
+max = 3
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 3 ]
+val = 3
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_Hio (1 : 2): [ 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (305 interne); stringhe deallocate: 0 (145 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 2
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 2
+ ]
+val = 0
+
+
+g_ind (3 : 4): [ 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 2
+ ]
+g_ind (3 : 4): [ 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 0 0 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (305 interne); stringhe deallocate: 0 (145 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (1 : 1): [ 1 ]
+st = 1
+end = 1
+
+
+elem_ris->hubs (1 : 1): [ 1 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubsio (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 4
+
+tmp1_i (4 : 4): [ 0 1 1 0 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+tmp2_i (0 : 4): [ ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_S (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 1 ]
+val = 1
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+val = 0
+
+
+g_tmp1_i (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+g_tmp1_i (2 : 4): [ 2 3 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 0 inf
+	 1 0
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+c = 1, val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ nan 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (1 : 4): [ 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 2 ]
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 1 ]
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 1 ]
+ris (1 : 1): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 1 ]
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 1 ]
+g_visitati (1 : 4): [ 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 2): [ 1 ]
+
+
+indx = 0
+------------------------------ Fine esiste_v_i
+
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (1 : 2): [ 1 ]
+st = 1
+end = 1
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine copia_v_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan 1 ]
+g_neighbours (1 : 4): [ 1 ]
+val = 2
+
+
+g_distanza (2 : 2): [ 2 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (1 : 4): [ 2 ]
+g_neighbours (1 : 4): [ 1 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 2 1 ]
+
+
+g_visitati (2 : 4): [ 2 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 2 1 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 2 ]
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 2 ]
+ris (1 : 1): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 2 2 ]
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 2 ]
+g_visitati (2 : 4): [ 2 1 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 2): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 2): [ 2 ]
+indx = 1
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (0 : 2): [ ]
+
+
+indx = 0
+------------------------------ Fine esiste_v_i
+
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 2): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ 2 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 2 nan
+	 1 nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+c = 2, val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 1 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 nan ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (1 : 4): [ 1 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 1 ]
+
+
+g_visitati (1 : 4): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 4): [ 1 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 2 ]
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 2 ]
+ris (1 : 1): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 2 2 ]
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 2 ]
+g_visitati (1 : 4): [ 1 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (1 : 2): [ 2 ]
+
+
+indx = 0
+------------------------------ Fine esiste_v_i
+
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine copia_v_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ 1 nan ]
+g_neighbours (1 : 4): [ 2 ]
+val = 2
+
+
+g_distanza (2 : 2): [ 1 2 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (1 : 4): [ 1 ]
+g_neighbours (1 : 4): [ 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 1 2 ]
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 1 ]
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 1 ]
+ris (1 : 1): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 1 ]
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 1 ]
+g_visitati (2 : 4): [ 1 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (1 : 2): [ 1 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 2): [ 1 ]
+indx = 1
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (0 : 2): [ ]
+
+
+indx = 0
+------------------------------ Fine esiste_v_i
+
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 2): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 2 nan
+	 1 nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ 1 2 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (420 interne); stringhe deallocate: 0 (245 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+
+
+g_tmp1_d (2 : 2): [ 2 2 ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ 2 2 ]
+
+
+min = 2
+------------------------------ Fine min_v_d
+
+50: assegna1_s_diag_d	<=>	diag_d(m) <- s
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+val = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_d
+
+52: somma_colonne_d	<=>	ris <- apply(m, 2, sum)
+ris (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmp1_d (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_colonne_d
+
+53: copia_v_indx_d	<=>	ris <- v[indx]
+g_tmp1_d (2 : 2): [ 1 1 ]
+g_ind (2 : 2): [ 1 2 ]
+
+
+g_P (2 : 2): [ 1 1 ]
+------------------------------ Fine copia_v_indx_d
+
+55: min_v_d	<=>	ris <- min(v)
+g_P (2 : 2): [ 1 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+56: min_v_d	<=>	ris <- min(v)
+g_P (2 : 2): [ 1 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+56: which_v_indxeq_d	<=>	ris <- which(v==val)
+g_P (2 : 2): [ 1 1 ]
+val = 1
+
+
+g_ind2 (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_d
+
+57: copia_v_indx_i	<=>	ris <- v[indx]
+g_ind (2 : 2): [ 1 2 ]
+g_ind2 (2 : 2): [ 1 2 ]
+
+
+g_H (2 : 4): [ 1 2 ]
+------------------------------ Fine copia_v_indx_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 1 1 ]
+g_tmp1_i (2 : 2): [ 1 1 ]
+
+
+g_S (2 : 2): [ 2 2 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 2 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 2 2 ]
+val = 2
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+g_Hio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (420 interne); stringhe deallocate: 0 (245 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 2
+	 2 0
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 2
+	 2 0
+ ]
+val = 0
+
+
+g_ind (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 2
+	 2 0
+ ]
+g_ind (2 : 4): [ 2 3 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 0 0 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (420 interne); stringhe deallocate: 0 (245 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (2 : 4): [ 1 2 ]
+st = 1
+end = 2
+
+
+elem_ris->hubs (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+elem_ris->hubsio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 5
+
+tmp1_i (4 : 4): [ 0 1 1 1 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+tmp2_i (0 : 4): [ ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_S (2 : 2): [ 1 2 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 2 ]
+val = 2
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmp1_i (3 : 4): [ 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+g_tmp1_i (3 : 4): [ 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ nan 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (1 : 4): [ 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 2 ]
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 4): [ 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 2 ]
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 2): [ 1 2 ]
+ris (2 : 2): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (2 : 4): [ 1 2 ]
+g_visitati (1 : 4): [ 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (2 : 4): [ 1 2 ]
+
+
+indx = 2
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (2 : 4): [ 1 2 ]
+indx = 2
+
+
+ris (1 : 4): [ 1 ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (1 : 4): [ 1 ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (1 : 4): [ 1 ]
+st = 1
+end = 1
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine copia_v_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan 1 ]
+g_neighbours (1 : 4): [ 1 ]
+val = 2
+
+
+g_distanza (2 : 2): [ 2 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (1 : 4): [ 2 ]
+g_neighbours (1 : 4): [ 1 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 2 1 ]
+
+
+g_visitati (2 : 4): [ 2 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 2 1 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 4): [ ]
+g_tmp1_i (1 : 4): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 2 ]
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 2 ]
+ris (1 : 1): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 2 2 ]
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 2 ]
+g_visitati (2 : 4): [ 2 1 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 2): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 2): [ 2 ]
+indx = 1
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (0 : 2): [ ]
+
+
+indx = 0
+------------------------------ Fine esiste_v_i
+
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 2): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ 2 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 2 nan
+	 1 nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_neighbours (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (2 : 4): [ 1 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (2 : 4): [ 1 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 1 2 ]
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (1 : 4): [ 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 2 ]
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 2 ]
+------------------------------ Fine unione1_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 2 ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (3 : 3): [ 2 1 2 ]
+
+
+ris (2 : 3): [ 2 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 3): [ 2 1 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 3): [ 2 1 ]
+ris (2 : 3): [ 2 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 2 1 2 1 ]
+
+
+ris (2 : 4): [ 2 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 2 1 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (2 : 4): [ 2 1 ]
+g_visitati (2 : 4): [ 1 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (2 : 4): [ 2 1 ]
+
+
+indx = 2
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (2 : 4): [ 2 1 ]
+indx = 2
+
+
+ris (1 : 4): [ 2 ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 4): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 4): [ 2 ]
+indx = 1
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 4): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 2 nan
+	 1 nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ 1 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 1
+ ]
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 1
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (520 interne); stringhe deallocate: 0 (330 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 1
+ ]
+
+
+g_tmp1_d (2 : 2): [ 2 1 ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ 2 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+46: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_H (1 : 4): [ 2 ]
+------------------------------ Fine copia_v_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 2 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 1 2 ]
+g_tmp1_i (2 : 2): [ 1 2 ]
+
+
+g_S (2 : 2): [ 2 4 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 2 4 ]
+
+
+max = 4
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 2 4 ]
+val = 4
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_Hio (1 : 2): [ 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (520 interne); stringhe deallocate: 0 (330 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 2
+	 2 2
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 2
+	 2 2
+ ]
+val = 0
+
+
+g_ind (3 : 4): [ 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 2
+	 2 2
+ ]
+g_ind (3 : 4): [ 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 0 0 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (520 interne); stringhe deallocate: 0 (330 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (1 : 4): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubs (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubsio (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 6
+
+tmp1_i (4 : 4): [ 1 0 1 1 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+tmp2_i (2 : 4): [ 2 3 ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_S (2 : 2): [ 1 2 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 1 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 1 2 ]
+val = 2
+
+
+g_ind (1 : 2): [ 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+val = 0
+
+
+g_tmp1_i (3 : 4): [ 1 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+g_tmp1_i (3 : 4): [ 1 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 2 1
+	 1 1
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+c = 1, val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (1 : 4): [ 1 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 nan ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (1 : 4): [ 1 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (1 : 1): [ 1 ]
+
+
+g_visitati (1 : 4): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (1 : 4): [ 1 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 4): [ ]
+g_tmp1_i (1 : 4): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 1 ]
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 1 ]
+ris (1 : 1): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 1 ]
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 2): [ 1 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (1 : 2): [ 1 ]
+g_visitati (1 : 4): [ 1 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (1 : 2): [ 1 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 2): [ 1 ]
+indx = 1
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 2): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 2): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ 1 nan ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 1 nan
+	 nan nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+c = 2, val = 0
+
+
+g_neighbours (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (2 : 4): [ 1 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (2 : 4): [ 1 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 1 2 ]
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (1 : 4): [ 1 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 2): [ ]
+g_tmp1_i (1 : 4): [ 1 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (1 : 1): [ 1 ]
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (1 : 1): [ 1 ]
+------------------------------ Fine unione1_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (1 : 1): [ 1 ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (3 : 3): [ 1 1 2 ]
+
+
+ris (2 : 3): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 3): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 3): [ 1 2 ]
+ris (2 : 3): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (2 : 4): [ 1 2 ]
+g_visitati (2 : 4): [ 1 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (2 : 4): [ 1 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (2 : 4): [ 1 2 ]
+indx = 1
+
+
+ris (1 : 4): [ 2 ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 4): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 4): [ 2 ]
+indx = 1
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 4): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 1 nan
+	 nan nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ 1 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 nan 1
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 nan 1
+ ]
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 nan 1
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 inf 1
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (595 interne); stringhe deallocate: 0 (390 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 inf 1
+ ]
+
+
+g_tmp1_d (2 : 2): [ 1 1 ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ 1 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+46: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (1 : 2): [ 2 ]
+st = 1
+end = 1
+
+
+g_H (1 : 4): [ 2 ]
+------------------------------ Fine copia_v_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 2 1 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 1 2 ]
+g_tmp1_i (2 : 2): [ 2 1 ]
+
+
+g_S (2 : 2): [ 3 3 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 3 3 ]
+
+
+max = 3
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 3 3 ]
+val = 3
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+g_Hio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (595 interne); stringhe deallocate: 0 (390 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 0
+	 1 1
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 0
+	 1 1
+ ]
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+val = 0
+
+
+g_ind (4 : 4): [ 1 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 2 1
+	 1 2
+ ]
+g_ind (4 : 4): [ 1 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 0 0 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (595 interne); stringhe deallocate: 0 (390 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (1 : 4): [ 2 ]
+st = 1
+end = 1
+
+
+elem_ris->hubs (1 : 1): [ 2 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+elem_ris->hubsio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+51: colonna_i	<=>	ris <- m[,c]
+ris (4 x 7 : 5 x 7): [
+	 0 0 0 0 0 1 1
+	 0 0 1 1 1 0 1
+	 1 1 0 1 1 1 1
+	 0 1 1 0 1 1 1
+ ]
+c = 7
+
+tmp1_i (4 : 4): [ 1 1 1 1 ]
+------------------------------ Fine colonna_i
+
+56: which_m_indxnsimm_i	<=>	ris <- which((m == t(m)) == 0)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+tmp2_i (0 : 4): [ ]
+------------------------------ Fine which_m_indxnsimm_i
+
+
+***hubs***
+32: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_S (2 : 2): [ 2 2 ]
+------------------------------ Fine somma_colonne_i
+
+34: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 2 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+34: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 2 2 ]
+val = 2
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+
+*** pathlength ***
+37: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine copia_m_i
+
+40: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmp1_i (4 : 4): [ 1 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+41: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+g_tmp1_i (4 : 4): [ 1 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+44: InitMatr_d
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 inf 1
+ ]
+val = nan
+
+
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+------------------------------ Fine InitMatr_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_neighbours (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (2 : 4): [ 1 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (2 : 4): [ 1 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 1 2 ]
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 4): [ ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 2 ]
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 2): [ 1 2 ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 4): [ 1 2 ]
+ris (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (2 : 4): [ 1 2 ]
+g_visitati (2 : 4): [ 1 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (2 : 4): [ 1 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (2 : 4): [ 1 2 ]
+indx = 1
+
+
+ris (1 : 4): [ 2 ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 4): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 4): [ 2 ]
+indx = 1
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 4): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 nan nan
+	 nan nan
+ ]
+colonna = 1
+g_distanza (2 : 2): [ 1 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 1 nan
+	 1 nan
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+50: rep_s_d	<=>	ris <- rep(num, rip)
+num = nan
+rip = 2
+
+
+g_distanza (2 : 2): [ nan nan ]
+------------------------------ Fine rep_s_d
+
+58: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_neighbours (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+65: assegna1_vs_indx_d	<=>	v[indx] <- val
+g_distanza (2 : 2): [ nan nan ]
+g_neighbours (2 : 4): [ 1 2 ]
+val = 1
+
+
+g_distanza (2 : 2): [ 1 1 ]
+------------------------------ Fine assegna1_vs_indx_d
+
+69: unione_i	<=>	ris <- union(v1, v2)
+g_visitati (0 : 4): [ ]
+g_neighbours (2 : 4): [ 1 2 ]
+4883: elimina_doppi_i	<=>	ris <- union(v, v)
+g_visitati (2 : 2): [ 1 2 ]
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+g_visitati (2 : 4): [ 1 2 ]
+------------------------------ Fine unione_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+c = 1, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (0 : 4): [ ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (2 : 2): [ 1 2 ]
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 2): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+79: which_m_colindxne_i	<=>	ris <- which(m[, c] != val)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+c = 2, val = 0
+
+
+g_tmp1_i (2 : 4): [ 1 2 ]
+------------------------------ Fine which_m_colindxne_i
+
+80: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 2): [ 1 2 ]
+g_tmp1_i (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+84: unione1_i	<=>	v1 <- union(v1, v2)
+ris (2 : 4): [ 1 2 ]
+ris (2 : 4): [ 1 2 ]
+3011: elimina_doppi_i	<=>	ris <- union(v, v)
+g_new_neighbours (4 : 4): [ 1 2 1 2 ]
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine elimina_doppi_i
+
+
+
+ris (2 : 4): [ 1 2 ]
+------------------------------ Fine unione1_i
+
+86: setdiff1_i	<=>	v1 <- setdiff(v1, v2)
+ris (2 : 4): [ 1 2 ]
+g_visitati (2 : 4): [ 1 2 ]
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 1
+ris (2 : 4): [ 1 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (2 : 4): [ 1 2 ]
+indx = 1
+
+
+ris (1 : 4): [ 2 ]
+------------------------------ Fine elimina1_indx_i
+
+2056: esiste_v_i	<=>	elem %IN% v
+elem = 2
+ris (1 : 4): [ 2 ]
+
+
+indx = 1
+------------------------------ Fine esiste_v_i
+
+2058: elimina1_indx_i	<=>	v <- v[-indx]
+ris (1 : 4): [ 2 ]
+indx = 1
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine elimina1_indx_i
+
+
+
+ris (0 : 4): [ ]
+------------------------------ Fine setdiff1_i
+
+88: copia_v_i	<=>	ris[st:end] <- v[st:end]
+ris (0 : 4): [ ]
+st = 1
+end = 0
+
+
+g_neighbours (0 : 4): [ ]
+------------------------------ Fine copia_v_i
+
+94: assegna1_mv_colonna_d	<=>	m[,colonna] <- v
+ris (2 x 2 : 2 x 2): [
+	 1 nan
+	 1 nan
+ ]
+colonna = 2
+g_distanza (2 : 2): [ 1 1 ]
+
+
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_mv_colonna_d
+
+101: assegna1_m_indxNA_d	<=>	m1[which(is.na(m2))] # o suo complemento
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+val = inf
+complemento = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_m_indxNA_d
+
+
+Stringhe allocate: 2 (680 interne); stringhe deallocate: 0 (460 interne)
+
+
+*** Esco da pathlength ***
+38: diag_d	<=>	ris <- diag(m)
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmp1_d (2 : 2): [ 1 1 ]
+------------------------------ Fine diag_d
+
+39: min_v_d	<=>	ris <- min(v)
+g_tmp1_d (2 : 2): [ 1 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+50: assegna1_s_diag_d	<=>	diag_d(m) <- s
+ris (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+val = 0
+
+
+ris (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_d
+
+52: somma_colonne_d	<=>	ris <- apply(m, 2, sum)
+ris (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmp1_d (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_colonne_d
+
+53: copia_v_indx_d	<=>	ris <- v[indx]
+g_tmp1_d (2 : 2): [ 1 1 ]
+g_ind (2 : 2): [ 1 2 ]
+
+
+g_P (2 : 2): [ 1 1 ]
+------------------------------ Fine copia_v_indx_d
+
+55: min_v_d	<=>	ris <- min(v)
+g_P (2 : 2): [ 1 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+56: min_v_d	<=>	ris <- min(v)
+g_P (2 : 2): [ 1 1 ]
+
+
+min = 1
+------------------------------ Fine min_v_d
+
+56: which_v_indxeq_d	<=>	ris <- which(v==val)
+g_P (2 : 2): [ 1 1 ]
+val = 1
+
+
+g_ind2 (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_d
+
+57: copia_v_indx_i	<=>	ris <- v[indx]
+g_ind (2 : 2): [ 1 2 ]
+g_ind2 (2 : 2): [ 1 2 ]
+
+
+g_H (2 : 4): [ 1 2 ]
+------------------------------ Fine copia_v_indx_i
+
+67: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 2 2 ]
+------------------------------ Fine somma_righe_i
+
+68: somma1_vv_i	<=>	v1 <- v1 + v2
+g_S (2 : 2): [ 2 2 ]
+g_tmp1_i (2 : 2): [ 2 2 ]
+
+
+g_S (2 : 2): [ 4 4 ]
+------------------------------ Fine somma1_vv_i
+
+70: max_v_i		<=>	ris <- max(v)
+g_S (2 : 2): [ 4 4 ]
+
+
+max = 4
+------------------------------ Fine max_v_i
+
+70: which_v_indxeq_i	<=>	ris <- which(v==val)
+g_S (2 : 2): [ 4 4 ]
+val = 4
+
+
+g_ind (2 : 2): [ 1 2 ]
+------------------------------ Fine which_v_indxeq_i
+
+72: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_ind (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+g_Hio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (680 interne); stringhe deallocate: 0 (460 interne)
+
+
+*** Esco da hubs ***
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 2 2
+	 2 2
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 2 2
+	 2 2
+ ]
+val = 0
+
+
+g_ind (4 : 4): [ 1 2 3 4 ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 2 2
+	 2 2
+ ]
+g_ind (4 : 4): [ 1 2 3 4 ]
+val = 1
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+val = 0
+
+
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (2 : 2): [ 0 0 ]
+val = 0
+
+
+ris (2 : 2): [ 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 1
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (1 : 4): [ 2 ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+riga = 2
+
+
+ris: 1
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (1 : 4): [ 1 ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (2 : 2): [ 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 2 (680 interne); stringhe deallocate: 0 (460 interne)
+
+
+*** Esco da cluster_coeff2 ***
+76: copia_m_i	<=>	ris <- da
+mod (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+------------------------------ Fine copia_m_i
+
+79: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_H (2 : 4): [ 1 2 ]
+st = 1
+end = 2
+
+
+elem_ris->hubs (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+85: copia_v_i	<=>	ris[st:end] <- v[st:end]
+g_Hio (2 : 2): [ 1 2 ]
+st = 1
+end = 2
+
+
+elem_ris->hubsio (2 : 2): [ 1 2 ]
+------------------------------ Fine copia_v_i
+
+
+Stringhe allocate: 2 (695 interne); stringhe deallocate: 2 (495 interne)
+
+
+*** Esco da createMOD1 ***
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+Trasformo il vettore elem_ris->hubs (1 : 1): [ 2 ]
+Trasformo il vettore elem_ris->hubsio (2 : 2): [ 1 2 ]
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+Trasformo il vettore elem_ris->hubs (1 : 1): [ 2 ]
+Trasformo il vettore elem_ris->hubsio (1 : 1): [ 2 ]
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+Trasformo il vettore elem_ris->hubs (1 : 1): [ 1 ]
+Trasformo il vettore elem_ris->hubsio (1 : 1): [ 2 ]
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+Trasformo il vettore elem_ris->hubs (2 : 2): [ 1 2 ]
+Trasformo il vettore elem_ris->hubsio (2 : 2): [ 1 2 ]
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+Trasformo il vettore elem_ris->hubs (1 : 1): [ 2 ]
+Trasformo il vettore elem_ris->hubsio (1 : 1): [ 2 ]
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+Trasformo il vettore elem_ris->hubs (1 : 1): [ 2 ]
+Trasformo il vettore elem_ris->hubsio (2 : 2): [ 1 2 ]
+Trasformo la matrice
+elem_ris->rete (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+Trasformo il vettore elem_ris->hubs (2 : 2): [ 1 2 ]
+Trasformo il vettore elem_ris->hubsio (2 : 2): [ 1 2 ]
+
+Stringhe allocate: 2 (695 interne); stringhe deallocate: 2 (695 interne)
+
+
+*** HMM ***
+Il vettore 'degree' e` nullo
+Ho trasformato la stringa 'INdegree' che vale 'free'
+------------------------------ Fine inSTRINGA
+
+Ho trasformato il vettore prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (1 : 1): [ 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 1 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (1 : 1): [ 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (2 : 2): [ 1 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (1 : 1): [ 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (1 : 1): [ 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+Ho trasformato la matrice VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+Ho trasformato il vettore VECTOR_ELT(elem, 2) (2 : 2): [ 1 2 ]
+Ho trasformato il vettore VECTOR_ELT(elem, 6) (2 : 2): [ 1 2 ]
+
+*** HMM1 ***
+80: copia_v_d	<=>	ris[st:end] <- v[st:end]
+prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+st = 1
+end = 7
+
+
+g_prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+------------------------------ Fine copia_v_d
+
+89: rep_s_i	<=>	ris <- rep(num, rip)
+num = 0
+rip = 7
+
+
+g_MC (7 : 7): [ 0 0 0 0 0 0 0 ]
+------------------------------ Fine rep_s_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 0
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 0 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 0 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 0 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 0
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 0 2 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 0 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 0
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 1 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 1 ]
+
+
+max = 1
+------------------------------ Fine max_v_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 0 1
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 1 2 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 1 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 0 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 2 1 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 2 1 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+95: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+VECTOR_ELT(elem, 1) (2 x 2 : 2 x 2): [
+	 1 1
+	 1 1
+ ]
+
+
+g_tmp1_i (2 : 2): [ 2 2 ]
+------------------------------ Fine somma_righe_i
+
+99: max_v_i		<=>	ris <- max(v)
+g_tmp1_i (2 : 2): [ 2 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+121: rep_s_i	<=>	ris <- rep(num, rip)
+num = -1
+rip = 10
+
+
+g_LG (10 : 10): [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ]
+------------------------------ Fine rep_s_i
+
+124: InitMatr_i
+ris (10 x 10 : 10 x 10): [
+	 -76132312 2648 7566433 875978550 1731033205 839122944 150994944 858600752 150994944 1685022836
+	 32610 33554944 589824 150994944 30062 3158320 16777216 10545 50331648 33554432
+	 49064016 33554699 2014511104 150994944 2304 589824 82 516 3026478 268435456
+	 0 3 912209464 1970170220 0 805437440 9 256 16449536 16777216
+	 49064032 772 1668295988 1852255608 2304 53 1981829661 2304 16646144 150994944
+	 0 63744 1852402733 117 3277056 9 1769173605 1651443200 393216 83886080
+	 -70833680 0 1731033205 9 589824 3224322 840986223 1952671082 65536 1634298977
+	 32610 3584 30062 909670417 822345728 589824 774975790 -83886080 589824 115
+	 354 2304 2304 741619295 3223089 889520128 841490481 33816576 1426653184 45624062
+	 49 1953694976 947389952 1852402720 589824 926232882 758133040 16777216 1699571059 0
+ ]
+val = 0
+
+
+ris (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+------------------------------ Fine InitMatr_i
+
+131: rep_s_d	<=>	ris <- rep(num, rip)
+num = 0
+rip = 11
+
+
+g_tmp1_d (11 : 11): [ 0 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine rep_s_d
+
+132: vettore2v_d		<=>	ris <- c(v1, v2)
+g_scalare_d (1 : 1): [ 10 ]
+g_tmp1_d (11 : 11): [ 0 0 0 0 0 0 0 0 0 0 0 ]
+
+
+g_Freq_out (12 : 12): [ 10 0 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine vettore2v_d
+
+133: copia_v_d	<=>	ris[st:end] <- v[st:end]
+g_Freq_out (12 : 12): [ 10 0 0 0 0 0 0 0 0 0 0 0 ]
+st = 1
+end = 12
+
+
+g_Freq_in (12 : 12): [ 10 0 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine copia_v_d
+
+137: seq_d	<=>	ris <- seq(da, a, incr)
+da = 1
+a = 10
+incr = 1
+
+
+g_tmp1_d (10 : 11): [ 1 2 3 4 5 6 7 8 9 10 ]
+------------------------------ Fine seq_d
+
+138: exp_d	<=>	ris <- v ^ val
+g_tmp1_d (10 : 11): [ 1 2 3 4 5 6 7 8 9 10 ]
+val = -2.2
+
+
+g_tmp2_d (10 : 10): [ 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0.01941186441032164 0.01382879415103022 0.01030865555291323 0.007955481666385851 0.00630957344480193 ]
+------------------------------ Fine exp_d
+
+141: vettore3v_d		<=>	ris <- c(v1, v2, v3)
+g_scalare1_d (1 : 1): [ nan ]
+g_tmp2_d (10 : 10): [ 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0.01941186441032164 0.01382879415103022 0.01030865555291323 0.007955481666385851 0.00630957344480193 ]
+g_scalare_d (1 : 1): [ 0 ]
+
+
+g_Prob (12 : 12): [ nan 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0.01941186441032164 0.01382879415103022 0.01030865555291323 0.007955481666385851 0.00630957344480193 0 ]
+------------------------------ Fine vettore3v_d
+
+143: somma_v_d	<=>	ris <- sum(v, na.rm=canc_NA)
+g_Prob (12 : 12): [ nan 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0.01941186441032164 0.01382879415103022 0.01030865555291323 0.007955481666385851 0.00630957344480193 0 ]
+canc_NA = 1
+
+
+
+ris: 1.441002846162289
+------------------------------ Fine somma_v_d
+
+143: dividi1_vs_d	<=>	v <- v / div
+g_Prob (12 : 12): [ nan 1 0.217637640824031 0.08919350686224783 0.04736614270344993 0.02899118654710781 0.01941186441032164 0.01382879415103022 0.01030865555291323 0.007955481666385851 0.00630957344480193 0 ]
+div = 1.441
+
+
+g_Prob (12 : 12): [ nan 0.6939611553601175 0.1510320686760948 0.06189682907274607 0.03287026311543831 0.02011875731149163 0.01347107985388075 0.009596645966286165 0.007153806517709157 0.005520795248651358 0.004378598877584264 0 ]
+------------------------------ Fine dividi1_vs_d
+
+155: moltiplica_vs_d	<=>	ris <- v1 * v2
+g_Prob (12 : 12): [ nan 0.6939611553601175 0.1510320686760948 0.06189682907274607 0.03287026311543831 0.02011875731149163 0.01347107985388075 0.009596645966286165 0.007153806517709157 0.005520795248651358 0.004378598877584264 0 ]
+val = 10
+
+
+g_STout (12 : 12): [ nan 6.939611553601175 1.510320686760948 0.6189682907274607 0.3287026311543831 0.2011875731149163 0.1347107985388075 0.09596645966286164 0.07153806517709158 0.05520795248651358 0.04378598877584264 0 ]
+------------------------------ Fine moltiplica_vs_d
+
+157: rep_s_d	<=>	ris <- rep(num, rip)
+num = 0
+rip = 12
+
+
+g_STin (12 : 12): [ 0 0 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine rep_s_d
+
+168: assegna_v_segm_d	<=>	v[st:end] <- val
+g_STin (12 : 12): [ 0 0 0 0 0 0 0 0 0 0 0 0 ]
+start = 1
+end = 11
+val = nan
+
+
+g_STin (12 : 12): [ nan nan nan nan nan nan nan nan nan nan nan 0 ]
+------------------------------ Fine assegna_v_segm_d
+
+190: moltiplica_vs_d	<=>	ris <- v1 * v2
+g_STout (12 : 12): [ nan 6.939611553601175 1.510320686760948 0.6189682907274607 0.3287026311543831 0.2011875731149163 0.1347107985388075 0.09596645966286164 0.07153806517709158 0.05520795248651358 0.04378598877584264 0 ]
+val = 0.1
+
+
+g_tmp1_d (12 : 34): [ nan 0.6939611553601175 0.1510320686760948 0.06189682907274607 0.03287026311543831 0.02011875731149163 0.01347107985388075 0.009596645966286165 0.007153806517709158 0.005520795248651358 0.004378598877584264 0 ]
+------------------------------ Fine moltiplica_vs_d
+
+191: rep_s_d	<=>	ris <- rep(num, rip)
+num = 1
+rip = 12
+
+
+g_tmp2_d (12 : 32): [ 1 1 1 1 1 1 1 1 1 1 1 1 ]
+------------------------------ Fine rep_s_d
+
+192: cbind2v_d	<=>	ris <- cbind(v1, v2)
+g_tmp1_d (12 : 34): [ nan 0.6939611553601175 0.1510320686760948 0.06189682907274607 0.03287026311543831 0.02011875731149163 0.01347107985388075 0.009596645966286165 0.007153806517709158 0.005520795248651358 0.004378598877584264 0 ]
+g_tmp2_d (12 : 32): [ 1 1 1 1 1 1 1 1 1 1 1 1 ]
+
+
+g_aus (12 x 2 : 12 x 2): [
+	 nan 1
+	 0.6939611553601175 1
+	 0.1510320686760948 1
+	 0.06189682907274607 1
+	 0.03287026311543831 1
+	 0.02011875731149163 1
+	 0.01347107985388075 1
+	 0.009596645966286165 1
+	 0.007153806517709158 1
+	 0.005520795248651358 1
+	 0.004378598877584264 1
+	 0 1
+ ]
+------------------------------ Fine cbind2v_d
+
+194: max_righe_d	<=>	ris <- apply(m, 1, max)
+g_aus (12 x 2 : 12 x 2): [
+	 nan 1
+	 0.6939611553601175 1
+	 0.1510320686760948 1
+	 0.06189682907274607 1
+	 0.03287026311543831 1
+	 0.02011875731149163 1
+	 0.01347107985388075 1
+	 0.009596645966286165 1
+	 0.007153806517709158 1
+	 0.005520795248651358 1
+	 0.004378598877584264 1
+	 0 1
+ ]
+
+
+g_toll (12 : 12): [ nan 1 1 1 1 1 1 1 1 1 1 1 ]
+------------------------------ Fine max_righe_d
+
+196: seq_i	<=>	ris <- seq(da, a, incr)
+da = 1
+a = 10
+incr = 1
+
+
+g_h (10 : 10): [ 1 2 3 4 5 6 7 8 9 10 ]
+------------------------------ Fine seq_i
+
+204: rep_s_d	<=>	ris <- rep(num, rip)
+num = 1
+rip = 7
+
+
+g_CCp (7 : 7): [ 1 1 1 1 1 1 1 ]
+------------------------------ Fine rep_s_d
+
+241: somma_righe_i	<=>	ris <- apply(m, 1, sum)
+ris (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+
+
+g_Sin (10 : 10): [ 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine somma_righe_i
+
+243: somma_colonne_i	<=>	ris <- apply(m, 2, sum)
+ris (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+
+
+g_Sout (10 : 10): [ 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine somma_colonne_i
+
+
+***cluster_coeff***
+20: trasponi_i	<=>	ris <- t(m)
+ris (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+
+
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+------------------------------ Fine trasponi_i
+
+21: somma1_m_i	<=>	m1 <- m1 + m2
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+ris (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+
+
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+------------------------------ Fine somma1_m_i
+
+23: which_m_indxne_i	<=>	ris <- which(m!=val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+val = 0
+
+
+g_ind (0 : 100): [ ]
+------------------------------ Fine which_m_indxne_i
+
+25: assegna1_ms_indx_i	<=>	m[indx] = val
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+g_ind (0 : 100): [ ]
+val = 1
+
+
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+------------------------------ Fine assegna1_ms_indx_i
+
+27: assegna1_s_diag_i	<=>	diag_i(m) <- s
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+val = 0
+
+
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+------------------------------ Fine assegna1_s_diag_i
+
+32: InitVett_d
+ris (10 : 10): [ 6.92003671246505e-310 6.92003671246505e-310 3 4 5 6 7 8 9 10 ]
+val = 0
+
+
+ris (10 : 10): [ 0 0 0 0 0 0 0 0 0 0 ]
+------------------------------ Fine InitVett_d
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 1
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 1
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 2
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 2
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 3
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 3
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 4
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 4
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 5
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 5
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 6
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 6
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 7
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 7
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 8
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 8
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 9
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 9
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+36: somma_riga_i	<=>	ris <- sum(m[riga, ])
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+riga = 10
+
+
+ris: 0
+------------------------------ Fine somma_riga_i
+
+38: which_m_rowindxne_i	<=>	ris <- which(m[r, ] != val)
+g_tmpm_i (10 x 10 : 10 x 10): [
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+	 0 0 0 0 0 0 0 0 0 0
+ ]
+r = 10
+val = 0
+
+
+g_neighbours (0 : 100): [ ]
+------------------------------ Fine which_m_rowindxne_i
+
+65: media_v_d	<=>	ris <- mean(v)
+ris (10 : 10): [ 0 0 0 0 0 0 0 0 0 0 ]
+
+
+media = 0.000
+------------------------------ Fine media_v_d
+
+
+Stringhe allocate: 3 (255 interne); stringhe deallocate: 0 (0 interne)
+
+
+*** Esco da cluster_coeff2 ***
+301: moltiplica_vv_d	<=>	ris <- v1 * v2
+g_prior_p_subnet (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+g_CCp (7 : 7): [ 1 1 1 1 1 1 1 ]
+
+
+g_ppp (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+------------------------------ Fine moltiplica_vv_d
+
+303: max_v_d		<=>	ris <- max(v)
+g_ppp (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+
+
+max = 0.1428571428571428
+------------------------------ Fine max_v_d
+
+307: somma_v_d	<=>	ris <- sum(v, na.rm=canc_NA)
+g_ppp (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+canc_NA = 1
+
+
+
+ris: 0.9999999999999998
+------------------------------ Fine somma_v_d
+
+307: dividi1_vs_d	<=>	v <- v / div
+g_ppp (7 : 7): [ 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 0.1428571428571428 ]
+div = 1.000
+
+
+g_ppp (7 : 7): [ 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 ]
+------------------------------ Fine dividi1_vs_d
+
+315: max_v_i		<=>	ris <- max(v)
+g_dim (7 : 7): [ 2 2 2 2 2 2 2 ]
+
+
+max = 2
+------------------------------ Fine max_v_i
+
+321: max_v_d		<=>	ris <- max(v)
+g_ppp (7 : 7): [ 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 ]
+
+
+max = 0.1428571428571429
+------------------------------ Fine max_v_d
+
+330: which_v_indxgt_d	<=>	ris <- which(v > val)
+g_ppp (7 : 7): [ 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 ]
+val = 0
+
+
+g_tmp1_i (7 : 11): [ 1 2 3 4 5 6 7 ]
+------------------------------ Fine which_v_indxgt_d
+
+333: seq_i	<=>	ris <- seq(da, a, incr)
+da = 1
+a = 7
+incr = 1
+
+
+g_tmp1_i (7 : 11): [ 1 2 3 4 5 6 7 ]
+------------------------------ Fine seq_i
+
+
+***sampleB_p***
+
+*** sample_p ***
+g_tmp1_i (7 : 11): [ 1 2 3 4 5 6 7 ]
+k = 3, replace = 0
+g_ppp (7 : 7): [ 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 0.1428571428571429 ]

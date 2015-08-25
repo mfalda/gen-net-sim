@@ -1,0 +1,12 @@
+Package: HMMb
+Type: Package
+Title: Gene network topology simulator
+Version: 1.1
+Date: 2009-12-07
+Author: Di Camillo Barbara
+Description: This program is a simulator that generates network topology according to the parameter settings given as input.
+License: GNU General Public License
+Maintainer: Di Camillo Barbara <barbara.dicamillo@dei.unipd.it>
+Depends: R (>= 2.8.1)
+License: GPL version 2 or newer
+Packaged: 2009-07-14 07:36:26 UTC; root

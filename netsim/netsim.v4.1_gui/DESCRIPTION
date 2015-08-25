@@ -1,0 +1,14 @@
+Package: netsim.gui
+Type: Package
+Title: Gene network simulator with Graphical User Interface
+Version: 1.5.2
+Date: 2012-11-03
+Author: Barbara Di Camillo and Marco Falda
+Description: This program is a simulator that generates network topology, regulatory rules and expression profiles so as to reproduce some important features of regulation in real gene networks, according to the parameter settings given as input.
+License: GNU General Public License, MIT License for muParser (thanks to Ingo Berg), modified BSD for r2clib
+Maintainer: Barbara Di Camillo <barbara.dicamillo@dei.unipd.it>
+Depends: R (>= 2.8.1)
+Imports: grid, RGtk2, Rgraphviz (<= 2.21), cairoDevice, graph
+License: GPL version 2 or newer
+Packaged: Wed May 27 15:20:57 2009; Marco Falda
+biocViews: Microarray
